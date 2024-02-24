@@ -1,0 +1,82 @@
+.header {
+  background-color: $blackColor;
+  position: fixed;
+  width: 100%;
+  height: 96px;
+  top: 0;
+  z-index: 5;
+
+  .logo {
+    @include fw700fs36lh36ls0taLeft;
+    width: 230px;
+    height: 36px;
+    text-align: left;
+    color: #ffffff;
+    position: absolute;
+    left: calculateWidth(195);
+    top: 30px;
+  }
+  .headerContactInfo {
+    width: calc(251px + 501px);
+    height: 30px;
+    position: relative;
+    top: 33px;
+    right: calculateWidth(195);
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    & div:first-of-type {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      align-items: center;
+      & div.contactUsTel {
+        margin: 0 30px;
+      }
+    }
+    .buttonsDiv {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 191px;
+      height: 30px;
+      justify-content: space-between;
+    }
+    .hamburger {
+      @include headerButton;
+      background: url("./Assets/Images/buttons/Menu.svg") center/cover;
+      width: 56px;
+      height: 30px;
+      background-color: $whiteColor;
+    }
+    .compareButton {
+      @include headerButton;
+      background: url("./Assets/Images/buttons/compareButton.svg") center/cover;
+      background-color: $whiteColor;
+    }
+    .searchButton {
+      @include headerButton;
+      background: url("./Assets/Images/buttons/searchButton.svg") center/cover;
+      background-color: $whiteColor;
+    }
+    .languageSwitch {
+      @include headerButton;
+      background: url("./Assets/Images/buttons/lang/Property\ 1=Ukraine.svg")
+        center/cover;
+    }
+
+    a {
+      @include fw400fs16lh22ls0taLeft;
+      color: $whiteColor;
+    }
+    .contactUsTel {
+      button {
+        background: url("./Assets/Images/buttons/Arrow\ down.svg") center/cover;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

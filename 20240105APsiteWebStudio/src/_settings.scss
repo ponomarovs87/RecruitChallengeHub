@@ -1,0 +1,39 @@
+@import "_fonts.scss";
+
+
+$whiteColor: #ffffff;
+$yellowColor: #f6d375;
+$blackColor: #18181b;
+
+@mixin FrontFamalyMontserrat {
+  font-family: Montserrat;
+}
+
+@mixin fw700fs36lh36ls0taLeft {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin fw400fs16lh22ls0taLeft {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin headerButton {
+  border-radius: 99px;
+  width: 30px;
+  height: 30px;
+  &:hover {
+    background-color: $yellowColor;
+  }
+}
+
+@function calculateWidth($width) {
+  @return percentage($width / 1920);
+}

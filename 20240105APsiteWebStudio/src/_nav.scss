@@ -1,0 +1,30 @@
+nav {
+  background-color: $blackColor;
+  margin-top: 96px;
+  width: 100%;
+  height: 60px;
+  padding: 20px calculateWidth(195);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  a {
+    @include fw400fs16lh22ls0taLeft;
+    color: $whiteColor;
+    padding: 1.5px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:not(:last-child)::after {
+      content: "";
+      background: url("./Assets/Images/Arrow\ left.svg") center/cover;
+      width: 20px;
+      height: 20px;
+      margin: 1.5px 15px;
+    }
+  }
+  a.currectPage {
+    opacity: 50%;
+  }
+}

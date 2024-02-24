@@ -1,13 +1,11 @@
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-  }
+@import "_settings.scss";
+@import "_header.scss";
+@import "_nav.scss";
+
+* {
+  @include FrontFamalyMontserrat;
+
   
-  h1 {
-    color: #333;
-  }
-  h2{
-    background-color: red;
-    clip: auto;
-    display: inline;
-  }
+}
+
+

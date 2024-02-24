@@ -1,11 +1,134 @@
-body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
-h1 {
-  color: #333; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
 
-h2 {
-  background-color: red;
-  clip: auto;
-  display: inline; }
+.header {
+  background-color: #18181b;
+  position: fixed;
+  width: 100%;
+  height: 96px;
+  top: 0;
+  z-index: 5; }
+  .header .logo {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 230px;
+    height: 36px;
+    text-align: left;
+    color: #ffffff;
+    position: absolute;
+    left: 10.15625%;
+    top: 30px; }
+  .header .headerContactInfo {
+    width: calc(251px + 501px);
+    height: 30px;
+    position: relative;
+    top: 33px;
+    right: 10.15625%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center; }
+    .header .headerContactInfo div:first-of-type {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      align-items: center; }
+      .header .headerContactInfo div:first-of-type div.contactUsTel {
+        margin: 0 30px; }
+    .header .headerContactInfo .buttonsDiv {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 191px;
+      height: 30px;
+      justify-content: space-between; }
+    .header .headerContactInfo .hamburger {
+      border-radius: 99px;
+      width: 30px;
+      height: 30px;
+      background: url("./Assets/Images/buttons/Menu.svg") center/cover;
+      width: 56px;
+      height: 30px;
+      background-color: #ffffff; }
+      .header .headerContactInfo .hamburger:hover {
+        background-color: #f6d375; }
+    .header .headerContactInfo .compareButton {
+      border-radius: 99px;
+      width: 30px;
+      height: 30px;
+      background: url("./Assets/Images/buttons/compareButton.svg") center/cover;
+      background-color: #ffffff; }
+      .header .headerContactInfo .compareButton:hover {
+        background-color: #f6d375; }
+    .header .headerContactInfo .searchButton {
+      border-radius: 99px;
+      width: 30px;
+      height: 30px;
+      background: url("./Assets/Images/buttons/searchButton.svg") center/cover;
+      background-color: #ffffff; }
+      .header .headerContactInfo .searchButton:hover {
+        background-color: #f6d375; }
+    .header .headerContactInfo .languageSwitch {
+      border-radius: 99px;
+      width: 30px;
+      height: 30px;
+      background: url("./Assets/Images/buttons/lang/Property 1=Ukraine.svg") center/cover; }
+      .header .headerContactInfo .languageSwitch:hover {
+        background-color: #f6d375; }
+    .header .headerContactInfo a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff; }
+    .header .headerContactInfo .contactUsTel button {
+      background: url("./Assets/Images/buttons/Arrow down.svg") center/cover;
+      width: 24px;
+      height: 24px; }
+
+nav {
+  background-color: #18181b;
+  margin-top: 96px;
+  width: 100%;
+  height: 60px;
+  padding: 20px 10.15625%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  nav a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    padding: 1.5px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    nav a:not(:last-child)::after {
+      content: "";
+      background: url("./Assets/Images/Arrow left.svg") center/cover;
+      width: 20px;
+      height: 20px;
+      margin: 1.5px 15px; }
+  nav a.currectPage {
+    opacity: 50%; }
+
+* {
+  font-family: Montserrat; }

@@ -1,0 +1,15 @@
+$montserrat-path: "Assets/fonts/Montserrat/static";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("#{$montserrat-path}/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("#{$montserrat-path}/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
