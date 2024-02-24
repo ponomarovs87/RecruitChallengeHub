@@ -1,0 +1,36 @@
+.currectCarSection {
+  background: url("./Assets/Images/cars/GENESIS\ G80.png") center/cover;
+  width: 100%;
+  height: 900px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .carInfo {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 calculateWidth(195) 60px calculateWidth(195);
+    z-index: 2;
+
+    h2 {
+      color: $whiteColor;
+    }
+    .carName {
+      @include fw400fs64lh77ls0taLeft;
+    }
+    .carPrice {
+      @include fw400fs50lh60ls0taLeft;
+      opacity: 98.43%;
+    }
+  }
+}

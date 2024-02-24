@@ -1,0 +1,49 @@
+.currectCarDeatil {
+  width: 100%;
+  height: 1003px;
+  padding: 41px calculateWidth(195) 160px calculateWidth(195);
+  background-color: $blackColor;
+  position: relative;
+  .choiseInformation {
+    display: flex;
+    width: 805px;
+    height: 24px;
+    justify-content: space-between;
+    h4 {
+      @include fw500fs20lh24ls0taLeft;
+      color: $whiteColor;
+    }
+    .activeChoise h4 {
+      color: $yellowColor;
+      text-decoration: underline;
+    }
+  }
+  .shoppingButtons {
+    width: 500px;
+    height: 46px;
+    position: absolute;
+    top: 30px;
+    right: calculateWidth(195);
+    display: flex;
+    justify-content: space-between;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 24px;
+      border: 1px solid $whiteColor;
+      @include fw600fs16lh195ls0taLeft;
+    }
+    .shopinngButton {
+      width: 212px;
+      height: 46px;
+      color: $blackColor;
+    }
+    .lisingShopinngButton {
+      background-color: $blackColor;
+      width: 278px;
+      height: 46px;
+      color: $whiteColor;
+    }
+  }
+}

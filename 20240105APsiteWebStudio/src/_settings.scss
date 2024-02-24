@@ -1,6 +1,5 @@
 @import "_fonts.scss";
 
-
 $whiteColor: #ffffff;
 $yellowColor: #f6d375;
 $blackColor: #18181b;
@@ -21,6 +20,38 @@ $blackColor: #18181b;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin fw400fs64lh77ls0taLeft {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin fw400fs50lh60ls0taLeft {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin fw500fs20lh24ls0taLeft {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin fw600fs16lh195ls0taLeft {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
   letter-spacing: 0em;
   text-align: left;
 }
