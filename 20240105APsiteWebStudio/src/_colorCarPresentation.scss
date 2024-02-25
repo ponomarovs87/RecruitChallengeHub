@@ -1,0 +1,44 @@
+.colorCarPresentation {
+  height: 1000px;
+  position: relative;
+  @include backgroungLinearGray;
+  .worningMassege {
+    position: absolute;
+    top: 159px;
+    right: calculateWidth(195);
+    width: calculateWidth(360);
+    @include fw400fs14lh1707;
+    z-index: 2;
+  }
+  .choiseColor {
+    position: absolute;
+    bottom: 155px;
+    left: calculateWidth(195);
+    width: calculateWidth(660);
+    @include fw400fs14lh1707;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: calculateWidthCurrectBlock(30, 660);
+    row-gap: 20px;
+    z-index: 2;
+    button {
+      background: none;
+      @include fw500fs26lh3169;
+      text-align: justify;
+      opacity: 50%;
+      color: $blackColor;
+    }
+    button.currectChoise {
+      opacity: 100%;
+    }
+  }
+  .colorCarImg{
+    position: absolute;
+    height: 550px;
+    top: 211px;
+    left: calculateWidth(325);
+    width: calculateWidth(1270);
+    z-index: 1;
+    object-fit: contain;
+  }
+}

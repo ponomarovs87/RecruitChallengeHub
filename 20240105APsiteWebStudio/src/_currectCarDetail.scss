@@ -1,49 +1,140 @@
 .currectCarDeatil {
   width: 100%;
   height: 1003px;
-  padding: 41px calculateWidth(195) 160px calculateWidth(195);
+  padding: 0 calculateWidth(195) 160px calculateWidth(195);
   background-color: $blackColor;
   position: relative;
-  .choiseInformation {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 120px;
+  .headerCurrectCarDeatil {
     display: flex;
-    width: 805px;
-    height: 24px;
     justify-content: space-between;
-    h4 {
-      @include fw500fs20lh24ls0taLeft;
-      color: $whiteColor;
+    margin: 30px 0;
+    align-items: center;
+    .navCurrectCarDeatil {
+      display: flex;
+      a {
+        h4 {
+          @include fw500fs20lh24ls0taLeft;
+          color: $whiteColor;
+        }
+        &.activeChoise h4 {
+          color: $yellowColor;
+          text-decoration: underline;
+        }
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
     }
-    .activeChoise h4 {
-      color: $yellowColor;
-      text-decoration: underline;
+    .shoppingButtons {
+      width: 500px;
+      height: 46px;
+      display: flex;
+      justify-content: space-between;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 24px;
+        border: 1px solid $whiteColor;
+        @include fw600fs16lh195ls0taLeft;
+      }
+      .shopinngButton {
+        width: 212px;
+        height: 46px;
+        color: $blackColor;
+      }
+      .lisingShopinngButton {
+        background-color: $blackColor;
+        width: 278px;
+        height: 46px;
+        color: $whiteColor;
+      }
     }
   }
-  .shoppingButtons {
-    width: 500px;
-    height: 46px;
-    position: absolute;
-    top: 30px;
-    right: calculateWidth(195);
-    display: flex;
-    justify-content: space-between;
-    button {
+  h2 {
+    height: 39px;
+  }
+  .currectCarInformation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    color: white;
+    & > .informationCar {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 24px;
-      border: 1px solid $whiteColor;
-      @include fw600fs16lh195ls0taLeft;
+      flex-direction: column;
+
+      p {
+        width: 66%;
+      }
     }
-    .shopinngButton {
-      width: 212px;
-      height: 46px;
-      color: $blackColor;
+    & > div.metricArticles {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 60px;
+      & > article {
+        height: 84px;
+        position: relative;
+        * {
+          @include fw500fs20lh2438ls0taLeft;
+        }
+        &:not(:last-child) {
+          border-right: solid 1px;
+        }
+
+        & p:first-child {
+          @include fw400fs50lh60;
+        }
+        & > .metricsInfoContainer {
+          position: absolute;
+          top: 0;
+          left: 95px;
+        }
+      }
     }
-    .lisingShopinngButton {
-      background-color: $blackColor;
-      width: 278px;
-      height: 46px;
-      color: $whiteColor;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      ul {
+        li {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          height: 42px;
+          p {
+            display: flex;
+            align-items: center;
+          }
+          &:not(:first-child)::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="750" height="2" viewBox="0 0 750 2" fill="none"><path opacity="0.5" d="M0 1H750" stroke="url(%23paint0_linear_1898_20364)"/><defs><linearGradient id="paint0_linear_1898_20364" x1="0" y1="1" x2="750" y2="1" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0"/><stop offset="0.25" stop-color="white"/><stop offset="0.734375" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs></svg>');
+            background-repeat: repeat-x;
+            background-position: center bottom;
+            background-size: auto 100%;
+          }
+        }
+      }
+      button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 40px;
+        background: none;
+        color: $yellowColor;
+        display: flex;
+        align-items: center;
+        img {
+          height: 20px;
+          width: 20px;
+          margin-left: 5px;
+        }
+      }
     }
   }
 }

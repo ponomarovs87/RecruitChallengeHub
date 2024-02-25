@@ -4,6 +4,10 @@ $whiteColor: #ffffff;
 $yellowColor: #f6d375;
 $blackColor: #18181b;
 
+@mixin backgroungLinearGray{
+  background: linear-gradient(90deg, #bababa 0%, #f3f3f3 100%);
+} 
+
 @mixin FrontFamalyMontserrat {
   font-family: Montserrat;
 }
@@ -48,12 +52,38 @@ $blackColor: #18181b;
   text-align: left;
 }
 
+@mixin fw500fs20lh2438ls0taLeft {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin fw500fs26lh3169 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31.69px;
+}
+
+@mixin fw400fs50lh60 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+}
+
 @mixin fw600fs16lh195ls0taLeft {
   font-weight: 600;
   font-size: 16px;
   line-height: 19.5px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+@mixin fw400fs14lh1707 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
 }
 
 @mixin headerButton {
@@ -67,4 +97,8 @@ $blackColor: #18181b;
 
 @function calculateWidth($width) {
   @return percentage($width / 1920);
+}
+
+@function calculateWidthCurrectBlock($width, $blockWidth) {
+  @return percentage($width / $blockWidth);
 }

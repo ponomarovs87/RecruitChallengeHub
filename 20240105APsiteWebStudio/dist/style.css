@@ -170,52 +170,202 @@ nav {
 .currectCarDeatil {
   width: 100%;
   height: 1003px;
-  padding: 41px 10.15625% 160px 10.15625%;
+  padding: 0 10.15625% 160px 10.15625%;
   background-color: #18181b;
-  position: relative; }
-  .currectCarDeatil .choiseInformation {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 120px; }
+  .currectCarDeatil .headerCurrectCarDeatil {
     display: flex;
-    width: 805px;
-    height: 24px;
-    justify-content: space-between; }
-    .currectCarDeatil .choiseInformation h4 {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 24px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #ffffff; }
-    .currectCarDeatil .choiseInformation .activeChoise h4 {
-      color: #f6d375;
-      text-decoration: underline; }
-  .currectCarDeatil .shoppingButtons {
-    width: 500px;
-    height: 46px;
-    position: absolute;
-    top: 30px;
-    right: 10.15625%;
-    display: flex;
-    justify-content: space-between; }
-    .currectCarDeatil .shoppingButtons button {
+    justify-content: space-between;
+    margin: 30px 0;
+    align-items: center; }
+    .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil {
+      display: flex; }
+      .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a h4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff; }
+      .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a.activeChoise h4 {
+        color: #f6d375;
+        text-decoration: underline; }
+      .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(:last-child) {
+        margin-right: 30px; }
+    .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons {
+      width: 500px;
+      height: 46px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 24px;
-      border: 1px solid #ffffff;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 19.5px;
-      letter-spacing: 0em;
-      text-align: left; }
-    .currectCarDeatil .shoppingButtons .shopinngButton {
-      width: 212px;
-      height: 46px;
+      justify-content: space-between; }
+      .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 24px;
+        border: 1px solid #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19.5px;
+        letter-spacing: 0em;
+        text-align: left; }
+      .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .shopinngButton {
+        width: 212px;
+        height: 46px;
+        color: #18181b; }
+      .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .lisingShopinngButton {
+        background-color: #18181b;
+        width: 278px;
+        height: 46px;
+        color: #ffffff; }
+  .currectCarDeatil h2 {
+    height: 39px; }
+  .currectCarDeatil .currectCarInformation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    color: white; }
+    .currectCarDeatil .currectCarInformation > .informationCar {
+      display: flex;
+      flex-direction: column; }
+      .currectCarDeatil .currectCarInformation > .informationCar p {
+        width: 66%; }
+    .currectCarDeatil .currectCarInformation > div.metricArticles {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 60px; }
+      .currectCarDeatil .currectCarInformation > div.metricArticles > article {
+        height: 84px;
+        position: relative; }
+        .currectCarDeatil .currectCarInformation > div.metricArticles > article * {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24.38px;
+          letter-spacing: 0em;
+          text-align: left; }
+        .currectCarDeatil .currectCarInformation > div.metricArticles > article:not(:last-child) {
+          border-right: solid 1px; }
+        .currectCarDeatil .currectCarInformation > div.metricArticles > article p:first-child {
+          font-weight: 400;
+          font-size: 50px;
+          line-height: 60px; }
+        .currectCarDeatil .currectCarInformation > div.metricArticles > article > .metricsInfoContainer {
+          position: absolute;
+          top: 0;
+          left: 95px; }
+    .currectCarDeatil .currectCarInformation > div {
+      display: flex;
+      flex-direction: column;
+      position: relative; }
+      .currectCarDeatil .currectCarInformation > div ul li {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 42px; }
+        .currectCarDeatil .currectCarInformation > div ul li p {
+          display: flex;
+          align-items: center; }
+        .currectCarDeatil .currectCarInformation > div ul li:not(:first-child)::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="750" height="2" viewBox="0 0 750 2" fill="none"><path opacity="0.5" d="M0 1H750" stroke="url(%23paint0_linear_1898_20364)"/><defs><linearGradient id="paint0_linear_1898_20364" x1="0" y1="1" x2="750" y2="1" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0"/><stop offset="0.25" stop-color="white"/><stop offset="0.734375" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs></svg>');
+          background-repeat: repeat-x;
+          background-position: center bottom;
+          background-size: auto 100%; }
+      .currectCarDeatil .currectCarInformation > div button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 40px;
+        background: none;
+        color: #f6d375;
+        display: flex;
+        align-items: center; }
+        .currectCarDeatil .currectCarInformation > div button img {
+          height: 20px;
+          width: 20px;
+          margin-left: 5px; }
+
+.galary {
+  height: 1000px;
+  background: url("./Assets/Images/cars/image 53.png") center/cover;
+  position: relative; }
+  .galary > div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 68px 10.15625% 48px;
+    display: flex;
+    align-items: center; }
+  .galary button {
+    background: none;
+    height: 40px;
+    width: 40px; }
+  .galary path {
+    stroke: #ffffff;
+    transition: stroke 0.5s linear; }
+  .galary .backButton {
+    transform: rotate(180deg); }
+    .galary .backButton:hover path {
+      stroke: #f6d375; }
+  .galary .pauseButton:hover path {
+    stroke: #f6d375; }
+  .galary .forwardButton:hover path {
+    stroke: #f6d375; }
+  .galary .ProgressLine {
+    width: calc(100% - 40px - 40px - 40px);
+    height: 40px;
+    display: flex;
+    align-items: center; }
+
+.colorCarPresentation {
+  height: 1000px;
+  position: relative;
+  background: linear-gradient(90deg, #bababa 0%, #f3f3f3 100%); }
+  .colorCarPresentation .worningMassege {
+    position: absolute;
+    top: 159px;
+    right: 10.15625%;
+    width: 18.75%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    z-index: 2; }
+  .colorCarPresentation .choiseColor {
+    position: absolute;
+    bottom: 155px;
+    left: 10.15625%;
+    width: 34.375%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4.54545%;
+    row-gap: 20px;
+    z-index: 2; }
+    .colorCarPresentation .choiseColor button {
+      background: none;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 31.69px;
+      text-align: justify;
+      opacity: 50%;
       color: #18181b; }
-    .currectCarDeatil .shoppingButtons .lisingShopinngButton {
-      background-color: #18181b;
-      width: 278px;
-      height: 46px;
-      color: #ffffff; }
+    .colorCarPresentation .choiseColor button.currectChoise {
+      opacity: 100%; }
+  .colorCarPresentation .colorCarImg {
+    position: absolute;
+    height: 550px;
+    top: 211px;
+    left: 16.92708%;
+    width: 66.14583%;
+    z-index: 1;
+    object-fit: contain; }
 
 * {
   font-family: Montserrat; }

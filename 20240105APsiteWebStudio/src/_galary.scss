@@ -1,0 +1,50 @@
+.galary {
+  height: 1000px;
+  background: url("./Assets/Images/cars/image\ 53.png") center/cover;
+  position: relative;
+  & > div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 68px calculateWidth(195) 48px;
+    display: flex;
+    align-items: center;
+  }
+  button {
+    background: none;
+    height: 40px;
+    width: 40px;
+  }
+  path {
+    stroke: $whiteColor;
+    transition: stroke 0.5s linear;
+  }
+  .backButton {
+    transform: rotate(180deg);
+    &:hover {
+      path {
+        stroke: $yellowColor;
+      }
+    }
+  }
+  .pauseButton {
+    &:hover {
+      path {
+        stroke: $yellowColor;
+      }
+    }
+  }
+  .forwardButton {
+    &:hover {
+      path {
+        stroke: $yellowColor;
+      }
+    }
+  }
+  .ProgressLine {
+    width: calc(100% - 40px - 40px - 40px);
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+}
