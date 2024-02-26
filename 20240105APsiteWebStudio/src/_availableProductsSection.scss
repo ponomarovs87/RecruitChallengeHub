@@ -1,0 +1,78 @@
+.availableProductsSection {
+  width: 100%;
+  height: 912px;
+  padding: 120px calculateWidth(195);
+  background-color: $blackColor;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    width: calculateWidth(1530);
+    height: 60px;
+    @include fw400fs50lh60ls0taLeft;
+    color: $whiteColor;
+    margin-bottom: 60px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      display: grid;
+      grid-template-columns:
+        calculateWidthCurrectBlock(430, 1530) calculateWidthCurrectBlock(
+          48,
+          1530
+        )
+        calculateWidthCurrectBlock(33.54, 1530) calculateWidthCurrectBlock(
+          260,
+          1530
+        )
+        calculateWidthCurrectBlock(115, 1530) calculateWidthCurrectBlock(390, 1530);
+      column-gap: calculateWidthCurrectBlock(38.69, 1530);
+      justify-content: center;
+      border-radius: 30px;
+      width: 100%;
+      background: $whiteColor;
+      height: 66px;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      * {
+        display: flex;
+        align-items: center;
+      }
+
+      p,
+      b {
+        opacity: 80%;
+      }
+      p {
+        @include fw500fs20lh2438ls0taLeft;
+      }
+      b {
+        @include fw700fs20lh2438;
+      }
+      .brendName {
+        img {
+          margin-right: 6px;
+        }
+
+        h4 {
+          *:not(:last-child) {
+            margin-right: 10px;
+          }
+        }
+      }
+      .price {
+        *:not(:last-child) {
+          margin-right: calculateWidthCurrectBlock(20, 260);
+        }
+      }
+      .colorPreviev {
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

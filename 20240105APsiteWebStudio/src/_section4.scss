@@ -1,0 +1,43 @@
+.section4 {
+  position: relative;
+  height: 1125px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  background: $whiteColor;
+  & *:first-child {
+    margin-left: calculateWidth(195);
+  }
+  & *:last-child {
+    margin-right: calculateWidth(195);
+  }
+  .InfoBlock {
+    width: calculateWidth(490);
+    @include fw400fs18lh288;
+    b {
+      margin: 0;
+      @include fw700fs18lh288;
+    }
+  }
+  .buttonsSection {
+    height: 180px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    button {
+      background: none;
+      width: 20px;
+      height: 10px;
+      stroke: $grayColor;
+    }
+  }
+  .section4Img {
+    width: calculateWidth(750);
+    height: 1000px;
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+}

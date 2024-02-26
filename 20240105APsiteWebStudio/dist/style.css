@@ -1,7 +1,37 @@
 @font-face {
   font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
   src: url("Assets/fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal; }
 
 @font-face {
@@ -9,6 +39,72 @@
   src: url("Assets/fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Assets/fonts/Montserrat/static/Montserrat-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
 
 .header {
   background-color: #18181b;
@@ -366,6 +462,134 @@ nav {
     width: 66.14583%;
     z-index: 1;
     object-fit: contain; }
+
+.section4 {
+  position: relative;
+  height: 1125px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  background: #ffffff; }
+  .section4 *:first-child {
+    margin-left: 10.15625%; }
+  .section4 *:last-child {
+    margin-right: 10.15625%; }
+  .section4 .InfoBlock {
+    width: 25.52083%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.8px; }
+    .section4 .InfoBlock b {
+      margin: 0;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28.8px; }
+  .section4 .buttonsSection {
+    height: 180px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .section4 .buttonsSection button {
+      background: none;
+      width: 20px;
+      height: 10px;
+      stroke: #48494f; }
+  .section4 .section4Img {
+    width: 39.0625%;
+    height: 1000px;
+    object-fit: contain;
+    margin-bottom: 5px; }
+
+.VisionSection {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  background: url("./Assets/Images/innerCar/image 61.png") center/cover;
+  align-items: center;
+  justify-content: center; }
+  .VisionSection button {
+    color: #18181b;
+    width: 260px;
+    height: 46px;
+    border-radius: 24px;
+    border: solid 1px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: 0em;
+    text-align: left; }
+    .VisionSection button svg {
+      margin-right: 8px; }
+      .VisionSection button svg path {
+        fill: #18181b; }
+
+.section7 {
+  width: 100%;
+  height: 1000px;
+  object-fit: contain; }
+
+.availableProductsSection {
+  width: 100%;
+  height: 912px;
+  padding: 120px 10.15625%;
+  background-color: #18181b;
+  display: flex;
+  flex-direction: column; }
+  .availableProductsSection h1 {
+    width: 79.6875%;
+    height: 60px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 60px; }
+  .availableProductsSection ul {
+    display: flex;
+    flex-direction: column; }
+    .availableProductsSection ul li {
+      display: grid;
+      grid-template-columns: 28.10458% 3.13725% 2.19216% 16.99346% 7.51634% 25.4902%;
+      column-gap: 2.52876%;
+      justify-content: center;
+      border-radius: 30px;
+      width: 100%;
+      background: #ffffff;
+      height: 66px; }
+      .availableProductsSection ul li:not(:last-child) {
+        margin-bottom: 15px; }
+      .availableProductsSection ul li * {
+        display: flex;
+        align-items: center; }
+      .availableProductsSection ul li p,
+      .availableProductsSection ul li b {
+        opacity: 80%; }
+      .availableProductsSection ul li p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24.38px;
+        letter-spacing: 0em;
+        text-align: left; }
+      .availableProductsSection ul li b {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24.38px; }
+      .availableProductsSection ul li .brendName img {
+        margin-right: 6px; }
+      .availableProductsSection ul li .brendName h4 *:not(:last-child) {
+        margin-right: 10px; }
+      .availableProductsSection ul li .price *:not(:last-child) {
+        margin-right: 7.69231%; }
+      .availableProductsSection ul li .colorPreviev img {
+        width: 100%;
+        object-fit: contain; }
 
 * {
   font-family: Montserrat; }

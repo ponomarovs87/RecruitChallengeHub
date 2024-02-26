@@ -3,21 +3,14 @@
 $whiteColor: #ffffff;
 $yellowColor: #f6d375;
 $blackColor: #18181b;
+$grayColor: #48494f;
 
-@mixin backgroungLinearGray{
+@mixin backgroungLinearGray {
   background: linear-gradient(90deg, #bababa 0%, #f3f3f3 100%);
-} 
+}
 
 @mixin FrontFamalyMontserrat {
   font-family: Montserrat;
-}
-
-@mixin fw700fs36lh36ls0taLeft {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 36px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 @mixin fw400fs16lh22ls0taLeft {
@@ -44,6 +37,24 @@ $blackColor: #18181b;
   text-align: left;
 }
 
+@mixin fw400fs50lh60 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+@mixin fw400fs14lh1707 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+
+@mixin fw400fs18lh288 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.8px;
+}
+
 @mixin fw500fs20lh24ls0taLeft {
   font-weight: 500;
   font-size: 20px;
@@ -66,12 +77,6 @@ $blackColor: #18181b;
   line-height: 31.69px;
 }
 
-@mixin fw400fs50lh60 {
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 60px;
-}
-
 @mixin fw600fs16lh195ls0taLeft {
   font-weight: 600;
   font-size: 16px;
@@ -80,10 +85,24 @@ $blackColor: #18181b;
   text-align: left;
 }
 
-@mixin fw400fs14lh1707 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17.07px;
+@mixin fw700fs36lh36ls0taLeft {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin fw700fs18lh288 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28.8px;
+}
+
+@mixin fw700fs20lh2438 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.38px;
 }
 
 @mixin headerButton {
