@@ -15,127 +15,103 @@ $grayColor: #48494f;
 
 @mixin fw400fs16lh22ls0taLeft {
   font-weight: 400;
-  font-size: calculateToVwFrom1920(16);
-  line-height: calculateToVwFrom1920(22);
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
 }
 
 @mixin fw400fs64lh77ls0taLeft {
   font-weight: 400;
-  font-size: calculateToVwFrom1920(64);
-  line-height: calculateToVwFrom1920(77);
+  font-size: 64px;
+  line-height: 77px;
   letter-spacing: 0em;
   text-align: left;
 }
 
 @mixin fw400fs50lh60ls0taLeft {
   font-weight: 400;
-  font-size: calculateToVwFrom1920(50);
-  line-height: calculateToVwFrom1920(60);
+  font-size: 50px;
+  line-height: 60px;
   letter-spacing: 0em;
   text-align: left;
 }
 
 @mixin fw400fs50lh60 {
   font-weight: 400;
-  font-size: calculateToVwFrom1920(50);
-  line-height: calculateToVwFrom1920(60);
+  font-size: 50px;
+  line-height: 60px;
 }
 
 @mixin fw400fs14lh1707 {
   font-weight: 400;
-  font-size: calculateToVwFrom1920(14);
-  line-height: calculateToVwFrom1920(17.07);
+  font-size: 14px;
+  line-height: 17.07px;
 }
 
 @mixin fw400fs18lh288 {
   font-weight: 400;
-  font-size: calculateToVwFrom1920(18);
-  line-height: calculateToVwFrom1920(28.8);
-}
-
-@mixin fw400fs16lh140 {
-  font-weight: 400;
-  font-size: calculateToVwFrom1920(16);
-  line-height: 140%;
+  font-size: 18px;
+  line-height: 28.8px;
 }
 
 @mixin fw500fs20lh24ls0taLeft {
   font-weight: 500;
-  font-size: calculateToVwFrom1920(20);
-  line-height: calculateToVwFrom1920(24);
+  font-size: 20px;
+  line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
 }
 
 @mixin fw500fs20lh2438ls0taLeft {
   font-weight: 500;
-  font-size: calculateToVwFrom1920(20);
-  line-height: calculateToVwFrom1920(24.38);
+  font-size: 20px;
+  line-height: 24.38px;
   letter-spacing: 0em;
   text-align: left;
 }
 
 @mixin fw500fs26lh3169 {
   font-weight: 500;
-  font-size: calculateToVwFrom1920(26);
-  line-height: calculateToVwFrom1920(31.69);
+  font-size: 26px;
+  line-height: 31.69px;
 }
 
 @mixin fw600fs16lh195ls0taLeft {
   font-weight: 600;
-  font-size: calculateToVwFrom1920(16);
-  line-height: calculateToVwFrom1920(19.5);
+  font-size: 16px;
+  line-height: 19.5px;
   letter-spacing: 0em;
   text-align: left;
 }
 
-@mixin fw600fs16lh195 {
-  font-weight: 600;
-  font-size: calculateToVwFrom1920(16);
-  line-height: calculateToVwFrom1920(19.5);
-
-}
-
 @mixin fw700fs36lh36ls0taLeft {
   font-weight: 700;
-  font-size: calculateToVwFrom1920(36);
-  line-height: calculateToVwFrom1920(36);
+  font-size: 36px;
+  line-height: 36px;
   letter-spacing: 0em;
   text-align: left;
 }
 
 @mixin fw700fs18lh288 {
   font-weight: 700;
-  font-size: calculateToVwFrom1920(18);
-  line-height: calculateToVwFrom1920(28.8);
+  font-size: 18px;
+  line-height: 28.8px;
 }
 
 @mixin fw700fs20lh2438 {
   font-weight: 700;
-  font-size: calculateToVwFrom1920(20);
-  line-height: calculateToVwFrom1920(24.38);
+  font-size: 20px;
+  line-height: 24.38px;
 }
 
 @mixin headerButton {
-  border-radius: calculateToVwFrom1920(99);
-  width: calculateToVwFrom1920(30);
-  height: calculateToVwFrom1920(30);
+  border-radius: 99px;
+  width: 30px;
+  height: 30px;
   &:hover {
     background-color: $yellowColor;
   }
-}
-
-@mixin visualyHidden{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border:0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 @function calculateWidth($width) {

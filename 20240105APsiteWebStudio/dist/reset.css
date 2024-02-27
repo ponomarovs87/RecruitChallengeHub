@@ -50,3 +50,6 @@ body {
 a {
   text-decoration: unset;
 }
+button {
+  background: none;
+}

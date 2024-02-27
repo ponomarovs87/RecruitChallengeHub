@@ -1,16 +1,16 @@
 .availableProductsSection {
   width: 100%;
-  height: 912px;
-  padding: 120px calculateWidth(195);
+  height: calculateToVwFrom1920(912);
+  padding: calculateToVwFrom1920(120) calculateToVwFrom1920(195);
   background-color: $blackColor;
   display: flex;
   flex-direction: column;
   h1 {
-    width: calculateWidth(1530);
-    height: 60px;
+    width: calculateToVwFrom1920(1530);
+    height: calculateToVwFrom1920(60);
     @include fw400fs50lh60ls0taLeft;
     color: $whiteColor;
-    margin-bottom: 60px;
+    margin-bottom: calculateToVwFrom1920(60);
   }
   ul {
     display: flex;
@@ -18,23 +18,17 @@
     li {
       display: grid;
       grid-template-columns:
-        calculateWidthCurrectBlock(430, 1530) calculateWidthCurrectBlock(
-          48,
-          1530
-        )
-        calculateWidthCurrectBlock(33.54, 1530) calculateWidthCurrectBlock(
-          260,
-          1530
-        )
-        calculateWidthCurrectBlock(115, 1530) calculateWidthCurrectBlock(390, 1530);
-      column-gap: calculateWidthCurrectBlock(38.69, 1530);
+        calculateToVwFrom1920(430) calculateToVwFrom1920(48)
+        calculateToVwFrom1920(33.54) calculateToVwFrom1920(260)
+        calculateToVwFrom1920(115) calculateToVwFrom1920(390);
+      column-gap: calculateToVwFrom1920(38.69);
       justify-content: center;
-      border-radius: 30px;
+      border-radius: calculateToVwFrom1920(30);
       width: 100%;
       background: $whiteColor;
-      height: 66px;
+      height: calculateToVwFrom1920(66);
       &:not(:last-child) {
-        margin-bottom: 15px;
+        margin-bottom: calculateToVwFrom1920(15);
       }
       * {
         display: flex;
@@ -53,24 +47,64 @@
       }
       .brendName {
         img {
-          margin-right: 6px;
+          height: calculateToVwFrom1920(40);
+          width: calculateToVwFrom1920(36);
+          margin-right: calculateToVwFrom1920(6);
         }
 
         h4 {
           *:not(:last-child) {
-            margin-right: 10px;
+            margin-right: calculateToVwFrom1920(10);
           }
         }
       }
       .price {
         *:not(:last-child) {
-          margin-right: calculateWidthCurrectBlock(20, 260);
+          margin-right: calculateToVwFrom1920(20);
         }
       }
       .colorPreviev {
         img {
           width: 100%;
           object-fit: contain;
+        }
+      }
+      .battonsSection {
+        justify-content: space-between;
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: none;
+        }
+
+        .markAsFavoriteBtn {
+          height: calculateToVwFrom1920(46);
+          width: calculateToVwFrom1920(46);
+          border-radius: 50%;
+          img {
+            min-height: 15px;
+            min-width: 10.38px;
+            height: calculateToVwFrom1920(15);
+            width: calculateToVwFrom1920(10.38);
+          }
+        }
+        .bayBtn {
+          height: calculateToVwFrom1920(46);
+          width: calculateToVwFrom1920(212);
+          border-radius: calculateToVwFrom1920(24);
+        }
+        .details {
+          height: calculateToVwFrom1920(20);
+          width: calculateToVwFrom1920(102);
+        }
+        .markAsFavoriteBtn,
+        .bayBtn {
+          border: solid 1px $blackColor;
+        }
+        .details,
+        .bayBtn {
+          @include fw600fs16lh195ls0taLeft;
         }
       }
     }

@@ -115,8 +115,8 @@
   z-index: 5; }
   .header .logo {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 1.875vw;
+    line-height: 1.875vw;
     letter-spacing: 0em;
     text-align: left;
     width: 230px;
@@ -152,9 +152,9 @@
       height: 30px;
       justify-content: space-between; }
     .header .headerContactInfo .hamburger {
-      border-radius: 99px;
-      width: 30px;
-      height: 30px;
+      border-radius: 5.15625vw;
+      width: 1.5625vw;
+      height: 1.5625vw;
       background: url("./Assets/Images/buttons/Menu.svg") center/cover;
       width: 56px;
       height: 30px;
@@ -162,32 +162,32 @@
       .header .headerContactInfo .hamburger:hover {
         background-color: #f6d375; }
     .header .headerContactInfo .compareButton {
-      border-radius: 99px;
-      width: 30px;
-      height: 30px;
+      border-radius: 5.15625vw;
+      width: 1.5625vw;
+      height: 1.5625vw;
       background: url("./Assets/Images/buttons/compareButton.svg") center/cover;
       background-color: #ffffff; }
       .header .headerContactInfo .compareButton:hover {
         background-color: #f6d375; }
     .header .headerContactInfo .searchButton {
-      border-radius: 99px;
-      width: 30px;
-      height: 30px;
+      border-radius: 5.15625vw;
+      width: 1.5625vw;
+      height: 1.5625vw;
       background: url("./Assets/Images/buttons/searchButton.svg") center/cover;
       background-color: #ffffff; }
       .header .headerContactInfo .searchButton:hover {
         background-color: #f6d375; }
     .header .headerContactInfo .languageSwitch {
-      border-radius: 99px;
-      width: 30px;
-      height: 30px;
+      border-radius: 5.15625vw;
+      width: 1.5625vw;
+      height: 1.5625vw;
       background: url("./Assets/Images/buttons/lang/Property 1=Ukraine.svg") center/cover; }
       .header .headerContactInfo .languageSwitch:hover {
         background-color: #f6d375; }
     .header .headerContactInfo a {
       font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 0.83333vw;
+      line-height: 1.14583vw;
       letter-spacing: 0em;
       text-align: left;
       color: #ffffff; }
@@ -207,8 +207,8 @@ nav {
   align-items: center; }
   nav a {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 0.83333vw;
+    line-height: 1.14583vw;
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
@@ -251,14 +251,14 @@ nav {
       color: #ffffff; }
     .currectCarSection .carInfo .carName {
       font-weight: 400;
-      font-size: 64px;
-      line-height: 77px;
+      font-size: 3.33333vw;
+      line-height: 4.01042vw;
       letter-spacing: 0em;
       text-align: left; }
     .currectCarSection .carInfo .carPrice {
       font-weight: 400;
-      font-size: 50px;
-      line-height: 60px;
+      font-size: 2.60417vw;
+      line-height: 3.125vw;
       letter-spacing: 0em;
       text-align: left;
       opacity: 98.43%; }
@@ -281,8 +281,8 @@ nav {
       display: flex; }
       .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a h4 {
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 1.04167vw;
+        line-height: 1.25vw;
         letter-spacing: 0em;
         text-align: left;
         color: #ffffff; }
@@ -303,8 +303,8 @@ nav {
         border-radius: 24px;
         border: 1px solid #ffffff;
         font-weight: 600;
-        font-size: 16px;
-        line-height: 19.5px;
+        font-size: 0.83333vw;
+        line-height: 1.01562vw;
         letter-spacing: 0em;
         text-align: left; }
       .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .shopinngButton {
@@ -337,16 +337,16 @@ nav {
         position: relative; }
         .currectCarDeatil .currectCarInformation > div.metricArticles > article * {
           font-weight: 500;
-          font-size: 20px;
-          line-height: 24.38px;
+          font-size: 1.04167vw;
+          line-height: 1.26979vw;
           letter-spacing: 0em;
           text-align: left; }
         .currectCarDeatil .currectCarInformation > div.metricArticles > article:not(:last-child) {
           border-right: solid 1px; }
         .currectCarDeatil .currectCarInformation > div.metricArticles > article p:first-child {
           font-weight: 400;
-          font-size: 50px;
-          line-height: 60px; }
+          font-size: 2.60417vw;
+          line-height: 3.125vw; }
         .currectCarDeatil .currectCarInformation > div.metricArticles > article > .metricsInfoContainer {
           position: absolute;
           top: 0;
@@ -428,8 +428,8 @@ nav {
     right: 10.15625%;
     width: 18.75%;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17.07px;
+    font-size: 0.72917vw;
+    line-height: 0.88906vw;
     z-index: 2; }
   .colorCarPresentation .choiseColor {
     position: absolute;
@@ -437,8 +437,8 @@ nav {
     left: 10.15625%;
     width: 34.375%;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17.07px;
+    font-size: 0.72917vw;
+    line-height: 0.88906vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 4.54545%;
@@ -447,8 +447,8 @@ nav {
     .colorCarPresentation .choiseColor button {
       background: none;
       font-weight: 500;
-      font-size: 26px;
-      line-height: 31.69px;
+      font-size: 1.35417vw;
+      line-height: 1.65052vw;
       text-align: justify;
       opacity: 50%;
       color: #18181b; }
@@ -479,13 +479,13 @@ nav {
   .section4 .InfoBlock {
     width: 25.52083%;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28.8px; }
+    font-size: 0.9375vw;
+    line-height: 1.5vw; }
     .section4 .InfoBlock b {
       margin: 0;
       font-weight: 700;
-      font-size: 18px;
-      line-height: 28.8px; }
+      font-size: 0.9375vw;
+      line-height: 1.5vw; }
   .section4 .buttonsSection {
     height: 180px;
     width: 20px;
@@ -520,8 +520,8 @@ nav {
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 19.5px;
+    font-size: 0.83333vw;
+    line-height: 1.01562vw;
     letter-spacing: 0em;
     text-align: left; }
     .VisionSection button svg {
@@ -536,35 +536,35 @@ nav {
 
 .availableProductsSection {
   width: 100%;
-  height: 912px;
-  padding: 120px 10.15625%;
+  height: 47.5vw;
+  padding: 6.25vw 10.15625vw;
   background-color: #18181b;
   display: flex;
   flex-direction: column; }
   .availableProductsSection h1 {
-    width: 79.6875%;
-    height: 60px;
+    width: 79.6875vw;
+    height: 3.125vw;
     font-weight: 400;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 2.60417vw;
+    line-height: 3.125vw;
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
-    margin-bottom: 60px; }
+    margin-bottom: 3.125vw; }
   .availableProductsSection ul {
     display: flex;
     flex-direction: column; }
     .availableProductsSection ul li {
       display: grid;
-      grid-template-columns: 28.10458% 3.13725% 2.19216% 16.99346% 7.51634% 25.4902%;
-      column-gap: 2.52876%;
+      grid-template-columns: 22.39583vw 2.5vw 1.74687vw 13.54167vw 5.98958vw 20.3125vw;
+      column-gap: 2.0151vw;
       justify-content: center;
-      border-radius: 30px;
+      border-radius: 1.5625vw;
       width: 100%;
       background: #ffffff;
-      height: 66px; }
+      height: 3.4375vw; }
       .availableProductsSection ul li:not(:last-child) {
-        margin-bottom: 15px; }
+        margin-bottom: 0.78125vw; }
       .availableProductsSection ul li * {
         display: flex;
         align-items: center; }
@@ -573,23 +573,152 @@ nav {
         opacity: 80%; }
       .availableProductsSection ul li p {
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24.38px;
+        font-size: 1.04167vw;
+        line-height: 1.26979vw;
         letter-spacing: 0em;
         text-align: left; }
       .availableProductsSection ul li b {
         font-weight: 700;
-        font-size: 20px;
-        line-height: 24.38px; }
+        font-size: 1.04167vw;
+        line-height: 1.26979vw; }
       .availableProductsSection ul li .brendName img {
-        margin-right: 6px; }
+        height: 2.08333vw;
+        width: 1.875vw;
+        margin-right: 0.3125vw; }
       .availableProductsSection ul li .brendName h4 *:not(:last-child) {
-        margin-right: 10px; }
+        margin-right: 0.52083vw; }
       .availableProductsSection ul li .price *:not(:last-child) {
-        margin-right: 7.69231%; }
+        margin-right: 1.04167vw; }
       .availableProductsSection ul li .colorPreviev img {
         width: 100%;
         object-fit: contain; }
+      .availableProductsSection ul li .battonsSection {
+        justify-content: space-between; }
+        .availableProductsSection ul li .battonsSection button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: none; }
+        .availableProductsSection ul li .battonsSection .markAsFavoriteBtn {
+          height: 2.39583vw;
+          width: 2.39583vw;
+          border-radius: 50%; }
+          .availableProductsSection ul li .battonsSection .markAsFavoriteBtn img {
+            min-height: 15px;
+            min-width: 10.38px;
+            height: 0.78125vw;
+            width: 0.54063vw; }
+        .availableProductsSection ul li .battonsSection .bayBtn {
+          height: 2.39583vw;
+          width: 11.04167vw;
+          border-radius: 1.25vw; }
+        .availableProductsSection ul li .battonsSection .details {
+          height: 1.04167vw;
+          width: 5.3125vw; }
+        .availableProductsSection ul li .battonsSection .markAsFavoriteBtn,
+        .availableProductsSection ul li .battonsSection .bayBtn {
+          border: solid 1px #18181b; }
+        .availableProductsSection ul li .battonsSection .details,
+        .availableProductsSection ul li .battonsSection .bayBtn {
+          font-weight: 600;
+          font-size: 0.83333vw;
+          line-height: 1.01562vw;
+          letter-spacing: 0em;
+          text-align: left; }
+
+.contactUsSection {
+  width: 100%;
+  height: 34.375vw;
+  padding: 6.25vw 10.15625vw; }
+  .contactUsSection .contactUsInfo {
+    width: 100%;
+    height: 5.72917vw;
+    display: flex;
+    justify-content: space-between; }
+    .contactUsSection .contactUsInfo * {
+      color: #18181b; }
+    .contactUsSection .contactUsInfo .contactUsTitle {
+      width: 24.16667vw;
+      height: 3.125vw;
+      font-weight: 400;
+      font-size: 2.60417vw;
+      line-height: 3.125vw; }
+    .contactUsSection .contactUsInfo .contactUsDescription {
+      width: 18.75vw;
+      height: 5.72917vw;
+      font-weight: 400;
+      font-size: 0.83333vw;
+      line-height: 140%; }
+  .contactUsSection .contactUsForm {
+    display: grid;
+    grid-template-columns: 39.0625vw 39.0625vw;
+    justify-content: space-between;
+    gap: 1.5625vw; }
+    .contactUsSection .contactUsForm .name,
+    .contactUsSection .contactUsForm .tel,
+    .contactUsSection .contactUsForm .message {
+      border-bottom: solid 1px #18181b; }
+      .contactUsSection .contactUsForm .name input,
+      .contactUsSection .contactUsForm .tel input,
+      .contactUsSection .contactUsForm .message input {
+        padding: 0 1.04167vw;
+        height: 2.39583vw;
+        width: 100%;
+        font-weight: 400;
+        font-size: 0.83333vw;
+        line-height: 140%; }
+    .contactUsSection .contactUsForm .message {
+      grid-column: 1 / -1; }
+    .contactUsSection .contactUsForm .checkboxesAndStendBox {
+      grid-area: 3 / 2;
+      margin-left: 132px; }
+      .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label {
+          height: 1.14583vw;
+          display: flex;
+          align-items: center; }
+          .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label .standartCheckbox {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            border: 0;
+            clip: rect(0 0 0 0);
+            overflow: hidden; }
+          .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label .castomCheckbox {
+            width: 1.04167vw;
+            height: 1.04167vw;
+            border: solid 1px #18181b;
+            margin-right: 0.52083vw; }
+          .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label .standartCheckbox:checked + .castomCheckbox {
+            background-color: #f6d375;
+            content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.25 5L7.5 15L3.75 11.25' stroke='%2318181B'/%3E%3C/svg%3E"); }
+      .contactUsSection .contactUsForm .checkboxesAndStendBox * {
+        font-weight: 400;
+        font-size: 0.83333vw;
+        line-height: 140%; }
+    .contactUsSection .contactUsForm .stendForm {
+      margin-top: 1.5625vw;
+      column-gap: 1.5625vw;
+      display: flex;
+      align-items: center; }
+      .contactUsSection .contactUsForm .stendForm .stendFormBtn {
+        width: 11.875vw;
+        height: 2.39583vw;
+        border-radius: 1.25vw;
+        border: solid 1px #18181b;
+        font-weight: 600;
+        font-size: 0.83333vw;
+        line-height: 1.01562vw; }
+      .contactUsSection .contactUsForm .stendForm .stendFormDescription {
+        width: 18.75vw;
+        font-weight: 400;
+        font-size: 0.72917vw;
+        line-height: 0.88906vw; }
 
 * {
   font-family: Montserrat; }

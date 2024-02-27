@@ -1,0 +1,93 @@
+.contactUsSection {
+  width: 100%;
+  height: calculateToVwFrom1920(660);
+  padding: calculateToVwFrom1920(120) calculateToVwFrom1920(195);
+  .contactUsInfo {
+    width: 100%;
+    height: calculateToVwFrom1920(110);
+    display: flex;
+    justify-content: space-between;
+    * {
+      color: $blackColor;
+    }
+    .contactUsTitle {
+      width: calculateToVwFrom1920(464);
+      height: calculateToVwFrom1920(60);
+      @include fw400fs50lh60;
+    }
+    .contactUsDescription {
+      width: calculateToVwFrom1920(360);
+      height: calculateToVwFrom1920(110);
+      @include fw400fs16lh140;
+    }
+  }
+  .contactUsForm {
+    display: grid;
+    grid-template-columns: calculateToVwFrom1920(750) calculateToVwFrom1920(750);
+    justify-content: space-between;
+    gap: calculateToVwFrom1920(30);
+    .name,
+    .tel,
+    .message {
+      border-bottom: solid 1px $blackColor;
+      input {
+        padding: 0 calculateToVwFrom1920(20);
+        height: calculateToVwFrom1920(46);
+        width: 100%;
+        @include fw400fs16lh140;
+      }
+    }
+
+    .message {
+      grid-column: 1 / -1;
+    }
+    .checkboxesAndStendBox {
+      grid-area: 3 / 2;
+      margin-left: 132px;
+      .choiceContactMethod {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        label {
+          height: calculateToVwFrom1920(22);
+          display: flex;
+          align-items: center;
+          .standartCheckbox {
+            @include visualyHidden;
+          }
+          .castomCheckbox {
+            width: calculateToVwFrom1920(20);
+            height: calculateToVwFrom1920(20);
+            border: solid 1px $blackColor;
+            margin-right: calculateToVwFrom1920(10);
+          }
+          .standartCheckbox:checked + .castomCheckbox {
+            background-color: $yellowColor;
+            content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.25 5L7.5 15L3.75 11.25' stroke='%2318181B'/%3E%3C/svg%3E");
+          }
+        }
+      }
+      * {
+        @include fw400fs16lh140;
+      }
+    }
+    .stendForm {
+      margin-top: calculateToVwFrom1920(30);
+      column-gap: calculateToVwFrom1920(30);
+      display: flex;
+      align-items: center;
+      .stendFormBtn {
+        width: calculateToVwFrom1920(228);
+        height: calculateToVwFrom1920(46);
+        border-radius: calculateToVwFrom1920(24);
+        border: solid 1px $blackColor;
+        @include fw600fs16lh195;
+      }
+      .stendFormDescription {
+        width: calculateToVwFrom1920(360);
+        @include fw400fs14lh1707;
+      }
+    }
+  }
+}
