@@ -720,5 +720,97 @@ nav {
         font-size: 0.72917vw;
         line-height: 0.88906vw; }
 
+.ourContactsSection {
+  width: 100%;
+  height: 54.16667vw;
+  padding: 6.25vw 10.15625vw;
+  background-color: #18181b;
+  gap: 3.125vw;
+  display: flex;
+  flex-direction: column; }
+  .ourContactsSection .ourContactsDescription {
+    width: 100%;
+    height: 3.125vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .ourContactsSection .ourContactsDescription h2 {
+      font-weight: 400;
+      font-size: 2.60417vw;
+      line-height: 3.125vw;
+      color: #f6d375; }
+    .ourContactsSection .ourContactsDescription button {
+      width: 10.67708vw;
+      height: 2.08333vw;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.83333vw;
+      line-height: 1.01562vw;
+      color: #ffffff; }
+  .ourContactsSection .contactSection {
+    width: 79.6875vw;
+    height: 35.41667vw;
+    display: flex;
+    justify-content: space-between; }
+    .ourContactsSection .contactSection .contacts {
+      width: 25.52083vw;
+      height: 11.14583vw;
+      font-weight: 500;
+      font-size: 1.35417vw;
+      line-height: 1.65052vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .ourContactsSection .contactSection .contacts > a {
+        color: #ffffff; }
+      .ourContactsSection .contactSection .contacts > *:not(:first-child) {
+        position: relative; }
+        .ourContactsSection .contactSection .contacts > *:not(:first-child)::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: -1.5625vw;
+          width: 100%;
+          height: 2px;
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="none"><path opacity="0.5" d="M0 1H750" stroke="url(%23paint0_linear_1898_20364)"/><defs><linearGradient id="paint0_linear_1898_20364" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0"/><stop offset="25%" stop-color="white"/><stop offset="73.4375%" stop-color="white"/><stop offset="100%" stop-color="white" stop-opacity="0"/></linearGradient></defs></svg>');
+          background-position: center;
+          background-size: contain; }
+      .ourContactsSection .contactSection .contacts .socialNetworks {
+        display: flex;
+        gap: 1.5625vw; }
+        .ourContactsSection .contactSection .contacts .socialNetworks a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 1.5625vw;
+          height: 1.5625vw; }
+          .ourContactsSection .contactSection .contacts .socialNetworks a svg path {
+            fill: #ffffff; }
+    .ourContactsSection .contactSection .interactiveMap {
+      position: relative; }
+      .ourContactsSection .contactSection .interactiveMap .region {
+        position: absolute; }
+      .ourContactsSection .contactSection .interactiveMap .khmelnytskyi {
+        background-image: url(./Assets/Images/map/ActiveRegion/khmelnytskyi.svg) center/cover;
+        height: 200px;
+        width: 200px; }
+      .ourContactsSection .contactSection .interactiveMap .dnipropetrovsk {
+        background-image: url(./Assets/Images/map/ActiveRegion/dnipropetrovsk.svg) center/cover;
+        height: 200px;
+        width: 200px; }
+      .ourContactsSection .contactSection .interactiveMap .kyiv {
+        background-image: url(./Assets/Images/map/ActiveRegion/kyiv.svg) center/cover;
+        height: 200px;
+        width: 200px; }
+      .ourContactsSection .contactSection .interactiveMap .poltava {
+        background-image: url(./Assets/Images/map/ActiveRegion/poltava.svg) center/cover;
+        height: 200px;
+        width: 200px; }
+      .ourContactsSection .contactSection .interactiveMap .zaporizhzhia {
+        background-image: url(./Assets/Images/map/ActiveRegion/zaporizhzhia.svg) center/cover;
+        height: 200px;
+        width: 200px; }
+
 * {
   font-family: Montserrat; }
