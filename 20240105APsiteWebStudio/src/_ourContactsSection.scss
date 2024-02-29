@@ -88,6 +88,10 @@
       .region {
         position: absolute;
         opacity: 0%;
+        transition: opacity 0.5s ease;
+        &:hover {
+          opacity: 2000%;
+        }
       }
       .khmelnytskyi {
         height: calculateToVwFrom1920(184.15);
