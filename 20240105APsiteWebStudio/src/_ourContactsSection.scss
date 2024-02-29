@@ -77,38 +77,47 @@
     }
     .interactiveMap {
       position: relative;
+      width: calculateToVwFrom1920(1010);
+      height: calculateToVwFrom1920(680);
+      & > img {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+      }
       .region {
         position: absolute;
+        opacity: 0%;
       }
       .khmelnytskyi {
-        background-image: url(./Assets/Images/map/ActiveRegion/khmelnytskyi.svg)
-          center/cover;
-        height: 200px;
-        width: 200px;
+        height: calculateToVwFrom1920(184.15);
+        width: calculateToVwFrom1920(97.36);
+        top: calculateToVwFrom1920(162.21);
+        left: calculateToVwFrom1920(225.53);
       }
       .dnipropetrovsk {
-        background-image: url(./Assets/Images/map/ActiveRegion/dnipropetrovsk.svg)
-          center/cover;
-        height: 200px;
-        width: 200px;
+        height: calculateToVwFrom1920(143.92);
+        width: calculateToVwFrom1920(220.48);
+        top: calculateToVwFrom1920(284.2);
+        left: calculateToVwFrom1920(607.72);
       }
       .kyiv {
-        background-image: url(./Assets/Images/map/ActiveRegion/kyiv.svg)
-          center/cover;
-        height: 200px;
-        width: 200px;
+        height: calculateToVwFrom1920(203.75);
+        width: calculateToVwFrom1920(160.39);
+        top: calculateToVwFrom1920(81.55);
+        left: calculateToVwFrom1920(400.16);
       }
       .poltava {
-        background-image: url(./Assets/Images/map/ActiveRegion/poltava.svg)
-          center/cover;
-        height: 200px;
-        width: 200px;
+        height: calculateToVwFrom1920(155.75);
+        width: calculateToVwFrom1920(190.49);
+        top: calculateToVwFrom1920(165.74);
+        left: calculateToVwFrom1920(556.61);
       }
       .zaporizhzhia {
-        background-image: url(./Assets/Images/map/ActiveRegion/zaporizhzhia.svg)
-          center/cover;
-        height: 200px;
-        width: 200px;
+        height: calculateToVwFrom1920(154.53);
+        width: calculateToVwFrom1920(168.67);
+        top: calculateToVwFrom1920(373.44);
+        left: calculateToVwFrom1920(675.99);
       }
     }
   }

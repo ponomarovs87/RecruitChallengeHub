@@ -788,29 +788,42 @@ nav {
           .ourContactsSection .contactSection .contacts .socialNetworks a svg path {
             fill: #ffffff; }
     .ourContactsSection .contactSection .interactiveMap {
-      position: relative; }
+      position: relative;
+      width: 52.60417vw;
+      height: 35.41667vw; }
+      .ourContactsSection .contactSection .interactiveMap > img {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 100%; }
       .ourContactsSection .contactSection .interactiveMap .region {
-        position: absolute; }
+        position: absolute;
+        opacity: 0%; }
       .ourContactsSection .contactSection .interactiveMap .khmelnytskyi {
-        background-image: url(./Assets/Images/map/ActiveRegion/khmelnytskyi.svg) center/cover;
-        height: 200px;
-        width: 200px; }
+        height: 9.59115vw;
+        width: 5.07083vw;
+        top: 8.44844vw;
+        left: 11.74635vw; }
       .ourContactsSection .contactSection .interactiveMap .dnipropetrovsk {
-        background-image: url(./Assets/Images/map/ActiveRegion/dnipropetrovsk.svg) center/cover;
-        height: 200px;
-        width: 200px; }
+        height: 7.49583vw;
+        width: 11.48333vw;
+        top: 14.80208vw;
+        left: 31.65208vw; }
       .ourContactsSection .contactSection .interactiveMap .kyiv {
-        background-image: url(./Assets/Images/map/ActiveRegion/kyiv.svg) center/cover;
-        height: 200px;
-        width: 200px; }
+        height: 10.61198vw;
+        width: 8.35365vw;
+        top: 4.2474vw;
+        left: 20.84167vw; }
       .ourContactsSection .contactSection .interactiveMap .poltava {
-        background-image: url(./Assets/Images/map/ActiveRegion/poltava.svg) center/cover;
-        height: 200px;
-        width: 200px; }
+        height: 8.11198vw;
+        width: 9.92135vw;
+        top: 8.63229vw;
+        left: 28.9901vw; }
       .ourContactsSection .contactSection .interactiveMap .zaporizhzhia {
-        background-image: url(./Assets/Images/map/ActiveRegion/zaporizhzhia.svg) center/cover;
-        height: 200px;
-        width: 200px; }
+        height: 8.04844vw;
+        width: 8.7849vw;
+        top: 19.45vw;
+        left: 35.20781vw; }
 
 * {
   font-family: Montserrat; }
