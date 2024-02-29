@@ -33,6 +33,7 @@
             @include fw400fs18lh288;
             color: $whiteColor;
             height: calculateToVwFrom1920(29);
+            @include hoverBrendYellow;
           }
         }
       }
@@ -56,6 +57,7 @@
           justify-content: center;
           width: calculateToVwFrom1920(30);
           height: calculateToVwFrom1920(30);
+          @include hoverBrendYellow;
           svg {
             path {
               fill: $whiteColor;
@@ -85,10 +87,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       a {
         opacity: 50%;
         @include fw400fs14lh1707;
         color: $whiteColor;
+        @include hoverBrendYellow;
       }
     }
   }

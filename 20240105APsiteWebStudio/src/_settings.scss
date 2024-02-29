@@ -149,6 +149,18 @@ $footerBlack: #111111;
   overflow: hidden;
 }
 
+@mixin hoverBrendYellow {
+  & {
+    transition: color 0.3s linear;
+    &:hover {
+      color: $yellowColor;
+      * {
+        fill: $yellowColor;
+      }
+    }
+  }
+}
+
 @function calculateWidth($width) {
   @return percentage($width / 1920);
 }

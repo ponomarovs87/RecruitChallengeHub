@@ -861,6 +861,12 @@ nav {
             line-height: 1.5vw;
             color: #ffffff;
             height: 1.51042vw; }
+            .footer .linksBlock .hrfsBlock > div > div a {
+              transition: color 0.3s linear; }
+              .footer .linksBlock .hrfsBlock > div > div a:hover {
+                color: #f6d375; }
+                .footer .linksBlock .hrfsBlock > div > div a:hover * {
+                  fill: #f6d375; }
     .footer .linksBlock .footerDisclaimer {
       display: flex;
       gap: 20px;
@@ -881,6 +887,12 @@ nav {
           justify-content: center;
           width: 1.5625vw;
           height: 1.5625vw; }
+          .footer .linksBlock .footerDisclaimer .socialNetworks a {
+            transition: color 0.3s linear; }
+            .footer .linksBlock .footerDisclaimer .socialNetworks a:hover {
+              color: #f6d375; }
+              .footer .linksBlock .footerDisclaimer .socialNetworks a:hover * {
+                fill: #f6d375; }
           .footer .linksBlock .footerDisclaimer .socialNetworks a svg path {
             fill: #ffffff; }
   .footer .bottomLinksContainer {
@@ -909,6 +921,12 @@ nav {
         font-size: 0.72917vw;
         line-height: 0.88906vw;
         color: #ffffff; }
+        .footer .bottomLinksContainer .bottomLinks a {
+          transition: color 0.3s linear; }
+          .footer .bottomLinksContainer .bottomLinks a:hover {
+            color: #f6d375; }
+            .footer .bottomLinksContainer .bottomLinks a:hover * {
+              fill: #f6d375; }
 
 * {
   font-family: Montserrat; }
