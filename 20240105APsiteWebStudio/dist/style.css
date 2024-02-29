@@ -463,19 +463,19 @@ nav {
 
 .section4 {
   position: relative;
-  height: 1125px;
+  height: 58.59375vw;
   display: flex;
   align-items: center;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
   background: #ffffff; }
-  .section4 *:first-child {
-    margin-left: 10.15625%; }
-  .section4 *:last-child {
-    margin-right: 10.15625%; }
+  .section4 > *:first-child {
+    margin-left: 10.15625vw; }
+  .section4 > *:last-child {
+    margin-right: 10.15625vw; }
   .section4 .InfoBlock {
-    width: 25.52083%;
+    width: 25.52083vw;
     font-weight: 400;
     font-size: 0.9375vw;
     line-height: 1.5vw; }
@@ -485,21 +485,24 @@ nav {
       font-size: 0.9375vw;
       line-height: 1.5vw; }
   .section4 .buttonsSection {
-    height: 180px;
-    width: 20px;
+    height: 9.375vw;
+    width: 1.04167vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
     .section4 .buttonsSection button {
       background: none;
-      width: 20px;
-      height: 10px;
+      width: 1.04167vw;
+      height: 0.52083vw;
       stroke: #48494f; }
+      .section4 .buttonsSection button svg {
+        width: 100%;
+        height: 100%; }
   .section4 .section4Img {
-    width: 39.0625%;
-    height: 1000px;
+    width: 39.0625vw;
+    height: 52.08333vw;
     object-fit: contain;
-    margin-bottom: 5px; }
+    margin-bottom: 0.26042vw; }
 
 .VisionSection {
   height: 1000px;
@@ -529,8 +532,13 @@ nav {
 
 .section7 {
   width: 100%;
-  height: 1000px;
-  object-fit: contain; }
+  height: 52.08333vw; }
+  .section7 img {
+    width: 100%;
+    height: 52.08333vw;
+    object-fit: contain;
+    object-position: bottom;
+    overflow: hidden; }
 
 .availableProductsSection {
   width: 100%;
@@ -561,6 +569,13 @@ nav {
       width: 100%;
       background: #ffffff;
       height: 3.4375vw; }
+      .availableProductsSection ul li {
+        transition: border 0.3s linear;
+        border-radius: 1.5625vw;
+        border: solid 1px;
+        border-color: unset; }
+        .availableProductsSection ul li:hover {
+          border-color: #f6d375; }
       .availableProductsSection ul li:not(:last-child) {
         margin-bottom: 0.78125vw; }
       .availableProductsSection ul li * {
@@ -675,7 +690,9 @@ nav {
         .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label {
           height: 1.14583vw;
           display: flex;
-          align-items: center; }
+          align-items: center;
+          user-select: none;
+          cursor: pointer; }
           .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label .standartCheckbox {
             position: absolute;
             width: 1px;
@@ -689,7 +706,8 @@ nav {
             width: 1.04167vw;
             height: 1.04167vw;
             border: solid 1px #18181b;
-            margin-right: 0.52083vw; }
+            margin-right: 0.52083vw;
+            transition: color 0.3s linear; }
           .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label .standartCheckbox:checked + .castomCheckbox {
             background-color: #f6d375;
             content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.25 5L7.5 15L3.75 11.25' stroke='%2318181B'/%3E%3C/svg%3E"); }
@@ -760,6 +778,12 @@ nav {
       justify-content: space-between; }
       .ourContactsSection .contactSection .contacts > a {
         color: #ffffff; }
+        .ourContactsSection .contactSection .contacts > a {
+          transition: color 0.3s linear; }
+          .ourContactsSection .contactSection .contacts > a:hover {
+            color: #f6d375; }
+            .ourContactsSection .contactSection .contacts > a:hover * {
+              fill: #f6d375; }
       .ourContactsSection .contactSection .contacts > *:not(:first-child) {
         position: relative; }
         .ourContactsSection .contactSection .contacts > *:not(:first-child)::after {
@@ -781,6 +805,12 @@ nav {
           justify-content: center;
           width: 1.5625vw;
           height: 1.5625vw; }
+          .ourContactsSection .contactSection .contacts .socialNetworks a {
+            transition: color 0.3s linear; }
+            .ourContactsSection .contactSection .contacts .socialNetworks a:hover {
+              color: #f6d375; }
+              .ourContactsSection .contactSection .contacts .socialNetworks a:hover * {
+                fill: #f6d375; }
           .ourContactsSection .contactSection .contacts .socialNetworks a svg path {
             fill: #ffffff; }
     .ourContactsSection .contactSection .interactiveMap {

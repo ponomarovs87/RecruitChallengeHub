@@ -40,6 +40,7 @@
 
       & > a {
         color: $whiteColor;
+        @include hoverBrendYellow;
       }
 
       & > *:not(:first-child) {
@@ -67,6 +68,7 @@
           justify-content: center;
           width: calculateToVwFrom1920(30);
           height: calculateToVwFrom1920(30);
+          @include hoverBrendYellow;
           svg {
             path {
               fill: $whiteColor;

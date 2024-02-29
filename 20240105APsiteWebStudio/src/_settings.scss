@@ -160,6 +160,18 @@ $footerBlack: #111111;
     }
   }
 }
+@mixin hoverBorderBrendYellow {
+  & {
+    transition: border 0.3s linear;
+    border-radius: calculateToVwFrom1920(30);
+    border: solid 1px ;
+    border-color: unset;
+
+    &:hover {
+      border-color: $yellowColor;
+    }
+  }
+}
 
 @function calculateWidth($width) {
   @return percentage($width / 1920);

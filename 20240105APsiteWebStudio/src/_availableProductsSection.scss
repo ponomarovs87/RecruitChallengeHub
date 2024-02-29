@@ -27,6 +27,7 @@
       width: 100%;
       background: $whiteColor;
       height: calculateToVwFrom1920(66);
+      @include hoverBorderBrendYellow;
       &:not(:last-child) {
         margin-bottom: calculateToVwFrom1920(15);
       }

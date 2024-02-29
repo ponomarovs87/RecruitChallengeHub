@@ -52,4 +52,5 @@ a {
 }
 button {
   background: none;
+  cursor: pointer;
 }

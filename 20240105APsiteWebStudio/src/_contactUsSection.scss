@@ -53,6 +53,8 @@
           height: calculateToVwFrom1920(22);
           display: flex;
           align-items: center;
+          user-select: none;
+          cursor: pointer;
           .standartCheckbox {
             @include visualyHidden;
           }
@@ -61,6 +63,7 @@
             height: calculateToVwFrom1920(20);
             border: solid 1px $blackColor;
             margin-right: calculateToVwFrom1920(10);
+            transition: color 0.3s linear;
           }
           .standartCheckbox:checked + .castomCheckbox {
             background-color: $yellowColor;

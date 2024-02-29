@@ -1,20 +1,20 @@
 .section4 {
   position: relative;
-  height: 1125px;
+  height: calculateToVwFrom1920(1125);
   display: flex;
   align-items: center;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
   background: $whiteColor;
-  & *:first-child {
-    margin-left: calculateWidth(195);
+  & > *:first-child {
+    margin-left: calculateToVwFrom1920(195);
   }
-  & *:last-child {
-    margin-right: calculateWidth(195);
+  & > *:last-child {
+    margin-right: calculateToVwFrom1920(195);
   }
   .InfoBlock {
-    width: calculateWidth(490);
+    width: calculateToVwFrom1920(490);
     @include fw400fs18lh288;
     b {
       margin: 0;
@@ -22,22 +22,26 @@
     }
   }
   .buttonsSection {
-    height: 180px;
-    width: 20px;
+    height: calculateToVwFrom1920(180);
+    width: calculateToVwFrom1920(20);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     button {
       background: none;
-      width: 20px;
-      height: 10px;
+      width: calculateToVwFrom1920(20);
+      height: calculateToVwFrom1920(10);
       stroke: $grayColor;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   .section4Img {
-    width: calculateWidth(750);
-    height: 1000px;
+    width: calculateToVwFrom1920(750);
+    height: calculateToVwFrom1920(1000);
     object-fit: contain;
-    margin-bottom: 5px;
+    margin-bottom: calculateToVwFrom1920(5);
   }
 }
