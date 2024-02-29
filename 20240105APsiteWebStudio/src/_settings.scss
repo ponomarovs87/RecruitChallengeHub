@@ -4,6 +4,7 @@ $whiteColor: #ffffff;
 $yellowColor: #f6d375;
 $blackColor: #18181b;
 $grayColor: #48494f;
+$footerBlack: #111111;
 
 @mixin backgroungLinearGray {
   background: linear-gradient(90deg, #bababa 0%, #f3f3f3 100%);
@@ -76,11 +77,22 @@ $grayColor: #48494f;
   letter-spacing: 0em;
   text-align: left;
 }
+@mixin fw500fs20lh2438ls0taLeft {
+  font-weight: 500;
+  font-size: calculateToVwFrom1920(20);
+  line-height: calculateToVwFrom1920(24.38);
+}
 
 @mixin fw500fs26lh3169 {
   font-weight: 500;
   font-size: calculateToVwFrom1920(26);
   line-height: calculateToVwFrom1920(31.69);
+}
+
+@mixin fw500fs32lh3901 {
+  font-weight: 500;
+  font-size: calculateToVwFrom1920(32);
+  line-height: calculateToVwFrom1920(39.01);
 }
 
 @mixin fw600fs16lh195ls0taLeft {

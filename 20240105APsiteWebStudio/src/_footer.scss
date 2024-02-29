@@ -1,0 +1,95 @@
+.footer {
+  width: 100%;
+  height: calculateToVwFrom1920(523);
+  background-color: $footerBlack;
+  margin: -1px 0 0 0;
+  .linksBlock {
+    width: calculateToVwFrom1920(1920);
+    height: calculateToVwFrom1920(364);
+    padding: calculateToVwFrom1920(80) calculateToVwFrom1920(195)
+      calculateToVwFrom1920(55);
+    display: flex;
+    justify-content: space-between;
+    .hrfsBlock {
+      width: calculateToVwFrom1920(750);
+      gap: calculateToVwFrom1920(30);
+      display: flex;
+      & > div {
+        width: calculateToVwFrom1920(230);
+        gap: calculateToVwFrom1920(20);
+        display: flex;
+        flex-direction: column;
+        h4 {
+          color: $whiteColor;
+          opacity: 50%;
+          @include fw500fs20lh2438ls0taLeft;
+          height: calculateToVwFrom1920(24);
+        }
+        & > div {
+          display: flex;
+          flex-direction: column;
+          gap: calculateToVwFrom1920(10);
+          a {
+            @include fw400fs18lh288;
+            color: $whiteColor;
+            height: calculateToVwFrom1920(29);
+          }
+        }
+      }
+    }
+    .footerDisclaimer {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      p {
+        width: calculateToVwFrom1920(421);
+        height: calculateToVwFrom1920(58);
+        @include fw400fs18lh288;
+        color: $whiteColor;
+      }
+      .socialNetworks {
+        display: flex;
+        gap: calculateToVwFrom1920(30);
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: calculateToVwFrom1920(30);
+          height: calculateToVwFrom1920(30);
+          svg {
+            path {
+              fill: $whiteColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottomLinksContainer {
+    width: 100%;
+    height: calculateToVwFrom1920(159);
+    padding: calculateToVwFrom1920(60) calculateToVwFrom1920(195);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > h2 {
+      width: calculateToVwFrom1920(198);
+      height: calculateToVwFrom1920(39);
+      @include fw500fs32lh3901;
+      color: $whiteColor;
+    }
+    .bottomLinks {
+      width: calculateToVwFrom1920(987);
+      height: calculateToVwFrom1920(17);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        opacity: 50%;
+        @include fw400fs14lh1707;
+        color: $whiteColor;
+      }
+    }
+  }
+}
