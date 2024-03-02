@@ -1,16 +1,17 @@
 nav {
   background-color: $blackColor;
-  margin-top: 96px;
+  margin-top: calculateToVwFrom1920(96);
   width: 100%;
-  height: 60px;
-  padding: 20px calculateWidth(195);
+  height: calculateToVwFrom1920(60);
+  padding: calculateToVwFrom1920(20) calculateToVwFrom1920(195);
   display: flex;
   flex-direction: row;
   align-items: center;
   a {
     @include fw400fs16lh22ls0taLeft;
+    @include hoverBrendYellow;
     color: $whiteColor;
-    padding: 1.5px;
+    padding: calculateToVwFrom1920(1.5);
     position: relative;
     display: flex;
     flex-direction: row;
@@ -19,9 +20,9 @@ nav {
     &:not(:last-child)::after {
       content: "";
       background: url("./Assets/Images/Arrow\ left.svg") center/cover;
-      width: 20px;
-      height: 20px;
-      margin: 1.5px 15px;
+      width: calculateToVwFrom1920(20);
+      height: calculateToVwFrom1920(20);
+      margin: calculateToVwFrom1920(1.5) calculateToVwFrom1920(15);
     }
   }
   a.currectPage {

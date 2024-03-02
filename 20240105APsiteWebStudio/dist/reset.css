@@ -54,3 +54,7 @@ button {
   background: none;
   cursor: pointer;
 }
+
+body{
+  overflow-x: hidden;
+}

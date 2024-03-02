@@ -90,7 +90,7 @@
             width: calculateToVwFrom1920(10.38);
           }
         }
-        .bayBtn {
+        .buyBtn {
           height: calculateToVwFrom1920(46);
           width: calculateToVwFrom1920(212);
           border-radius: calculateToVwFrom1920(24);
@@ -98,13 +98,15 @@
         .details {
           height: calculateToVwFrom1920(20);
           width: calculateToVwFrom1920(102);
+          @include hoverBrendBlackUnderline(0.3);
         }
         .markAsFavoriteBtn,
-        .bayBtn {
+        .buyBtn {
           border: solid 1px $blackColor;
+          @include buttonHoverActiveBorder($whiteColor,$yellowColor,$yellowPressedColor);
         }
         .details,
-        .bayBtn {
+        .buyBtn {
           @include fw600fs16lh195ls0taLeft;
         }
       }

@@ -1,5 +1,5 @@
 .VisionSection {
-  height: 1000px;
+  height: calculateToVwFrom1920(1000);
   width: 100%;
   display: flex;
   background: url("./Assets/Images/innerCar/image\ 61.png") center/cover;
@@ -7,16 +7,18 @@
   justify-content: center;
   button {
     color: $blackColor;
-    width: 260px;
-    height: 46px;
-    border-radius: 24px;
-    border: solid 1px $whiteColor;
+    width: calculateToVwFrom1920(260);
+    height: calculateToVwFrom1920(46);
+    border-radius: calculateToVwFrom1920(24);
     display: flex;
     justify-content: center;
     align-items: center;
     @include fw600fs16lh195ls0taLeft;
+    @include buttonHoverActive($whiteColor, $yellowColor, $yellowPressedColor);
     svg {
-      margin-right: 8px;
+      margin-right: calculateToVwFrom1920(8);
+      width: calculateToVwFrom1920(20);
+      height: calculateToVwFrom1920(20);
       path {
         fill: $blackColor;
       }

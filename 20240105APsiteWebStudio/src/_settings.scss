@@ -2,6 +2,7 @@
 
 $whiteColor: #ffffff;
 $yellowColor: #f6d375;
+$yellowPressedColor: #bfaa70;
 $blackColor: #18181b;
 $grayColor: #48494f;
 $footerBlack: #111111;
@@ -60,6 +61,12 @@ $footerBlack: #111111;
   font-weight: 400;
   font-size: calculateToVwFrom1920(16);
   line-height: 140%;
+}
+
+@mixin fw500fs18lh2194 {
+  font-weight: 500;
+  font-size: calculateToVwFrom1920(18);
+  line-height: calculateToVwFrom1920(21.94);
 }
 
 @mixin fw500fs20lh24ls0taLeft {
@@ -129,15 +136,6 @@ $footerBlack: #111111;
   line-height: calculateToVwFrom1920(24.38);
 }
 
-@mixin headerButton {
-  border-radius: calculateToVwFrom1920(99);
-  width: calculateToVwFrom1920(30);
-  height: calculateToVwFrom1920(30);
-  &:hover {
-    background-color: $yellowColor;
-  }
-}
-
 @mixin visualyHidden {
   position: absolute;
   width: 1px;
@@ -149,9 +147,43 @@ $footerBlack: #111111;
   overflow: hidden;
 }
 
+@mixin specialBorder($top) {
+  & > *:not(:first-child) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: calculateToVwFrom1920($top);
+      width: 100%;
+      height: calculateToVwFrom1920(2);
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="none"><path opacity="0.5" d="M0 1H750" stroke="url(%23paint0_linear_1898_20364)"/><defs><linearGradient id="paint0_linear_1898_20364" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0"/><stop offset="25%" stop-color="white"/><stop offset="73.4375%" stop-color="white"/><stop offset="100%" stop-color="white" stop-opacity="0"/></linearGradient></defs></svg>');
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
+
+@mixin headerButton {
+  border-radius: calculateToVwFrom1920(99);
+  width: calculateToVwFrom1920(30);
+  height: calculateToVwFrom1920(30);
+}
+
+@mixin headerButtonHoverActive {
+  transition: background-color 0.3s linear;
+  &:hover {
+    background-color: $yellowColor;
+  }
+  &:active {
+    background-color: $yellowPressedColor;
+  }
+}
+
 @mixin hoverBrendYellow {
   & {
-    transition: color 0.3s linear;
+    transition: color 0.3s linear, fill 0.3s linear;
     &:hover {
       color: $yellowColor;
       * {
@@ -160,15 +192,147 @@ $footerBlack: #111111;
     }
   }
 }
+
+@mixin hoverBrendYellowStroke {
+  & {
+    transition: stroke 0.3s linear;
+    &:hover {
+      * {
+        stroke: $yellowColor;
+      }
+    }
+  }
+}
+
+@mixin hoverBackgroundBrendYellowForLi(
+  $standartColor,
+  $standartBg,
+  $hoverColor,
+  $hoverBg
+) {
+  & {
+    transition: color 0.3s linear, background-color 0.3s linear;
+    color: $standartColor;
+    background-color: $standartBg;
+    &:hover {
+      color: $hoverColor;
+      background-color: $hoverBg;
+    }
+  }
+}
+
+@mixin underline($color) {
+  & {
+    position: relative;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: calculateToVwFrom1920(2);
+      position: absolute;
+      bottom: 0;
+      background-color: $color;
+    }
+  }
+}
+
+@mixin hoverBrendYellowActiveBrendUnderline($timerTrasition) {
+  & {
+    transition: color 0.3s linear;
+    &:hover {
+      color: $yellowColor;
+    }
+    &:active {
+      color: $yellowColor;
+      position: relative;
+      overflow-x: hidden;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 0%;
+        height: calculateToVwFrom1920(2);
+        position: absolute;
+        bottom: 0;
+        background-color: $yellowColor;
+        animation: textScroll #{$timerTrasition}s linear 1 forwards;
+      }
+    }
+  }
+}
+
+@mixin hoverBrendBlackUnderline($timerTrasition) {
+  & {
+    &:hover {
+      position: relative;
+      overflow-x: hidden;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 0%;
+        height: calculateToVwFrom1920(2);
+        position: absolute;
+        bottom: 0;
+        background-color: $blackColor;
+        animation: textScroll #{$timerTrasition}s linear 1 forwards;
+      }
+    }
+  }
+}
+
 @mixin hoverBorderBrendYellow {
   & {
     transition: border 0.3s linear;
     border-radius: calculateToVwFrom1920(30);
-    border: solid 1px ;
+    border: solid 1px;
     border-color: unset;
 
     &:hover {
       border-color: $yellowColor;
+    }
+  }
+}
+
+@mixin buttonHoverActive($standart, $hoverColor, $activeColor) {
+  & {
+    color: $blackColor;
+    background-color: $standart;
+    transition: background-color 0.3s linear;
+    &:hover {
+      background-color: $hoverColor;
+    }
+    &:active {
+      background-color: $activeColor;
+    }
+  }
+}
+
+@mixin buttonHoverActiveBorder($standart, $hoverColor, $activeColor) {
+  & {
+    color: $blackColor;
+    background-color: $standart;
+    transition: background-color 0.3s linear, border-color 0.3s linear;
+    &:hover {
+      border-color: $hoverColor;
+      background-color: $hoverColor;
+    }
+    &:active {
+      border-color: $hoverColor;
+      background-color: $activeColor;
+    }
+  }
+}
+
+@mixin buttonTransparentHoverActive($standart, $hoverColor, $activeColor) {
+  & {
+    color: $standart;
+    transition: color 0.3s linear, border-color 0.3s linear;
+    &:hover {
+      color: $hoverColor;
+      border-color: $hoverColor;
+    }
+    &:active {
+      color: $activeColor;
+      border-color: $activeColor;
     }
   }
 }
@@ -185,4 +349,13 @@ $footerBlack: #111111;
   $onePercent: 1920 / 100;
   $calculate: $currentPX / $onePercent;
   @return #{$calculate}vw;
+}
+
+@keyframes textScroll {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }

@@ -106,11 +106,17 @@
   font-weight: 900;
   font-style: italic; }
 
+@keyframes textScroll {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
 .header {
   background-color: #18181b;
   position: fixed;
   width: 100%;
-  height: 96px;
+  height: 5vw;
   top: 0;
   z-index: 5; }
   .header .logo {
@@ -119,19 +125,19 @@
     line-height: 1.875vw;
     letter-spacing: 0em;
     text-align: left;
-    width: 230px;
-    height: 36px;
+    width: 11.97917vw;
+    height: 1.875vw;
     text-align: left;
     color: #ffffff;
     position: absolute;
-    left: 10.15625%;
-    top: 30px; }
+    left: 10.15625vw;
+    top: 1.5625vw; }
   .header .headerContactInfo {
-    width: calc(251px + 501px);
-    height: 30px;
+    width: 39.16667vw;
+    height: 1.5625vw;
     position: relative;
-    top: 33px;
-    right: 10.15625%;
+    top: 1.71875vw;
+    right: 10.15625vw;
     float: right;
     display: flex;
     justify-content: space-between;
@@ -142,48 +148,61 @@
       justify-content: space-evenly;
       flex-wrap: nowrap;
       align-items: center; }
+      .header .headerContactInfo div:first-of-type a {
+        transition: color 0.3s linear, fill 0.3s linear; }
+        .header .headerContactInfo div:first-of-type a:hover {
+          color: #f6d375; }
+          .header .headerContactInfo div:first-of-type a:hover * {
+            fill: #f6d375; }
       .header .headerContactInfo div:first-of-type div.contactUsTel {
-        margin: 0 30px; }
+        margin: 0 1.5625vw; }
     .header .headerContactInfo .buttonsDiv {
       display: flex;
       align-items: center;
       flex-wrap: nowrap;
-      width: 191px;
-      height: 30px;
+      width: 9.94792vw;
+      height: 1.5625vw;
       justify-content: space-between; }
     .header .headerContactInfo .hamburger {
       border-radius: 5.15625vw;
       width: 1.5625vw;
       height: 1.5625vw;
+      transition: background-color 0.3s linear;
       background: url("./Assets/Images/buttons/Menu.svg") center/cover;
-      width: 56px;
-      height: 30px;
+      width: 2.91667vw;
+      height: 1.5625vw;
       background-color: #ffffff; }
       .header .headerContactInfo .hamburger:hover {
         background-color: #f6d375; }
+      .header .headerContactInfo .hamburger:active {
+        background-color: #bfaa70; }
     .header .headerContactInfo .compareButton {
       border-radius: 5.15625vw;
       width: 1.5625vw;
       height: 1.5625vw;
+      transition: background-color 0.3s linear;
       background: url("./Assets/Images/buttons/compareButton.svg") center/cover;
       background-color: #ffffff; }
       .header .headerContactInfo .compareButton:hover {
         background-color: #f6d375; }
+      .header .headerContactInfo .compareButton:active {
+        background-color: #bfaa70; }
     .header .headerContactInfo .searchButton {
       border-radius: 5.15625vw;
       width: 1.5625vw;
       height: 1.5625vw;
+      transition: background-color 0.3s linear;
       background: url("./Assets/Images/buttons/searchButton.svg") center/cover;
       background-color: #ffffff; }
       .header .headerContactInfo .searchButton:hover {
         background-color: #f6d375; }
+      .header .headerContactInfo .searchButton:active {
+        background-color: #bfaa70; }
     .header .headerContactInfo .languageSwitch {
       border-radius: 5.15625vw;
       width: 1.5625vw;
       height: 1.5625vw;
       background: url("./Assets/Images/buttons/lang/Property 1=Ukraine.svg") center/cover; }
-      .header .headerContactInfo .languageSwitch:hover {
-        background-color: #f6d375; }
     .header .headerContactInfo a {
       font-weight: 400;
       font-size: 0.83333vw;
@@ -193,15 +212,15 @@
       color: #ffffff; }
     .header .headerContactInfo .contactUsTel button {
       background: url("./Assets/Images/buttons/Arrow down.svg") center/cover;
-      width: 24px;
-      height: 24px; }
+      width: 1.25vw;
+      height: 1.25vw; }
 
 nav {
   background-color: #18181b;
-  margin-top: 96px;
+  margin-top: 5vw;
   width: 100%;
-  height: 60px;
-  padding: 20px 10.15625%;
+  height: 3.125vw;
+  padding: 1.04167vw 10.15625vw;
   display: flex;
   flex-direction: row;
   align-items: center; }
@@ -212,24 +231,30 @@ nav {
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
-    padding: 1.5px;
+    padding: 0.07812vw;
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center; }
+    nav a {
+      transition: color 0.3s linear, fill 0.3s linear; }
+      nav a:hover {
+        color: #f6d375; }
+        nav a:hover * {
+          fill: #f6d375; }
     nav a:not(:last-child)::after {
       content: "";
       background: url("./Assets/Images/Arrow left.svg") center/cover;
-      width: 20px;
-      height: 20px;
-      margin: 1.5px 15px; }
+      width: 1.04167vw;
+      height: 1.04167vw;
+      margin: 0.07812vw 0.78125vw; }
   nav a.currectPage {
     opacity: 50%; }
 
 .currectCarSection {
   background: url("./Assets/Images/cars/GENESIS G80.png") center/cover;
   width: 100%;
-  height: 900px;
+  height: 46.875vw;
   position: relative; }
   .currectCarSection::after {
     content: "";
@@ -245,7 +270,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 10.15625% 60px 10.15625%;
+    padding: 0 10.15625vw 3.125vw;
     z-index: 2; }
     .currectCarSection .carInfo h2 {
       color: #ffffff; }
@@ -265,82 +290,133 @@ nav {
 
 .currectCarDeatil {
   width: 100%;
-  height: 1003px;
-  padding: 0 10.15625% 160px 10.15625%;
+  height: 52.23958vw;
+  padding: 0 10.15625vw 8.33333vw;
   background-color: #18181b;
   position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  row-gap: 120px; }
+  row-gap: 6.25vw; }
   .currectCarDeatil .headerCurrectCarDeatil {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
+    width: 100%;
+    margin: 1.5625vw 0;
     align-items: center; }
     .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil {
       display: flex; }
-      .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a h4 {
+      .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a {
         font-weight: 500;
         font-size: 1.04167vw;
         line-height: 1.25vw;
         letter-spacing: 0em;
         text-align: left;
-        color: #ffffff; }
-      .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a.activeChoise h4 {
-        color: #f6d375;
-        text-decoration: underline; }
-      .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(:last-child) {
-        margin-right: 30px; }
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a.activeChoise {
+          color: #f6d375; }
+          .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a.activeChoise {
+            position: relative; }
+            .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a.activeChoise::after {
+              content: "";
+              display: inline-block;
+              width: 100%;
+              height: 0.10417vw;
+              position: absolute;
+              bottom: 0;
+              background-color: #f6d375; }
+        .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(:last-child) {
+          margin-right: 1.5625vw; }
+        .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(.activeChoise) {
+          transition: color 0.3s linear; }
+          .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(.activeChoise):hover {
+            color: #f6d375; }
+          .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(.activeChoise):active {
+            color: #f6d375;
+            position: relative;
+            overflow-x: hidden; }
+            .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(.activeChoise):active::after {
+              content: "";
+              display: inline-block;
+              width: 0%;
+              height: 0.10417vw;
+              position: absolute;
+              bottom: 0;
+              background-color: #f6d375;
+              animation: textScroll 0.3s linear 1 forwards; }
     .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons {
-      width: 500px;
-      height: 46px;
+      width: 26.04167vw;
+      height: 2.39583vw;
       display: flex;
       justify-content: space-between; }
       .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons button {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 24px;
-        border: 1px solid #ffffff;
+        border-radius: 1.25vw;
         font-weight: 600;
         font-size: 0.83333vw;
         line-height: 1.01562vw;
         letter-spacing: 0em;
         text-align: left; }
       .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .shopinngButton {
-        width: 212px;
-        height: 46px;
-        color: #18181b; }
+        width: 11.04167vw;
+        height: 2.39583vw; }
+        .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .shopinngButton {
+          color: #18181b;
+          background-color: #ffffff;
+          transition: background-color 0.3s linear; }
+          .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .shopinngButton:hover {
+            background-color: #f6d375; }
+          .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .shopinngButton:active {
+            background-color: #bfaa70; }
       .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .lisingShopinngButton {
-        background-color: #18181b;
-        width: 278px;
-        height: 46px;
-        color: #ffffff; }
+        width: 14.47917vw;
+        height: 2.39583vw;
+        color: #ffffff;
+        border: 1px solid #ffffff; }
+        .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .lisingShopinngButton {
+          color: #ffffff;
+          transition: color 0.3s linear, border-color 0.3s linear; }
+          .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .lisingShopinngButton:hover {
+            color: #f6d375;
+            border-color: #f6d375; }
+          .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .lisingShopinngButton:active {
+            color: #bfaa70;
+            border-color: #bfaa70; }
   .currectCarDeatil h2 {
-    height: 39px; }
+    height: 2.03125vw;
+    font-weight: 500;
+    font-size: 1.66667vw;
+    line-height: 2.03177vw; }
   .currectCarDeatil .currectCarInformation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 30px;
+    column-gap: 1.5625vw;
     color: white; }
     .currectCarDeatil .currectCarInformation > .informationCar {
       display: flex;
       flex-direction: column; }
       .currectCarDeatil .currectCarInformation > .informationCar p {
-        width: 66%; }
+        width: 66%;
+        font-weight: 400;
+        font-size: 0.9375vw;
+        line-height: 1.5vw; }
     .currectCarDeatil .currectCarInformation > div.metricArticles {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 60px; }
+      column-gap: 3.125vw; }
       .currectCarDeatil .currectCarInformation > div.metricArticles > article {
-        height: 84px;
+        height: 4.375vw;
         position: relative; }
         .currectCarDeatil .currectCarInformation > div.metricArticles > article * {
           font-weight: 500;
           font-size: 1.04167vw;
           line-height: 1.26979vw; }
         .currectCarDeatil .currectCarInformation > div.metricArticles > article:not(:last-child) {
-          border-right: solid 1px; }
+          border-right: solid 0.05208vw; }
         .currectCarDeatil .currectCarInformation > div.metricArticles > article p:first-child {
           font-weight: 400;
           font-size: 2.60417vw;
@@ -348,99 +424,122 @@ nav {
         .currectCarDeatil .currectCarInformation > div.metricArticles > article > .metricsInfoContainer {
           position: absolute;
           top: 0;
-          left: 95px; }
+          left: 4.94792vw; }
     .currectCarDeatil .currectCarInformation > div {
       display: flex;
       flex-direction: column;
       position: relative; }
-      .currectCarDeatil .currectCarInformation > div ul li {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        height: 42px; }
-        .currectCarDeatil .currectCarInformation > div ul li p {
-          display: flex;
-          align-items: center; }
-        .currectCarDeatil .currectCarInformation > div ul li:not(:first-child)::after {
+      .currectCarDeatil .currectCarInformation > div ul > *:not(:first-child) {
+        position: relative; }
+        .currectCarDeatil .currectCarInformation > div ul > *:not(:first-child)::after {
           content: "";
           position: absolute;
           left: 0;
+          top: 0vw;
           width: 100%;
-          height: 2px;
-          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="750" height="2" viewBox="0 0 750 2" fill="none"><path opacity="0.5" d="M0 1H750" stroke="url(%23paint0_linear_1898_20364)"/><defs><linearGradient id="paint0_linear_1898_20364" x1="0" y1="1" x2="750" y2="1" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0"/><stop offset="0.25" stop-color="white"/><stop offset="0.734375" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs></svg>');
-          background-repeat: repeat-x;
-          background-position: center bottom;
-          background-size: auto 100%; }
+          height: 0.10417vw;
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="none"><path opacity="0.5" d="M0 1H750" stroke="url(%23paint0_linear_1898_20364)"/><defs><linearGradient id="paint0_linear_1898_20364" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0"/><stop offset="25%" stop-color="white"/><stop offset="73.4375%" stop-color="white"/><stop offset="100%" stop-color="white" stop-opacity="0"/></linearGradient></defs></svg>');
+          background-position: center;
+          background-size: contain; }
+      .currectCarDeatil .currectCarInformation > div ul li {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 2.1875vw;
+        font-weight: 500;
+        font-size: 0.9375vw;
+        line-height: 1.14271vw;
+        cursor: pointer; }
+        .currectCarDeatil .currectCarInformation > div ul li {
+          transition: color 0.3s linear, background-color 0.3s linear;
+          color: #ffffff;
+          background-color: #18181b; }
+          .currectCarDeatil .currectCarInformation > div ul li:hover {
+            color: #18181b;
+            background-color: #f6d375; }
+        .currectCarDeatil .currectCarInformation > div ul li p {
+          display: flex;
+          align-items: center; }
       .currectCarDeatil .currectCarInformation > div button {
         position: absolute;
         bottom: 0;
         right: 0;
-        height: 40px;
+        height: 2.08333vw;
         background: none;
         color: #f6d375;
         display: flex;
-        align-items: center; }
+        align-items: center;
+        font-weight: 600;
+        font-size: 0.83333vw;
+        line-height: 1.01562vw; }
         .currectCarDeatil .currectCarInformation > div button img {
-          height: 20px;
-          width: 20px;
-          margin-left: 5px; }
+          height: 1.04167vw;
+          width: 1.04167vw;
+          margin-left: 0.26042vw; }
 
 .galary {
-  height: 1000px;
+  height: 52.08333vw;
   background: url("./Assets/Images/cars/image 53.png") center/cover;
   position: relative; }
   .galary > div {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 68px 10.15625% 48px;
+    padding: 3.54167vw 10.15625vw 2.5vw;
     display: flex;
     align-items: center; }
   .galary button {
     background: none;
-    height: 40px;
-    width: 40px; }
+    height: 2.08333vw;
+    width: 2.08333vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .galary button > * {
+      width: 100%;
+      height: 100%; }
   .galary path {
-    stroke: #ffffff;
-    transition: stroke 0.5s linear; }
+    stroke: #ffffff; }
   .galary .backButton {
     transform: rotate(180deg); }
-    .galary .backButton:hover path {
+  .galary .pauseButton:hover,
+  .galary .forwardButton:hover,
+  .galary .backButton:hover {
+    transition: stroke 0.3s linear; }
+    .galary .pauseButton:hover:hover *,
+    .galary .forwardButton:hover:hover *,
+    .galary .backButton:hover:hover * {
       stroke: #f6d375; }
-  .galary .pauseButton:hover path {
-    stroke: #f6d375; }
-  .galary .forwardButton:hover path {
-    stroke: #f6d375; }
   .galary .ProgressLine {
-    width: calc(100% - 40px - 40px - 40px);
-    height: 40px;
+    width: calc(100% - 2.08333vw - 2.08333vw - 2.08333vw);
+    height: 2.08333vw;
     display: flex;
     align-items: center; }
 
 .colorCarPresentation {
-  height: 1000px;
+  height: 52.08333vw;
   position: relative;
   background: linear-gradient(90deg, #bababa 0%, #f3f3f3 100%); }
   .colorCarPresentation .worningMassege {
     position: absolute;
-    top: 159px;
-    right: 10.15625%;
-    width: 18.75%;
+    top: 8.28125vw;
+    right: 10.15625vw;
+    width: 18.75vw;
     font-weight: 400;
     font-size: 0.72917vw;
     line-height: 0.88906vw;
     z-index: 2; }
   .colorCarPresentation .choiseColor {
     position: absolute;
-    bottom: 155px;
-    left: 10.15625%;
-    width: 34.375%;
+    bottom: 8.07292vw;
+    left: 10.15625vw;
+    width: 34.375vw;
     font-weight: 400;
     font-size: 0.72917vw;
     line-height: 0.88906vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 4.54545%;
-    row-gap: 20px;
+    column-gap: 1.5625vw;
+    row-gap: 1.04167vw;
     z-index: 2; }
     .colorCarPresentation .choiseColor button {
       background: none;
@@ -454,10 +553,10 @@ nav {
       opacity: 100%; }
   .colorCarPresentation .colorCarImg {
     position: absolute;
-    height: 550px;
-    top: 211px;
-    left: 16.92708%;
-    width: 66.14583%;
+    height: 28.64583vw;
+    top: 10.98958vw;
+    left: 16.92708vw;
+    width: 66.14583vw;
     z-index: 1;
     object-fit: contain; }
 
@@ -505,7 +604,7 @@ nav {
     margin-bottom: 0.26042vw; }
 
 .VisionSection {
-  height: 1000px;
+  height: 52.08333vw;
   width: 100%;
   display: flex;
   background: url("./Assets/Images/innerCar/image 61.png") center/cover;
@@ -513,10 +612,9 @@ nav {
   justify-content: center; }
   .VisionSection button {
     color: #18181b;
-    width: 260px;
-    height: 46px;
-    border-radius: 24px;
-    border: solid 1px #ffffff;
+    width: 13.54167vw;
+    height: 2.39583vw;
+    border-radius: 1.25vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -525,8 +623,18 @@ nav {
     line-height: 1.01562vw;
     letter-spacing: 0em;
     text-align: left; }
+    .VisionSection button {
+      color: #18181b;
+      background-color: #ffffff;
+      transition: background-color 0.3s linear; }
+      .VisionSection button:hover {
+        background-color: #f6d375; }
+      .VisionSection button:active {
+        background-color: #bfaa70; }
     .VisionSection button svg {
-      margin-right: 8px; }
+      margin-right: 0.41667vw;
+      width: 1.04167vw;
+      height: 1.04167vw; }
       .VisionSection button svg path {
         fill: #18181b; }
 
@@ -619,18 +727,43 @@ nav {
             min-width: 10.38px;
             height: 0.78125vw;
             width: 0.54063vw; }
-        .availableProductsSection ul li .battonsSection .bayBtn {
+        .availableProductsSection ul li .battonsSection .buyBtn {
           height: 2.39583vw;
           width: 11.04167vw;
           border-radius: 1.25vw; }
         .availableProductsSection ul li .battonsSection .details {
           height: 1.04167vw;
           width: 5.3125vw; }
+          .availableProductsSection ul li .battonsSection .details:hover {
+            position: relative;
+            overflow-x: hidden; }
+            .availableProductsSection ul li .battonsSection .details:hover::after {
+              content: "";
+              display: inline-block;
+              width: 0%;
+              height: 0.10417vw;
+              position: absolute;
+              bottom: 0;
+              background-color: #18181b;
+              animation: textScroll 0.3s linear 1 forwards; }
         .availableProductsSection ul li .battonsSection .markAsFavoriteBtn,
-        .availableProductsSection ul li .battonsSection .bayBtn {
+        .availableProductsSection ul li .battonsSection .buyBtn {
           border: solid 1px #18181b; }
+          .availableProductsSection ul li .battonsSection .markAsFavoriteBtn,
+          .availableProductsSection ul li .battonsSection .buyBtn {
+            color: #18181b;
+            background-color: #ffffff;
+            transition: background-color 0.3s linear, border-color 0.3s linear; }
+            .availableProductsSection ul li .battonsSection .markAsFavoriteBtn:hover,
+            .availableProductsSection ul li .battonsSection .buyBtn:hover {
+              border-color: #f6d375;
+              background-color: #f6d375; }
+            .availableProductsSection ul li .battonsSection .markAsFavoriteBtn:active,
+            .availableProductsSection ul li .battonsSection .buyBtn:active {
+              border-color: #f6d375;
+              background-color: #bfaa70; }
         .availableProductsSection ul li .battonsSection .details,
-        .availableProductsSection ul li .battonsSection .bayBtn {
+        .availableProductsSection ul li .battonsSection .buyBtn {
           font-weight: 600;
           font-size: 0.83333vw;
           line-height: 1.01562vw;
@@ -779,7 +912,7 @@ nav {
       .ourContactsSection .contactSection .contacts > a {
         color: #ffffff; }
         .ourContactsSection .contactSection .contacts > a {
-          transition: color 0.3s linear; }
+          transition: color 0.3s linear, fill 0.3s linear; }
           .ourContactsSection .contactSection .contacts > a:hover {
             color: #f6d375; }
             .ourContactsSection .contactSection .contacts > a:hover * {
@@ -792,7 +925,7 @@ nav {
           left: 0;
           top: -1.5625vw;
           width: 100%;
-          height: 2px;
+          height: 0.10417vw;
           background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="none"><path opacity="0.5" d="M0 1H750" stroke="url(%23paint0_linear_1898_20364)"/><defs><linearGradient id="paint0_linear_1898_20364" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0"/><stop offset="25%" stop-color="white"/><stop offset="73.4375%" stop-color="white"/><stop offset="100%" stop-color="white" stop-opacity="0"/></linearGradient></defs></svg>');
           background-position: center;
           background-size: contain; }
@@ -806,7 +939,7 @@ nav {
           width: 1.5625vw;
           height: 1.5625vw; }
           .ourContactsSection .contactSection .contacts .socialNetworks a {
-            transition: color 0.3s linear; }
+            transition: color 0.3s linear, fill 0.3s linear; }
             .ourContactsSection .contactSection .contacts .socialNetworks a:hover {
               color: #f6d375; }
               .ourContactsSection .contactSection .contacts .socialNetworks a:hover * {
@@ -892,7 +1025,7 @@ nav {
             color: #ffffff;
             height: 1.51042vw; }
             .footer .linksBlock .hrfsBlock > div > div a {
-              transition: color 0.3s linear; }
+              transition: color 0.3s linear, fill 0.3s linear; }
               .footer .linksBlock .hrfsBlock > div > div a:hover {
                 color: #f6d375; }
                 .footer .linksBlock .hrfsBlock > div > div a:hover * {
@@ -918,7 +1051,7 @@ nav {
           width: 1.5625vw;
           height: 1.5625vw; }
           .footer .linksBlock .footerDisclaimer .socialNetworks a {
-            transition: color 0.3s linear; }
+            transition: color 0.3s linear, fill 0.3s linear; }
             .footer .linksBlock .footerDisclaimer .socialNetworks a:hover {
               color: #f6d375; }
               .footer .linksBlock .footerDisclaimer .socialNetworks a:hover * {
@@ -952,7 +1085,7 @@ nav {
         line-height: 0.88906vw;
         color: #ffffff; }
         .footer .bottomLinksContainer .bottomLinks a {
-          transition: color 0.3s linear; }
+          transition: color 0.3s linear, fill 0.3s linear; }
           .footer .bottomLinksContainer .bottomLinks a:hover {
             color: #f6d375; }
             .footer .bottomLinksContainer .bottomLinks a:hover * {

@@ -1,25 +1,25 @@
 .colorCarPresentation {
-  height: 1000px;
+  height: calculateToVwFrom1920(1000);
   position: relative;
   @include backgroungLinearGray;
   .worningMassege {
     position: absolute;
-    top: 159px;
-    right: calculateWidth(195);
-    width: calculateWidth(360);
+    top: calculateToVwFrom1920(159);
+    right: calculateToVwFrom1920(195);
+    width: calculateToVwFrom1920(360);
     @include fw400fs14lh1707;
     z-index: 2;
   }
   .choiseColor {
     position: absolute;
-    bottom: 155px;
-    left: calculateWidth(195);
-    width: calculateWidth(660);
+    bottom: calculateToVwFrom1920(155);
+    left: calculateToVwFrom1920(195);
+    width: calculateToVwFrom1920(660);
     @include fw400fs14lh1707;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: calculateWidthCurrectBlock(30, 660);
-    row-gap: 20px;
+    column-gap: calculateToVwFrom1920(30);
+    row-gap: calculateToVwFrom1920(20);
     z-index: 2;
     button {
       background: none;
@@ -32,12 +32,12 @@
       opacity: 100%;
     }
   }
-  .colorCarImg{
+  .colorCarImg {
     position: absolute;
-    height: 550px;
-    top: 211px;
-    left: calculateWidth(325);
-    width: calculateWidth(1270);
+    height: calculateToVwFrom1920(550);
+    top: calculateToVwFrom1920(211);
+    left: calculateToVwFrom1920(325);
+    width: calculateToVwFrom1920(1270);
     z-index: 1;
     object-fit: contain;
   }

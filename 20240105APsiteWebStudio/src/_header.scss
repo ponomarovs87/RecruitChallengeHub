@@ -2,26 +2,26 @@
   background-color: $blackColor;
   position: fixed;
   width: 100%;
-  height: 96px;
+  height: calculateToVwFrom1920(96);
   top: 0;
   z-index: 5;
 
   .logo {
     @include fw700fs36lh36ls0taLeft;
-    width: 230px;
-    height: 36px;
+    width: calculateToVwFrom1920(230);
+    height: calculateToVwFrom1920(36);
     text-align: left;
     color: #ffffff;
     position: absolute;
-    left: calculateWidth(195);
-    top: 30px;
+    left: calculateToVwFrom1920(195);
+    top: calculateToVwFrom1920(30);
   }
   .headerContactInfo {
-    width: calc(251px + 501px);
-    height: 30px;
+    width: calculateToVwFrom1920(752); //251px + 501px
+    height: calculateToVwFrom1920(30);
     position: relative;
-    top: 33px;
-    right: calculateWidth(195);
+    top: calculateToVwFrom1920(33);
+    right: calculateToVwFrom1920(195);
     float: right;
     display: flex;
     justify-content: space-between;
@@ -32,32 +32,38 @@
       justify-content: space-evenly;
       flex-wrap: nowrap;
       align-items: center;
+      a {
+        @include hoverBrendYellow;
+      }
       & div.contactUsTel {
-        margin: 0 30px;
+        margin: 0 calculateToVwFrom1920(30);
       }
     }
     .buttonsDiv {
       display: flex;
       align-items: center;
       flex-wrap: nowrap;
-      width: 191px;
-      height: 30px;
+      width: calculateToVwFrom1920(191);
+      height: calculateToVwFrom1920(30);
       justify-content: space-between;
     }
     .hamburger {
       @include headerButton;
+      @include headerButtonHoverActive;
       background: url("./Assets/Images/buttons/Menu.svg") center/cover;
-      width: 56px;
-      height: 30px;
+      width: calculateToVwFrom1920(56);
+      height: calculateToVwFrom1920(30);
       background-color: $whiteColor;
     }
     .compareButton {
       @include headerButton;
+      @include headerButtonHoverActive;
       background: url("./Assets/Images/buttons/compareButton.svg") center/cover;
       background-color: $whiteColor;
     }
     .searchButton {
       @include headerButton;
+      @include headerButtonHoverActive;
       background: url("./Assets/Images/buttons/searchButton.svg") center/cover;
       background-color: $whiteColor;
     }
@@ -74,8 +80,8 @@
     .contactUsTel {
       button {
         background: url("./Assets/Images/buttons/Arrow\ down.svg") center/cover;
-        width: 24px;
-        height: 24px;
+        width: calculateToVwFrom1920(24);
+        height: calculateToVwFrom1920(24);
       }
     }
   }
