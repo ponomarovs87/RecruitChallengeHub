@@ -115,104 +115,166 @@
 .header {
   background-color: #18181b;
   position: fixed;
-  width: 100vw;
-  height: 5vw;
   top: 0;
   z-index: 5; }
-  .header .logo {
-    font-weight: 700;
-    font-size: 1.875vw;
-    line-height: 1.875vw;
-    width: 11.97917vw;
-    height: 1.875vw;
-    color: #ffffff;
-    position: absolute;
-    left: 10.15625vw;
-    top: 1.5625vw; }
-  .header .headerContactInfo {
-    width: 39.16667vw;
-    height: 1.5625vw;
-    position: relative;
-    top: 1.71875vw;
-    right: 10.15625vw;
-    float: right;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center; }
-    .header .headerContactInfo div:first-of-type {
+  .header .progressNavigation {
+    display: none; }
+  .header .headerBlock {
+    width: 100vw;
+    height: 5vw; }
+    .header .headerBlock .logo {
+      font-weight: 700;
+      font-size: 1.875vw;
+      line-height: 1.875vw;
+      width: 11.97917vw;
+      height: 1.875vw;
+      color: #ffffff;
+      position: absolute;
+      left: 10.15625vw;
+      top: 1.5625vw; }
+    .header .headerBlock .headerContactInfo {
+      width: 39.16667vw;
+      height: 1.5625vw;
+      position: relative;
+      top: 1.71875vw;
+      right: 10.15625vw;
+      float: right;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       flex-wrap: nowrap;
       align-items: center; }
-      .header .headerContactInfo div:first-of-type a {
-        transition: color 0.3s linear, fill 0.3s linear; }
-        .header .headerContactInfo div:first-of-type a:hover {
-          color: #f6d375; }
-          .header .headerContactInfo div:first-of-type a:hover * {
-            fill: #f6d375; }
-      .header .headerContactInfo div:first-of-type div.contactUsTel {
-        margin: 0 1.5625vw; }
-    .header .headerContactInfo .buttonsDiv {
+      .header .headerBlock .headerContactInfo div:first-of-type {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: center; }
+        .header .headerBlock .headerContactInfo div:first-of-type a {
+          transition: color 0.3s linear, fill 0.3s linear; }
+          .header .headerBlock .headerContactInfo div:first-of-type a:hover {
+            color: #f6d375; }
+            .header .headerBlock .headerContactInfo div:first-of-type a:hover * {
+              fill: #f6d375; }
+        .header .headerBlock .headerContactInfo div:first-of-type div.contactUsTel {
+          margin: 0 1.5625vw; }
+      .header .headerBlock .headerContactInfo .buttonsDiv {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 9.94792vw;
+        height: 1.5625vw;
+        justify-content: space-between; }
+      .header .headerBlock .headerContactInfo .hamburger {
+        border-radius: 5.15625vw;
+        width: 1.5625vw;
+        height: 1.5625vw;
+        transition: background-color 0.3s linear;
+        background: url("./Assets/Images/buttons/Menu.svg") center/cover;
+        width: 2.91667vw;
+        height: 1.5625vw;
+        background-color: #ffffff; }
+        .header .headerBlock .headerContactInfo .hamburger:hover {
+          background-color: #f6d375; }
+        .header .headerBlock .headerContactInfo .hamburger:active {
+          background-color: #bfaa70; }
+      .header .headerBlock .headerContactInfo .compareButton {
+        border-radius: 5.15625vw;
+        width: 1.5625vw;
+        height: 1.5625vw;
+        transition: background-color 0.3s linear;
+        background: url("./Assets/Images/buttons/compareButton.svg") center/cover;
+        background-color: #ffffff; }
+        .header .headerBlock .headerContactInfo .compareButton:hover {
+          background-color: #f6d375; }
+        .header .headerBlock .headerContactInfo .compareButton:active {
+          background-color: #bfaa70; }
+      .header .headerBlock .headerContactInfo .searchButton {
+        border-radius: 5.15625vw;
+        width: 1.5625vw;
+        height: 1.5625vw;
+        transition: background-color 0.3s linear;
+        background: url("./Assets/Images/buttons/searchButton.svg") center/cover;
+        background-color: #ffffff; }
+        .header .headerBlock .headerContactInfo .searchButton:hover {
+          background-color: #f6d375; }
+        .header .headerBlock .headerContactInfo .searchButton:active {
+          background-color: #bfaa70; }
+      .header .headerBlock .headerContactInfo .languageSwitch {
+        border-radius: 5.15625vw;
+        width: 1.5625vw;
+        height: 1.5625vw;
+        background: url("./Assets/Images/buttons/lang/Property 1=Ukraine.svg") center/cover; }
+      .header .headerBlock .headerContactInfo a {
+        font-weight: 400;
+        font-size: 0.83333vw;
+        line-height: 1.14583vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff; }
+      .header .headerBlock .headerContactInfo .contactUsTel button {
+        background: url("./Assets/Images/buttons/Arrow down.svg") center/cover;
+        width: 1.25vw;
+        height: 1.25vw; }
+
+@media screen and (max-width: 360px) {
+  .header .headerBlock {
+    height: 16.66667vw;
+    padding: 4.16667vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header .headerBlock .logo {
+      position: unset;
+      font-weight: 700;
+      font-size: 5.55556vw;
+      line-height: 5.55556vw;
+      width: unset;
+      height: unset; }
+    .header .headerBlock .headerContactInfo {
+      position: unset;
+      order: -1; }
+      .header .headerBlock .headerContactInfo div:first-of-type {
+        display: none; }
+      .header .headerBlock .headerContactInfo .buttonsDiv {
+        width: 37.77778vw;
+        height: 8.33333vw;
+        gap: 2.77778vw; }
+        .header .headerBlock .headerContactInfo .buttonsDiv .languageSwitch {
+          display: none; }
+        .header .headerBlock .headerContactInfo .buttonsDiv .hamburger {
+          width: 15.55556vw;
+          height: 8.33333vw;
+          order: -1; }
+        .header .headerBlock .headerContactInfo .buttonsDiv .searchButton,
+        .header .headerBlock .headerContactInfo .buttonsDiv .compareButton {
+          width: 8.33333vw;
+          height: 8.33333vw; }
+  .header .progressNavigation {
+    width: 100vw;
+    height: 15vw;
+    padding: 4.72222vw 4.16667vw;
+    gap: 1.66667vw;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .header .progressNavigation button {
       display: flex;
       align-items: center;
-      flex-wrap: nowrap;
-      width: 9.94792vw;
-      height: 1.5625vw;
-      justify-content: space-between; }
-    .header .headerContactInfo .hamburger {
-      border-radius: 5.15625vw;
-      width: 1.5625vw;
-      height: 1.5625vw;
-      transition: background-color 0.3s linear;
-      background: url("./Assets/Images/buttons/Menu.svg") center/cover;
-      width: 2.91667vw;
-      height: 1.5625vw;
-      background-color: #ffffff; }
-      .header .headerContactInfo .hamburger:hover {
-        background-color: #f6d375; }
-      .header .headerContactInfo .hamburger:active {
-        background-color: #bfaa70; }
-    .header .headerContactInfo .compareButton {
-      border-radius: 5.15625vw;
-      width: 1.5625vw;
-      height: 1.5625vw;
-      transition: background-color 0.3s linear;
-      background: url("./Assets/Images/buttons/compareButton.svg") center/cover;
-      background-color: #ffffff; }
-      .header .headerContactInfo .compareButton:hover {
-        background-color: #f6d375; }
-      .header .headerContactInfo .compareButton:active {
-        background-color: #bfaa70; }
-    .header .headerContactInfo .searchButton {
-      border-radius: 5.15625vw;
-      width: 1.5625vw;
-      height: 1.5625vw;
-      transition: background-color 0.3s linear;
-      background: url("./Assets/Images/buttons/searchButton.svg") center/cover;
-      background-color: #ffffff; }
-      .header .headerContactInfo .searchButton:hover {
-        background-color: #f6d375; }
-      .header .headerContactInfo .searchButton:active {
-        background-color: #bfaa70; }
-    .header .headerContactInfo .languageSwitch {
-      border-radius: 5.15625vw;
-      width: 1.5625vw;
-      height: 1.5625vw;
-      background: url("./Assets/Images/buttons/lang/Property 1=Ukraine.svg") center/cover; }
-    .header .headerContactInfo a {
-      font-weight: 400;
-      font-size: 0.83333vw;
-      line-height: 1.14583vw;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #ffffff; }
-    .header .headerContactInfo .contactUsTel button {
-      background: url("./Assets/Images/buttons/Arrow down.svg") center/cover;
-      width: 1.25vw;
-      height: 1.25vw; }
+      gap: 4.16667vw; }
+      .header .progressNavigation button h2 {
+        color: #f6d375;
+        font-weight: 600;
+        font-size: 4.44444vw;
+        line-height: 5.41667vw; }
+    .header .progressNavigation .progressLine {
+      background-color: #f6d375;
+      height: 0.83333vw;
+      border-radius: 27.5vw;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      min-width: 1%; } }
 
-nav {
+nav.navigation {
   background-color: #18181b;
   margin-top: 5vw;
   width: 100%;
@@ -221,7 +283,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center; }
-  nav a {
+  nav.navigation a {
     font-weight: 400;
     font-size: 0.83333vw;
     line-height: 1.14583vw;
@@ -233,20 +295,37 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    nav a {
+    nav.navigation a {
       transition: color 0.3s linear, fill 0.3s linear; }
-      nav a:hover {
+      nav.navigation a:hover {
         color: #f6d375; }
-        nav a:hover * {
+        nav.navigation a:hover * {
           fill: #f6d375; }
-    nav a:not(:last-child)::after {
+    nav.navigation a:not(:last-child)::after {
       content: "";
       background: url("./Assets/Images/Arrow left.svg") center/cover;
       width: 1.04167vw;
       height: 1.04167vw;
       margin: 0.07812vw 0.78125vw; }
-  nav a.currectPage {
+  nav.navigation a.currectPage {
     opacity: 50%; }
+
+@media screen and (max-width: 360px) {
+  nav.navigation {
+    margin-top: 31.66667vw;
+    width: 100vw;
+    height: 19.16667vw;
+    padding: 5.55556vw 4.16667vw;
+    overflow-x: scroll; }
+    nav.navigation a {
+      font-weight: 400;
+      font-size: 5vw;
+      line-height: 8vw;
+      white-space: nowrap; }
+      nav.navigation a:not(:last-child)::after {
+        width: 5.55556vw;
+        height: 5.55556vw;
+        margin: 1.25vw 4.16667vw; } }
 
 .currectCarSection {
   background: url("./Assets/Images/cars/GENESIS G80.png") center/cover;
@@ -283,7 +362,34 @@ nav {
       line-height: 3.125vw;
       letter-spacing: 0em;
       text-align: left;
-      opacity: 98.43%; }
+      opacity: 98.43%;
+      display: flex;
+      gap: 1.5625vw; }
+      .currectCarSection .carInfo .carPrice * {
+        white-space: nowrap; }
+
+@media screen and (max-width: 360px) {
+  .currectCarSection {
+    height: 166.66667vw;
+    position: relative; }
+    .currectCarSection .carInfo {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 81.66667vw;
+      bottom: 0;
+      left: 0;
+      gap: 2.77778vw;
+      padding: 0 0 4.16667vw 4.16667vw; }
+      .currectCarSection .carInfo .carName {
+        font-weight: 500;
+        font-size: 7.22222vw;
+        line-height: 8.80278vw; }
+      .currectCarSection .carInfo .carPrice {
+        font-weight: 500;
+        font-size: 5.55556vw;
+        line-height: 6.77222vw;
+        gap: 8.33333vw; } }
 
 .currectCarDeatil {
   width: 100%;

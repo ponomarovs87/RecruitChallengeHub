@@ -1,4 +1,4 @@
-nav {
+nav.navigation {
   background-color: $blackColor;
   margin-top: calculateToVwFrom1920(96);
   width: 100%;
@@ -27,5 +27,24 @@ nav {
   }
   a.currectPage {
     opacity: 50%;
+  }
+}
+
+@media screen and (max-width: $minWidthForMobileView) {
+  nav.navigation {
+    margin-top: calculateToVwFrom360(114); //60px+54px
+    width: calculateToVwFrom360(360);
+    height: calculateToVwFrom360(69);
+    padding: calculateToVwFrom360(20) calculateToVwFrom360(15);
+    overflow-x: scroll;
+    a {
+      @include fw400fs18lh288For360;
+      white-space: nowrap;
+      &:not(:last-child)::after {
+        width: calculateToVwFrom360(20);
+        height: calculateToVwFrom360(20);
+        margin: calculateToVwFrom360(4.5) calculateToVwFrom360(15);
+      }
+    }
   }
 }

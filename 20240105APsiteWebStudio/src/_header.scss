@@ -1,86 +1,164 @@
 .header {
   background-color: $blackColor;
   position: fixed;
-  width: 100vw;
-  height: calculateToVwFrom1920(96);
   top: 0;
   z-index: 5;
-
-  .logo {
-    @include fw700fs36lh36;
-    width: calculateToVwFrom1920(230);
-    height: calculateToVwFrom1920(36);
-    color: #ffffff;
-    position: absolute;
-    left: calculateToVwFrom1920(195);
-    top: calculateToVwFrom1920(30);
+  .progressNavigation {
+    display: none;
   }
-  .headerContactInfo {
-    width: calculateToVwFrom1920(752); //251px + 501px
-    height: calculateToVwFrom1920(30);
-    position: relative;
-    top: calculateToVwFrom1920(33);
-    right: calculateToVwFrom1920(195);
-    float: right;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
-    & div:first-of-type {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: nowrap;
-      align-items: center;
-      a {
-        @include hoverBrendYellow;
-      }
-      & div.contactUsTel {
-        margin: 0 calculateToVwFrom1920(30);
-      }
-    }
-    .buttonsDiv {
-      display: flex;
-      align-items: center;
-      flex-wrap: nowrap;
-      width: calculateToVwFrom1920(191);
-      height: calculateToVwFrom1920(30);
-      justify-content: space-between;
-    }
-    .hamburger {
-      @include headerButton;
-      @include headerButtonHoverActive;
-      background: url("./Assets/Images/buttons/Menu.svg") center/cover;
-      width: calculateToVwFrom1920(56);
-      height: calculateToVwFrom1920(30);
-      background-color: $whiteColor;
-    }
-    .compareButton {
-      @include headerButton;
-      @include headerButtonHoverActive;
-      background: url("./Assets/Images/buttons/compareButton.svg") center/cover;
-      background-color: $whiteColor;
-    }
-    .searchButton {
-      @include headerButton;
-      @include headerButtonHoverActive;
-      background: url("./Assets/Images/buttons/searchButton.svg") center/cover;
-      background-color: $whiteColor;
-    }
-    .languageSwitch {
-      @include headerButton;
-      background: url("./Assets/Images/buttons/lang/Property\ 1=Ukraine.svg")
-        center/cover;
-    }
+  .headerBlock {
+    width: 100vw;
+    height: calculateToVwFrom1920(96);
 
-    a {
-      @include fw400fs16lh22ls0taLeft;
-      color: $whiteColor;
+    .logo {
+      @include fw700fs36lh36;
+      width: calculateToVwFrom1920(230);
+      height: calculateToVwFrom1920(36);
+      color: #ffffff;
+      position: absolute;
+      left: calculateToVwFrom1920(195);
+      top: calculateToVwFrom1920(30);
     }
-    .contactUsTel {
+    .headerContactInfo {
+      width: calculateToVwFrom1920(752); //251px + 501px
+      height: calculateToVwFrom1920(30);
+      position: relative;
+      top: calculateToVwFrom1920(33);
+      right: calculateToVwFrom1920(195);
+      float: right;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+      & div:first-of-type {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: center;
+        a {
+          @include hoverBrendYellow;
+        }
+        & div.contactUsTel {
+          margin: 0 calculateToVwFrom1920(30);
+        }
+      }
+      .buttonsDiv {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: calculateToVwFrom1920(191);
+        height: calculateToVwFrom1920(30);
+        justify-content: space-between;
+      }
+      .hamburger {
+        @include headerButton;
+        @include headerButtonHoverActive;
+        background: url("./Assets/Images/buttons/Menu.svg") center/cover;
+        width: calculateToVwFrom1920(56);
+        height: calculateToVwFrom1920(30);
+        background-color: $whiteColor;
+      }
+      .compareButton {
+        @include headerButton;
+        @include headerButtonHoverActive;
+        background: url("./Assets/Images/buttons/compareButton.svg")
+          center/cover;
+        background-color: $whiteColor;
+      }
+      .searchButton {
+        @include headerButton;
+        @include headerButtonHoverActive;
+        background: url("./Assets/Images/buttons/searchButton.svg") center/cover;
+        background-color: $whiteColor;
+      }
+      .languageSwitch {
+        @include headerButton;
+        background: url("./Assets/Images/buttons/lang/Property\ 1=Ukraine.svg")
+          center/cover;
+      }
+
+      a {
+        @include fw400fs16lh22ls0taLeft;
+        color: $whiteColor;
+      }
+      .contactUsTel {
+        button {
+          background: url("./Assets/Images/buttons/Arrow\ down.svg")
+            center/cover;
+          width: calculateToVwFrom1920(24);
+          height: calculateToVwFrom1920(24);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $minWidthForMobileView) {
+  .header {
+    .headerBlock {
+      height: calculateToVwFrom360(60);
+      padding: calculateToVwFrom360(15);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        position: unset;
+        @include fw700fs20lh20for360;
+        width: unset;
+        height: unset;
+      }
+      .headerContactInfo {
+        position: unset;
+        order: -1;
+        & div:first-of-type {
+          display: none;
+        }
+        .buttonsDiv {
+          width: calculateToVwFrom360(136);
+          height: calculateToVwFrom360(30);
+          gap: calculateToVwFrom360(10);
+
+          .languageSwitch {
+            display: none;
+          }
+          .hamburger {
+            width: calculateToVwFrom360(56);
+            height: calculateToVwFrom360(30);
+            order: -1;
+          }
+          .searchButton,
+          .compareButton {
+            width: calculateToVwFrom360(30);
+            height: calculateToVwFrom360(30);
+          }
+        }
+      }
+    }
+    .progressNavigation {
+      width: calculateToVwFrom360(360);
+      height: calculateToVwFrom360(54);
+      padding: calculateToVwFrom360(17) calculateToVwFrom360(15);
+      gap: calculateToVwFrom360(6);
+      display: flex;
+      align-items: center;
+      position: relative;
       button {
-        background: url("./Assets/Images/buttons/Arrow\ down.svg") center/cover;
-        width: calculateToVwFrom1920(24);
-        height: calculateToVwFrom1920(24);
+        display: flex;
+        align-items: center;
+        gap: calculateToVwFrom360(15);
+        h2 {
+          color: $yellowColor;
+          @include fw600fs16lh195For360;
+        }
+      }
+      .progressLine {
+        background-color: $yellowColor;
+        height: calculateToVwFrom360(3);
+        border-radius: calculateToVwFrom360(99);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-width: 1%;
       }
     }
   }

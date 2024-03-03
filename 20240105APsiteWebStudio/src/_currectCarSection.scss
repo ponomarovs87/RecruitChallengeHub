@@ -31,6 +31,35 @@
     .carPrice {
       @include fw400fs50lh60ls0taLeft;
       opacity: 98.43%;
+      display: flex;
+      gap: calculateToVwFrom1920(30);
+      * {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $minWidthForMobileView) {
+  .currectCarSection {
+    height: calculateToVwFrom360(600);
+    position: relative;
+    .carInfo {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: calculateToVwFrom360(294);
+      bottom: 0;
+      left: 0;
+      gap: calculateToVwFrom360(10);
+      padding: 0 0 calculateToVwFrom360(15) calculateToVwFrom360(15);
+      .carName {
+        @include fw500fs26lh3169For360;
+      }
+      .carPrice {
+        @include fw500fs20lh2438For360;
+        gap: calculateToVwFrom360(30);
+      }
     }
   }
 }

@@ -10,28 +10,40 @@
 
   <body>
     <header class="header">
-      <h1 role="Logo" class="logo">Aura Motors</h1>
-      <div class="headerContactInfo">
-        <div>
-          <a
-            href="https://www.google.com/maps/search/Kyiv+%D1%86%D0%B5%D0%BD%D1%82%D1%80/@50.4378214,30.4774331,12z/data=!3m1!4b1?entry=ttu">
-            Місто: Київ - Центр
-          </a>
-          <div class="contactUsTel">
-            <a href="tel:0 800 320 555">0 800 320 555</a>
-            <button></button>
+      <div class="headerBlock">
+        <h1 role="Logo" class="logo">Aura Motors</h1>
+        <div class="headerContactInfo">
+          <div class="contactBlock">
+            <a
+              href="https://www.google.com/maps/search/Kyiv+%D1%86%D0%B5%D0%BD%D1%82%D1%80/@50.4378214,30.4774331,12z/data=!3m1!4b1?entry=ttu">
+              Місто: Київ - Центр
+            </a>
+            <div class="contactUsTel">
+              <a href="tel:0 800 320 555">0 800 320 555</a>
+              <button></button>
+            </div>
+            <a href="mailto:#">Зв'язатися з нами</a>
           </div>
-          <a href="mailto:#">Зв'язатися з нами</a>
-        </div>
-        <div class="buttonsDiv">
-          <button id="languageSwitch" class="languageSwitch"></button>
-          <button id="searchButton" class="searchButton"></button>
-          <button id="compareButton" class="compareButton"></button>
-          <button id="menu" class="hamburger"></button>
+          <div class="buttonsDiv">
+            <button id="languageSwitch" class="languageSwitch"></button>
+            <button id="searchButton" class="searchButton"></button>
+            <button id="compareButton" class="compareButton"></button>
+            <button id="menu" class="hamburger"></button>
+          </div>
         </div>
       </div>
+
+      <div class="progressNavigation">
+        <button>
+          <h2>GENESIS G80</h2>
+          <img
+            src="./Assets/Images/buttons/navigation/VectorDown.svg"
+            alt="show more" />
+        </button>
+        <div class="progressLine"></div>
+      </div>
     </header>
-    <nav>
+    <nav class="navigation">
       <a href="#">Aura Motors</a>
       <a href="#">Авто під замовлення</a>
       <a href="#">GENESIS</a>
@@ -41,7 +53,11 @@
       <section class="currectCarSection">
         <div class="carInfo">
           <h2 class="carName">GENESIS G80</h2>
-          <h2 class="carPrice">$139 700 / 5 427 345 грн</h2>
+          <h2 class="carPrice">
+            <p>$139 700</p>
+            <p>/</p>
+            <p>5 427 345 грн</p>
+          </h2>
         </div>
       </section>
       <section class="currectCarDeatil">
@@ -519,13 +535,13 @@
           </p>
         </div>
         <form class="contactUsForm">
-          <label  class="name">
-            <input type="text"  placeholder="Им’я" />
+          <label class="name">
+            <input type="text" placeholder="Им’я" />
           </label>
-          <label  class="tel">
-            <input type="tel"  placeholder="Номер телефону" />
+          <label class="tel">
+            <input type="tel" placeholder="Номер телефону" />
           </label>
-          <label  class="message">
+          <label class="message">
             <input type="text" placeholder="Повідомлення" />
           </label>
           <div class="checkboxesAndStendBox">
