@@ -131,7 +131,8 @@
       color: #ffffff;
       position: absolute;
       left: 10.15625vw;
-      top: 1.5625vw; }
+      top: 1.5625vw;
+      white-space: nowrap; }
     .header .headerBlock .headerContactInfo {
       width: 39.16667vw;
       height: 1.5625vw;
