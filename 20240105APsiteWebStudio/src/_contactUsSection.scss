@@ -36,6 +36,12 @@
         width: 100%;
         @include fw400fs16lh140;
       }
+      &.error {
+        border-bottom-color: $redErrorColor;
+        * {
+          color: $redErrorColor;
+        }
+      }
     }
 
     .message {

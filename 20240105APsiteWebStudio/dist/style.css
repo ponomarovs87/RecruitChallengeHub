@@ -812,6 +812,14 @@ nav {
         font-weight: 400;
         font-size: 0.83333vw;
         line-height: 140%; }
+      .contactUsSection .contactUsForm .name.error,
+      .contactUsSection .contactUsForm .tel.error,
+      .contactUsSection .contactUsForm .message.error {
+        border-bottom-color: #eb5757; }
+        .contactUsSection .contactUsForm .name.error *,
+        .contactUsSection .contactUsForm .tel.error *,
+        .contactUsSection .contactUsForm .message.error * {
+          color: #eb5757; }
     .contactUsSection .contactUsForm .message {
       grid-column: 1 / -1; }
     .contactUsSection .contactUsForm .checkboxesAndStendBox {
