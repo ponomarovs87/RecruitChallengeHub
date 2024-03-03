@@ -103,7 +103,11 @@
         .markAsFavoriteBtn,
         .buyBtn {
           border: solid 1px $blackColor;
-          @include buttonHoverActiveBorder($whiteColor,$yellowColor,$yellowPressedColor);
+          @include buttonHoverActiveBorder(
+            $whiteColor,
+            $yellowColor,
+            $yellowPressedColor
+          );
         }
         .details,
         .buyBtn {

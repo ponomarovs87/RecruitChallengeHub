@@ -86,6 +86,11 @@
         border-radius: calculateToVwFrom1920(24);
         border: solid 1px $blackColor;
         @include fw600fs16lh195;
+        @include buttonHoverActiveBorder(
+          $whiteColor,
+          $yellowColor,
+          $yellowPressedColor
+        );
       }
       .stendFormDescription {
         width: calculateToVwFrom1920(360);

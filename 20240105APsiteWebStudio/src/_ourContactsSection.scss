@@ -56,6 +56,8 @@
           height: calculateToVwFrom1920(30);
           @include hoverBrendYellow;
           svg {
+            width: 100%;
+            height: 100%;
             path {
               fill: $whiteColor;
             }
