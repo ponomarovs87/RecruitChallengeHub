@@ -125,6 +125,13 @@ $redErrorColor: #eb5757;
   text-align: left;
 }
 
+@mixin fw700fs36lh36 {
+  font-weight: 700;
+  font-size: calculateToVwFrom1920(36);
+  line-height: calculateToVwFrom1920(36);
+
+}
+
 @mixin fw700fs18lh288 {
   font-weight: 700;
   font-size: calculateToVwFrom1920(18);

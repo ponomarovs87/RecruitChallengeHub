@@ -123,11 +123,8 @@
     font-weight: 700;
     font-size: 1.875vw;
     line-height: 1.875vw;
-    letter-spacing: 0em;
-    text-align: left;
     width: 11.97917vw;
     height: 1.875vw;
-    text-align: left;
     color: #ffffff;
     position: absolute;
     left: 10.15625vw;
@@ -824,7 +821,7 @@ nav {
       grid-column: 1 / -1; }
     .contactUsSection .contactUsForm .checkboxesAndStendBox {
       grid-area: 3 / 2;
-      margin-left: 132px; }
+      margin-left: 6.875vw; }
       .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod {
         display: flex;
         justify-content: space-between;

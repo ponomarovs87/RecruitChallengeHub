@@ -49,7 +49,7 @@
     }
     .checkboxesAndStendBox {
       grid-area: 3 / 2;
-      margin-left: 132px;
+      margin-left: calculateToVwFrom1920(132);
       .choiceContactMethod {
         display: flex;
         justify-content: space-between;

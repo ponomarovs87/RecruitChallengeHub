@@ -7,10 +7,9 @@
   z-index: 5;
 
   .logo {
-    @include fw700fs36lh36ls0taLeft;
+    @include fw700fs36lh36;
     width: calculateToVwFrom1920(230);
     height: calculateToVwFrom1920(36);
-    text-align: left;
     color: #ffffff;
     position: absolute;
     left: calculateToVwFrom1920(195);
