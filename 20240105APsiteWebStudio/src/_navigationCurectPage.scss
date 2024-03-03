@@ -1,0 +1,121 @@
+.navigationCurectPage {
+  position: absolute;
+  top: calculateToVwFrom1920(1056);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: calculateToVwFrom1920(30) calculateToVwFrom1920(195);
+  align-items: center;
+  background-color: $blackColor;
+  .navCurrectCarDeatil {
+    display: flex;
+    .hiddenForDecktop {
+      display: none;
+    }
+    a {
+      @include fw500fs20lh24ls0taLeft;
+      color: $whiteColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &.activeChoise {
+        color: $yellowColor;
+        @include underline($yellowColor);
+      }
+      &:not(:last-child) {
+        margin-right: calculateToVwFrom1920(30);
+      }
+      &:not(.activeChoise) {
+        @include hoverBrendYellowActiveBrendUnderline(0.3);
+      }
+    }
+  }
+  .shoppingButtons {
+    width: calculateToVwFrom1920(500);
+    height: calculateToVwFrom1920(46);
+    display: flex;
+    justify-content: space-between;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: calculateToVwFrom1920(24);
+
+      @include fw600fs16lh195ls0taLeft;
+    }
+    .shopinngButton {
+      width: calculateToVwFrom1920(212);
+      height: calculateToVwFrom1920(46);
+      @include buttonHoverActive(
+        $whiteColor,
+        $yellowColor,
+        $yellowPressedColor
+      );
+    }
+    .lisingShopinngButton {
+      width: calculateToVwFrom1920(278);
+      height: calculateToVwFrom1920(46);
+      color: $whiteColor;
+      border: 1px solid $whiteColor;
+      @include buttonTransparentHoverActive(
+        $whiteColor,
+        $yellowColor,
+        $yellowPressedColor
+      );
+    }
+  }
+}
+
+@media screen and (max-width: $minWidthForMobileView) {
+  .navigationCurectPage {
+    position: unset;
+    display: contents;
+
+    .navCurrectCarDeatil {
+      .hiddenForDecktop {
+        display: unset;
+      }
+      .progressLine {
+        background-color: $yellowColor;
+        height: calculateToVwFrom360(3);
+        border-radius: calculateToVwFrom360(99);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-width: 1%;
+      }
+      background-color: $navigationBlack;
+      width: calculateToVwFrom360(360);
+      height: calculateToVwFrom360(54);
+      padding: calculateToVwFrom360(17) calculateToVwFrom360(15);
+      gap: calculateToVwFrom360(6);
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: calculateToVwFrom360(60);
+      z-index: 5;
+    }
+  }
+}
+
+/*    .progressNavigation {
+      width: calculateToVwFrom360(360);
+      height: calculateToVwFrom360(54);
+      padding: calculateToVwFrom360(17) calculateToVwFrom360(15);
+      gap: calculateToVwFrom360(6);
+      display: flex;
+      align-items: center;
+      position: relative;
+      button {
+        display: flex;
+        align-items: center;
+        gap: calculateToVwFrom360(15);
+        h2 {
+          color: $yellowColor;
+          @include fw600fs16lh195For360;
+        }
+      }
+      
+    } */

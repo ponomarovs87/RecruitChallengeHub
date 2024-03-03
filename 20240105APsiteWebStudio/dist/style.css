@@ -117,8 +117,6 @@
   position: fixed;
   top: 0;
   z-index: 5; }
-  .header .progressNavigation {
-    display: none; }
   .header .headerBlock {
     width: 100vw;
     height: 5vw; }
@@ -248,34 +246,9 @@
         .header .headerBlock .headerContactInfo .buttonsDiv .searchButton,
         .header .headerBlock .headerContactInfo .buttonsDiv .compareButton {
           width: 8.33333vw;
-          height: 8.33333vw; }
-  .header .progressNavigation {
-    width: 100vw;
-    height: 15vw;
-    padding: 4.72222vw 4.16667vw;
-    gap: 1.66667vw;
-    display: flex;
-    align-items: center;
-    position: relative; }
-    .header .progressNavigation button {
-      display: flex;
-      align-items: center;
-      gap: 4.16667vw; }
-      .header .progressNavigation button h2 {
-        color: #f6d375;
-        font-weight: 600;
-        font-size: 4.44444vw;
-        line-height: 5.41667vw; }
-    .header .progressNavigation .progressLine {
-      background-color: #f6d375;
-      height: 0.83333vw;
-      border-radius: 27.5vw;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      min-width: 1%; } }
+          height: 8.33333vw; } }
 
-nav.navigation {
+nav.navigationPages {
   background-color: #18181b;
   margin-top: 5vw;
   width: 100%;
@@ -284,7 +257,7 @@ nav.navigation {
   display: flex;
   flex-direction: row;
   align-items: center; }
-  nav.navigation a {
+  nav.navigationPages a {
     font-weight: 400;
     font-size: 0.83333vw;
     line-height: 1.14583vw;
@@ -296,38 +269,179 @@ nav.navigation {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    nav.navigation a {
+    nav.navigationPages a {
       transition: color 0.3s linear, fill 0.3s linear; }
-      nav.navigation a:hover {
+      nav.navigationPages a:hover {
         color: #f6d375; }
-        nav.navigation a:hover * {
+        nav.navigationPages a:hover * {
           fill: #f6d375; }
-    nav.navigation a:not(:last-child)::after {
+    nav.navigationPages a:not(:last-child)::after {
       content: "";
       background: url("./Assets/Images/Arrow left.svg") center/cover;
       width: 1.04167vw;
       height: 1.04167vw;
       margin: 0.07812vw 0.78125vw; }
-  nav.navigation a.currectPage {
+  nav.navigationPages a.currectPage {
     opacity: 50%; }
 
 @media screen and (max-width: 360px) {
-  nav.navigation {
+  nav.navigationPages {
     margin-top: 31.66667vw;
     width: 100vw;
     height: 19.16667vw;
     padding: 5.55556vw 4.16667vw;
     overflow-x: scroll; }
-    nav.navigation a {
+    nav.navigationPages a {
       font-weight: 400;
       font-size: 5vw;
       line-height: 8vw;
       white-space: nowrap; }
-      nav.navigation a:not(:last-child)::after {
+      nav.navigationPages a:not(:last-child)::after {
         width: 5.55556vw;
         height: 5.55556vw;
         margin: 1.25vw 4.16667vw; } }
 
+.navigationCurectPage {
+  position: absolute;
+  top: 55vw;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5625vw 10.15625vw;
+  align-items: center;
+  background-color: #18181b; }
+  .navigationCurectPage .navCurrectCarDeatil {
+    display: flex; }
+    .navigationCurectPage .navCurrectCarDeatil .hiddenForDecktop {
+      display: none; }
+    .navigationCurectPage .navCurrectCarDeatil a {
+      font-weight: 500;
+      font-size: 1.04167vw;
+      line-height: 1.25vw;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .navigationCurectPage .navCurrectCarDeatil a.activeChoise {
+        color: #f6d375; }
+        .navigationCurectPage .navCurrectCarDeatil a.activeChoise {
+          position: relative; }
+          .navigationCurectPage .navCurrectCarDeatil a.activeChoise::after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 0.10417vw;
+            position: absolute;
+            bottom: 0;
+            background-color: #f6d375; }
+      .navigationCurectPage .navCurrectCarDeatil a:not(:last-child) {
+        margin-right: 1.5625vw; }
+      .navigationCurectPage .navCurrectCarDeatil a:not(.activeChoise) {
+        transition: color 0.3s linear; }
+        .navigationCurectPage .navCurrectCarDeatil a:not(.activeChoise):hover {
+          color: #f6d375; }
+        .navigationCurectPage .navCurrectCarDeatil a:not(.activeChoise):active {
+          color: #f6d375;
+          position: relative;
+          overflow-x: hidden; }
+          .navigationCurectPage .navCurrectCarDeatil a:not(.activeChoise):active::after {
+            content: "";
+            display: inline-block;
+            width: 0%;
+            height: 0.10417vw;
+            position: absolute;
+            bottom: 0;
+            background-color: #f6d375;
+            animation: textScroll 0.3s linear 1 forwards; }
+  .navigationCurectPage .shoppingButtons {
+    width: 26.04167vw;
+    height: 2.39583vw;
+    display: flex;
+    justify-content: space-between; }
+    .navigationCurectPage .shoppingButtons button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1.25vw;
+      font-weight: 600;
+      font-size: 0.83333vw;
+      line-height: 1.01562vw;
+      letter-spacing: 0em;
+      text-align: left; }
+    .navigationCurectPage .shoppingButtons .shopinngButton {
+      width: 11.04167vw;
+      height: 2.39583vw; }
+      .navigationCurectPage .shoppingButtons .shopinngButton {
+        color: #18181b;
+        background-color: #ffffff;
+        transition: background-color 0.3s linear; }
+        .navigationCurectPage .shoppingButtons .shopinngButton:hover {
+          background-color: #f6d375; }
+        .navigationCurectPage .shoppingButtons .shopinngButton:active {
+          background-color: #bfaa70; }
+    .navigationCurectPage .shoppingButtons .lisingShopinngButton {
+      width: 14.47917vw;
+      height: 2.39583vw;
+      color: #ffffff;
+      border: 1px solid #ffffff; }
+      .navigationCurectPage .shoppingButtons .lisingShopinngButton {
+        color: #ffffff;
+        transition: color 0.3s linear, border-color 0.3s linear; }
+        .navigationCurectPage .shoppingButtons .lisingShopinngButton:hover {
+          color: #f6d375;
+          border-color: #f6d375; }
+        .navigationCurectPage .shoppingButtons .lisingShopinngButton:active {
+          color: #bfaa70;
+          border-color: #bfaa70; }
+
+@media screen and (max-width: 360px) {
+  .navigationCurectPage {
+    position: unset;
+    display: contents; }
+    .navigationCurectPage .navCurrectCarDeatil {
+      background-color: #000000;
+      width: 100vw;
+      height: 15vw;
+      padding: 4.72222vw 4.16667vw;
+      gap: 1.66667vw;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 16.66667vw;
+      z-index: 5; }
+      .navigationCurectPage .navCurrectCarDeatil .hiddenForDecktop {
+        display: unset; }
+      .navigationCurectPage .navCurrectCarDeatil .progressLine {
+        background-color: #f6d375;
+        height: 0.83333vw;
+        border-radius: 27.5vw;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-width: 1%; } }
+
+/*    .progressNavigation {
+      width: calculateToVwFrom360(360);
+      height: calculateToVwFrom360(54);
+      padding: calculateToVwFrom360(17) calculateToVwFrom360(15);
+      gap: calculateToVwFrom360(6);
+      display: flex;
+      align-items: center;
+      position: relative;
+      button {
+        display: flex;
+        align-items: center;
+        gap: calculateToVwFrom360(15);
+        h2 {
+          color: $yellowColor;
+          @include fw600fs16lh195For360;
+        }
+      }
+      
+    } */
 .currectCarSection {
   background: url("./Assets/Images/cars/GENESIS G80.png") center/cover;
   width: 100%;
@@ -395,101 +509,12 @@ nav.navigation {
 .currectCarDeatil {
   width: 100%;
   height: 52.23958vw;
-  padding: 0 10.15625vw 8.33333vw;
+  padding: 11.77083vw 10.15625vw 8.33333vw;
   background-color: #18181b;
   position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 6.25vw; }
-  .currectCarDeatil .headerCurrectCarDeatil {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 1.5625vw 0;
-    align-items: center; }
-    .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil {
-      display: flex; }
-      .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a {
-        font-weight: 500;
-        font-size: 1.04167vw;
-        line-height: 1.25vw;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a.activeChoise {
-          color: #f6d375; }
-          .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a.activeChoise {
-            position: relative; }
-            .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a.activeChoise::after {
-              content: "";
-              display: inline-block;
-              width: 100%;
-              height: 0.10417vw;
-              position: absolute;
-              bottom: 0;
-              background-color: #f6d375; }
-        .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(:last-child) {
-          margin-right: 1.5625vw; }
-        .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(.activeChoise) {
-          transition: color 0.3s linear; }
-          .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(.activeChoise):hover {
-            color: #f6d375; }
-          .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(.activeChoise):active {
-            color: #f6d375;
-            position: relative;
-            overflow-x: hidden; }
-            .currectCarDeatil .headerCurrectCarDeatil .navCurrectCarDeatil a:not(.activeChoise):active::after {
-              content: "";
-              display: inline-block;
-              width: 0%;
-              height: 0.10417vw;
-              position: absolute;
-              bottom: 0;
-              background-color: #f6d375;
-              animation: textScroll 0.3s linear 1 forwards; }
-    .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons {
-      width: 26.04167vw;
-      height: 2.39583vw;
-      display: flex;
-      justify-content: space-between; }
-      .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 1.25vw;
-        font-weight: 600;
-        font-size: 0.83333vw;
-        line-height: 1.01562vw;
-        letter-spacing: 0em;
-        text-align: left; }
-      .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .shopinngButton {
-        width: 11.04167vw;
-        height: 2.39583vw; }
-        .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .shopinngButton {
-          color: #18181b;
-          background-color: #ffffff;
-          transition: background-color 0.3s linear; }
-          .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .shopinngButton:hover {
-            background-color: #f6d375; }
-          .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .shopinngButton:active {
-            background-color: #bfaa70; }
-      .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .lisingShopinngButton {
-        width: 14.47917vw;
-        height: 2.39583vw;
-        color: #ffffff;
-        border: 1px solid #ffffff; }
-        .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .lisingShopinngButton {
-          color: #ffffff;
-          transition: color 0.3s linear, border-color 0.3s linear; }
-          .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .lisingShopinngButton:hover {
-            color: #f6d375;
-            border-color: #f6d375; }
-          .currectCarDeatil .headerCurrectCarDeatil .shoppingButtons .lisingShopinngButton:active {
-            color: #bfaa70;
-            border-color: #bfaa70; }
   .currectCarDeatil h2 {
     height: 2.03125vw;
     font-weight: 500;

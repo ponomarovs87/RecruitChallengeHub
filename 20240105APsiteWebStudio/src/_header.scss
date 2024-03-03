@@ -3,9 +3,7 @@
   position: fixed;
   top: 0;
   z-index: 5;
-  .progressNavigation {
-    display: none;
-  }
+
   .headerBlock {
     width: 100vw;
     height: calculateToVwFrom1920(96);
@@ -133,33 +131,6 @@
             height: calculateToVwFrom360(30);
           }
         }
-      }
-    }
-    .progressNavigation {
-      width: calculateToVwFrom360(360);
-      height: calculateToVwFrom360(54);
-      padding: calculateToVwFrom360(17) calculateToVwFrom360(15);
-      gap: calculateToVwFrom360(6);
-      display: flex;
-      align-items: center;
-      position: relative;
-      button {
-        display: flex;
-        align-items: center;
-        gap: calculateToVwFrom360(15);
-        h2 {
-          color: $yellowColor;
-          @include fw600fs16lh195For360;
-        }
-      }
-      .progressLine {
-        background-color: $yellowColor;
-        height: calculateToVwFrom360(3);
-        border-radius: calculateToVwFrom360(99);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        min-width: 1%;
       }
     }
   }

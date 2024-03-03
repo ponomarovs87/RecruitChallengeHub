@@ -1,4 +1,4 @@
-nav.navigation {
+nav.navigationPages {
   background-color: $blackColor;
   margin-top: calculateToVwFrom1920(96);
   width: 100%;
@@ -31,7 +31,7 @@ nav.navigation {
 }
 
 @media screen and (max-width: $minWidthForMobileView) {
-  nav.navigation {
+  nav.navigationPages {
     margin-top: calculateToVwFrom360(114); //60px+54px
     width: calculateToVwFrom360(360);
     height: calculateToVwFrom360(69);
