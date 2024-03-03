@@ -115,7 +115,7 @@
 .header {
   background-color: #18181b;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 5vw;
   top: 0;
   z-index: 5; }
@@ -772,7 +772,7 @@ nav {
           text-align: left; }
 
 .contactUsSection {
-  width: 100%;
+  width: 100vw;
   height: 34.375vw;
   padding: 6.25vw 10.15625vw; }
   .contactUsSection .contactUsInfo {

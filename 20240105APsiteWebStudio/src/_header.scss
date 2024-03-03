@@ -1,7 +1,7 @@
 .header {
   background-color: $blackColor;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: calculateToVwFrom1920(96);
   top: 0;
   z-index: 5;
