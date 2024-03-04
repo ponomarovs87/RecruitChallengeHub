@@ -96,4 +96,38 @@
 }
 
 @media screen and (max-width: $minWidthForMobileView) {
+  .currectCarDeatil {
+    height: calculateToVwFrom360(946);
+    padding: calculateToVwFrom360(60) calculateToVwFrom360(15);
+    .currectCarInformation {
+      display: flex;
+      flex-direction: column;
+      gap: calculateToVwFrom360(30);
+      div.metricArticles {
+        order: -1;
+        & > article {
+          height: calculateToVwFrom360(39);
+          p:first-child {
+            @include fw500fs18lh2194for360;
+          }
+          & > * {
+            @include fw400fs14lh1707For360;
+          }
+          & > .metricsInfoContainer {
+            top: 0;
+            left: calculateToVwFrom360(38);
+          }
+        }
+      }
+      .informationCar {
+        h2 {
+          display: none;
+        }
+        p {
+          @include fw400fs18lh288For360;
+          width: 100%;
+        }
+      }
+    }
+  }
 }

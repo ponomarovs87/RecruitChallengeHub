@@ -606,6 +606,37 @@ nav.navigationPages {
           width: 1.04167vw;
           margin-left: 0.26042vw; }
 
+@media screen and (max-width: 360px) {
+  .currectCarDeatil {
+    height: 262.77778vw;
+    padding: 16.66667vw 4.16667vw; }
+    .currectCarDeatil .currectCarInformation {
+      display: flex;
+      flex-direction: column;
+      gap: 8.33333vw; }
+      .currectCarDeatil .currectCarInformation div.metricArticles {
+        order: -1; }
+        .currectCarDeatil .currectCarInformation div.metricArticles > article {
+          height: 10.83333vw; }
+          .currectCarDeatil .currectCarInformation div.metricArticles > article p:first-child {
+            font-weight: 500;
+            font-size: 5vw;
+            line-height: 6.09444vw; }
+          .currectCarDeatil .currectCarInformation div.metricArticles > article > * {
+            font-weight: 400;
+            font-size: 3.88889vw;
+            line-height: 4.74167vw; }
+          .currectCarDeatil .currectCarInformation div.metricArticles > article > .metricsInfoContainer {
+            top: 0;
+            left: 10.55556vw; }
+      .currectCarDeatil .currectCarInformation .informationCar h2 {
+        display: none; }
+      .currectCarDeatil .currectCarInformation .informationCar p {
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 8vw;
+        width: 100%; } }
+
 .galary {
   height: 52.08333vw;
   background: url("./Assets/Images/cars/image 53.png") center/cover;
