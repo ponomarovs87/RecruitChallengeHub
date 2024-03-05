@@ -635,7 +635,38 @@ nav.navigationPages {
         font-weight: 400;
         font-size: 5vw;
         line-height: 8vw;
-        width: 100%; } }
+        width: 100%; }
+      .currectCarDeatil .currectCarInformation > div h2 {
+        font-weight: 500;
+        font-size: 7.22222vw;
+        line-height: 8.80278vw;
+        height: 8.88889vw;
+        margin-bottom: 2.77778vw; }
+      .currectCarDeatil .currectCarInformation > div ul li {
+        display: flex;
+        justify-content: space-between;
+        height: max-content;
+        padding: 2.5vw 0; }
+        .currectCarDeatil .currectCarInformation > div ul li p {
+          font-weight: 400;
+          font-size: 4.44444vw;
+          line-height: 6.22222vw; }
+          .currectCarDeatil .currectCarInformation > div ul li p.hideForMobile {
+            display: none; }
+      .currectCarDeatil .currectCarInformation .withButton ul {
+        margin-bottom: 23.05556vw; }
+      .currectCarDeatil .currectCarInformation .withButton button {
+        bottom: 3.61111vw;
+        right: 0;
+        font-weight: 600;
+        font-size: 4.44444vw;
+        line-height: 5.41667vw;
+        padding: 2.77778vw 0;
+        height: max-content; }
+        .currectCarDeatil .currectCarInformation .withButton button img {
+          width: 5.55556vw;
+          height: 5.55556vw;
+          margin-left: 1.38889vw; } }
 
 .galary {
   height: 52.08333vw;
@@ -671,10 +702,21 @@ nav.navigationPages {
     .galary .backButton:hover:hover * {
       stroke: #f6d375; }
   .galary .ProgressLine {
-    width: calc(100% - 2.08333vw - 2.08333vw - 2.08333vw);
+    width: calc( 100% - 2.08333vw - 2.08333vw - 2.08333vw);
     height: 2.08333vw;
     display: flex;
     align-items: center; }
+
+@media screen and (max-width: 360px) {
+  .galary {
+    height: 183.33333vw; }
+    .galary > div {
+      padding: 4.16667vw; }
+      .galary > div button {
+        height: 11.11111vw;
+        width: 11.11111vw; }
+      .galary > div .ProgressLine {
+        width: calc( 100% - 11.11111vw - 11.11111vw - 11.11111vw); } }
 
 .colorCarPresentation {
   height: 52.08333vw;
@@ -688,6 +730,7 @@ nav.navigationPages {
     font-weight: 400;
     font-size: 0.72917vw;
     line-height: 0.88906vw;
+    color: #48494f;
     z-index: 2; }
   .colorCarPresentation .choiseColor {
     position: absolute;
@@ -720,6 +763,39 @@ nav.navigationPages {
     width: 66.14583vw;
     z-index: 1;
     object-fit: contain; }
+
+@media screen and (max-width: 360px) {
+  .colorCarPresentation {
+    height: 183.33333vw; }
+    .colorCarPresentation .choiseColor {
+      top: 16.66667vw;
+      left: 4.16667vw;
+      bottom: unset;
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+      gap: 4.16667vw; }
+      .colorCarPresentation .choiseColor button {
+        font-weight: 500;
+        font-size: 5.55556vw;
+        line-height: 6.77222vw; }
+    .colorCarPresentation .colorCarImg {
+      top: unset;
+      left: unset;
+      bottom: 47.5vw;
+      height: 41.66667vw;
+      width: calc( 100% - 4.16667vw - 4.16667vw);
+      margin: 0 4.16667vw; }
+    .colorCarPresentation .worningMassege {
+      top: unset;
+      left: unset;
+      right: unset;
+      bottom: 16.66667vw;
+      width: calc( 100% - 4.16667vw - 4.16667vw);
+      margin: 0 4.16667vw;
+      font-weight: 400;
+      font-size: 3.88889vw;
+      line-height: 4.74167vw; } }
 
 .section4 {
   position: relative;
@@ -763,6 +839,12 @@ nav.navigationPages {
     height: 52.08333vw;
     object-fit: contain;
     margin-bottom: 0.26042vw; }
+
+@media screen and (max-width: 360px) {
+  .section4 {
+    height: 212.77778vw;
+    padding: 16.66667vw 4.16667vw;
+    gap: 8.33333vw; } }
 
 .VisionSection {
   height: 52.08333vw;

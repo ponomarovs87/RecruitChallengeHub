@@ -6,7 +6,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: calculateToVwFrom1920(68) calculateToVwFrom1920(195) calculateToVwFrom1920(48);
+    padding: calculateToVwFrom1920(68) calculateToVwFrom1920(195)
+      calculateToVwFrom1920(48);
     display: flex;
     align-items: center;
   }
@@ -17,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &>*{
+    & > * {
       width: 100%;
       height: 100%;
     }
@@ -36,11 +37,36 @@
       @include hoverBrendYellowStroke;
     }
   }
-  
+
   .ProgressLine {
-    width: calc(100% - #{calculateToVwFrom1920(40)} - #{calculateToVwFrom1920(40)} - #{calculateToVwFrom1920(40)});
+    width: calc(
+      100% - #{calculateToVwFrom1920(40)} - #{calculateToVwFrom1920(40)} - #{calculateToVwFrom1920(
+          40
+        )}
+    );
     height: calculateToVwFrom1920(40);
     display: flex;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: $minWidthForMobileView) {
+  .galary {
+    height: calculateToVwFrom360(660);
+    & > div {
+      padding: calculateToVwFrom360(15);
+      button {
+        height: calculateToVwFrom360(40);
+        width: calculateToVwFrom360(40);
+      }
+
+      .ProgressLine {
+        width: calc(
+          100% - #{calculateToVwFrom360(40)} - #{calculateToVwFrom360(40)} - #{calculateToVwFrom360(
+              40
+            )}
+        );
+      }
+    }
   }
 }

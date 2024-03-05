@@ -128,6 +128,46 @@
           width: 100%;
         }
       }
+      & > div {
+        h2 {
+          @include fw500fs26lh3169For360;
+          height: calculateToVwFrom360(32);
+          margin-bottom: calculateToVwFrom360(10);
+        }
+
+        ul {
+          li {
+            display: flex;
+            justify-content: space-between;
+            height: max-content;
+            padding: calculateToVwFrom360(9) 0;
+            p {
+              @include fw400fs16lh224For360;
+
+              &.hideForMobile {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .withButton {
+        ul {
+          margin-bottom: calculateToVwFrom360(83);
+        }
+        button {
+          bottom: calculateToVwFrom360(13);
+          right: 0;
+          @include fw600fs16lh195For360;
+          padding: calculateToVwFrom360(10) 0;
+          height: max-content;
+          img {
+            width: calculateToVwFrom360(20);
+            height: calculateToVwFrom360(20);
+            margin-left: calculateToVwFrom360(5);
+          }
+        }
+      }
     }
   }
 }

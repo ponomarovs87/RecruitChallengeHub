@@ -8,6 +8,7 @@
     right: calculateToVwFrom1920(195);
     width: calculateToVwFrom1920(360);
     @include fw400fs14lh1707;
+    color: $grayColor;
     z-index: 2;
   }
   .choiseColor {
@@ -40,5 +41,43 @@
     width: calculateToVwFrom1920(1270);
     z-index: 1;
     object-fit: contain;
+  }
+}
+@media screen and (max-width: $minWidthForMobileView) {
+  .colorCarPresentation {
+    height: calculateToVwFrom360(660);
+    .choiseColor {
+      top: calculateToVwFrom360(60);
+      left: calculateToVwFrom360(15);
+      bottom: unset;
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+      gap: calculateToVwFrom360(15);
+      button {
+        @include fw500fs20lh2438For360;
+      }
+    }
+    .colorCarImg {
+      top: unset;
+      left: unset;
+      bottom: calculateToVwFrom360(171);
+      height: calculateToVwFrom360(150);
+      width: calc(
+        100% - #{calculateToVwFrom360(15)} - #{calculateToVwFrom360(15)}
+      );
+      margin: 0 calculateToVwFrom360(15);
+    }
+    .worningMassege {
+      top: unset;
+      left: unset;
+      right: unset;
+      bottom: calculateToVwFrom360(60);
+      width: calc(
+        100% - #{calculateToVwFrom360(15)} - #{calculateToVwFrom360(15)}
+      );
+      margin: 0 calculateToVwFrom360(15);
+      @include fw400fs14lh1707For360;
+    }
   }
 }

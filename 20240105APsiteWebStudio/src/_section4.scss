@@ -45,3 +45,10 @@
     margin-bottom: calculateToVwFrom1920(5);
   }
 }
+@media screen and (max-width: $minWidthForMobileView) {
+  .section4 {
+    height: calculateToVwFrom360(766);
+    padding: calculateToVwFrom360(60) calculateToVwFrom360(15);
+    gap: calculateToVwFrom360(30);
+  }
+}
