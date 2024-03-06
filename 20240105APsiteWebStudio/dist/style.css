@@ -842,9 +842,33 @@ nav.navigationPages {
 
 @media screen and (max-width: 360px) {
   .section4 {
+    width: 100vw;
     height: 212.77778vw;
-    padding: 16.66667vw 4.16667vw;
-    gap: 8.33333vw; } }
+    padding: 16.66667vw 0 16.66667vw 4.16667vw;
+    gap: 8.33333vw;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-x: scroll;
+    align-items: flex-start; }
+    .section4 .buttonsSection {
+      display: none; }
+    .section4 .section4Img {
+      width: 83.33333vw;
+      height: 122.22222vw;
+      margin: 0;
+      object-fit: cover;
+      object-position: center; }
+    .section4 .InfoBlock {
+      margin: 0;
+      width: 83.33333vw;
+      height: 48.88889vw;
+      font-weight: 400;
+      font-size: 4.44444vw;
+      line-height: 6.22222vw; }
+      .section4 .InfoBlock b {
+        font-weight: 700;
+        font-size: 4.44444vw;
+        line-height: 6.22222vw; } }
 
 .VisionSection {
   height: 52.08333vw;
@@ -881,6 +905,26 @@ nav.navigationPages {
       .VisionSection button svg path {
         fill: #18181b; }
 
+@media screen and (max-width: 360px) {
+  .VisionSection {
+    width: 100vw;
+    height: 183.33333vw; }
+    .VisionSection button {
+      width: 72.22222vw;
+      height: 12.77778vw;
+      border-radius: 6.66667vw;
+      font-weight: 600;
+      font-size: 4.44444vw;
+      line-height: 5.41667vw; }
+      .VisionSection button svg {
+        width: 5.55556vw;
+        height: 5.55556vw;
+        margin-right: 2.22222vw; } }
+
+@media screen and (max-width: 360px) {
+  .section6 {
+    flex-direction: column; } }
+
 .section7 {
   width: 100%;
   height: 52.08333vw; }
@@ -890,6 +934,14 @@ nav.navigationPages {
     object-fit: contain;
     object-position: bottom;
     overflow: hidden; }
+
+@media screen and (max-width: 360px) {
+  .section7 {
+    height: 183.33333vw; }
+    .section7 img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center; } }
 
 .availableProductsSection {
   width: 100%;
@@ -1012,6 +1064,34 @@ nav.navigationPages {
           line-height: 1.01562vw;
           letter-spacing: 0em;
           text-align: left; }
+
+@media screen and (max-width: 360px) {
+  .availableProductsSection {
+    width: 100vw;
+    height: 247.22222vw;
+    padding: 16.66667vw 4.16667vw;
+    gap: 8.33333vw; }
+    .availableProductsSection h1 {
+      margin: 0;
+      font-weight: 500;
+      font-size: 7.22222vw;
+      line-height: 8.80278vw;
+      height: max-content;
+      width: 75vw; }
+    .availableProductsSection ul li {
+      width: 91.66667vw;
+      height: 24.44444vw;
+      border-radius: 2.77778vw;
+      position: relative;
+      overflow: hidden; }
+      .availableProductsSection ul li:not(:last-child) {
+        margin-bottom: 2.77778vw; }
+      .availableProductsSection ul li div.colorPreviev {
+        position: absolute;
+        height: 100%;
+        width: 5.55556vw;
+        border-radius: 2.77778vw 0 0 2.77778vw;
+        background: linear-gradient(0deg, #eae8e2, #eae8e2), linear-gradient(321.13deg, rgba(0, 0, 0, 0.3) -21.16%, rgba(255, 255, 255, 0.3) 64.17%), linear-gradient(180deg, rgba(0, 0, 0, 0) 78.2%, rgba(0, 0, 0, 0.1) 100%); } }
 
 .contactUsSection {
   width: 100vw;

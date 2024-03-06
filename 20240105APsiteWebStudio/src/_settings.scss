@@ -172,6 +172,12 @@ $minWidthForMobileView: 360px;
   text-align: left;
 }
 
+@mixin fw700fs16lh224For360 {
+  font-weight: 700;
+  font-size: calculateToVwFrom360(16);
+  line-height: calculateToVwFrom360(22.4);
+}
+
 @mixin fw700fs36lh36 {
   font-weight: 700;
   font-size: calculateToVwFrom1920(36);

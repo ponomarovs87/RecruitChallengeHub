@@ -25,3 +25,21 @@
     }
   }
 }
+
+@media screen and (max-width: $minWidthForMobileView) {
+  .VisionSection {
+    width: 100vw;
+    height: calculateToVwFrom360(660);
+    button {
+      width: calculateToVwFrom360(260);
+      height: calculateToVwFrom360(46);
+      border-radius: calculateToVwFrom360(24);
+      @include fw600fs16lh195For360;
+      svg {
+        width: calculateToVwFrom360(20);
+        height: calculateToVwFrom360(20);
+        margin-right: calculateToVwFrom360(8);
+      }
+    }
+  }
+}

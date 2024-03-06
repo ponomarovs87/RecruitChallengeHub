@@ -117,3 +117,48 @@
     }
   }
 }
+
+@media screen and (max-width: $minWidthForMobileView) {
+  .availableProductsSection {
+    width: calculateToVwFrom360(360);
+    height: calculateToVwFrom360(890);
+    padding: calculateToVwFrom360(60) calculateToVwFrom360(15);
+    gap: calculateToVwFrom360(30);
+    h1 {
+      margin: 0;
+      @include fw500fs26lh3169For360;
+      height: max-content;
+      width: calculateToVwFrom360(270);
+    }
+    ul {
+      li {
+        width: calculateToVwFrom360(330);
+        height: calculateToVwFrom360(88);
+        border-radius: calculateToVwFrom360(10);
+        position: relative;
+        overflow: hidden;
+        &:not(:last-child) {
+          margin-bottom: calculateToVwFrom360(10);
+        }
+        div.colorPreviev {
+          position: absolute;
+          height: 100%;
+          width: calculateToVwFrom360(20);
+          border-radius: calculateToVwFrom360(10) 0 0 calculateToVwFrom360(10);
+
+          background: linear-gradient(0deg, #eae8e2, #eae8e2),
+            linear-gradient(
+              321.13deg,
+              rgba(0, 0, 0, 0.3) -21.16%,
+              rgba(255, 255, 255, 0.3) 64.17%
+            ),
+            linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0) 78.2%,
+              rgba(0, 0, 0, 0.1) 100%
+            );
+        }
+      }
+    }
+  }
+}

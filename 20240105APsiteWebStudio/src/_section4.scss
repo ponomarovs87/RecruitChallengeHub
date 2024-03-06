@@ -47,8 +47,33 @@
 }
 @media screen and (max-width: $minWidthForMobileView) {
   .section4 {
+    width: 100vw;
     height: calculateToVwFrom360(766);
-    padding: calculateToVwFrom360(60) calculateToVwFrom360(15);
+    padding: calculateToVwFrom360(60) 0 calculateToVwFrom360(60)
+      calculateToVwFrom360(15);
     gap: calculateToVwFrom360(30);
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-x: scroll;
+    align-items: flex-start;
+    .buttonsSection {
+      display: none;
+    }
+    .section4Img {
+      width: calculateToVwFrom360(300);
+      height: calculateToVwFrom360(440);
+      margin: 0;
+      object-fit: cover;
+      object-position: center;
+    }
+    .InfoBlock {
+      margin: 0;
+      width: calculateToVwFrom360(300);
+      height: calculateToVwFrom360(176);
+      @include fw400fs16lh224For360;
+      b {
+        @include fw700fs16lh224For360;
+      }
+    }
   }
 }
