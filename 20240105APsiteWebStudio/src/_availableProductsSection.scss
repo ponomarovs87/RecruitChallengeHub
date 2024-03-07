@@ -137,6 +137,11 @@
         border-radius: calculateToVwFrom360(10);
         position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 calculateToVwFrom360(7) calculateToVwFrom360(30);
+        justify-content: center;
+        gap: calculateToVwFrom360(5);
         &:not(:last-child) {
           margin-bottom: calculateToVwFrom360(10);
         }
@@ -145,18 +150,57 @@
           height: 100%;
           width: calculateToVwFrom360(20);
           border-radius: calculateToVwFrom360(10) 0 0 calculateToVwFrom360(10);
+          left: 0;
+          top: 0;
 
-          background: linear-gradient(0deg, #eae8e2, #eae8e2),
-            linear-gradient(
-              321.13deg,
-              rgba(0, 0, 0, 0.3) -21.16%,
-              rgba(255, 255, 255, 0.3) 64.17%
-            ),
-            linear-gradient(
-              180deg,
-              rgba(0, 0, 0, 0) 78.2%,
-              rgba(0, 0, 0, 0.1) 100%
-            );
+          img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 120%;
+            top: 0;
+          }
+        }
+        .battonsSection {
+          display: none;
+        }
+        & > p {
+          display: none;
+        }
+        .brendName {
+          height: calculateToVwFrom360(27);
+          gap: calculateToVwFrom360(10);
+
+          img {
+            width: calculateToVwFrom360(30);
+            height: calculateToVwFrom360(27);
+            object-fit: contain;
+            object-position: center;
+          }
+          h4 {
+            gap: calculateToVwFrom360(4);
+            b {
+              @include fw700fs14lh1707for360;
+            }
+            p {
+              @include fw400fs14lh1707For360;
+            }
+          }
+        }
+        .price {
+          height: calculateToVwFrom360(29);
+          padding: 0 0 0 calculateToVwFrom360(40);
+          gap: calculateToVwFrom360(10);
+          p {
+            @include fw400fs18lh288For360;
+          }
+          p::after {
+            content: "/";
+            margin-left: calculateToVwFrom360(10);
+          }
+          b {
+            @include fw700fs18lh288For360;
+          }
         }
       }
     }

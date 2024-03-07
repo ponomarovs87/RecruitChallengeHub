@@ -190,6 +190,12 @@ $minWidthForMobileView: 360px;
   line-height: calculateToVwFrom1920(28.8);
 }
 
+@mixin fw700fs18lh288For360 {
+  font-weight: 700;
+  font-size: calculateToVwFrom360(18);
+  line-height: calculateToVwFrom360(28.8);
+}
+
 @mixin fw700fs20lh2438 {
   font-weight: 700;
   font-size: calculateToVwFrom1920(20);
@@ -200,6 +206,12 @@ $minWidthForMobileView: 360px;
   font-weight: 700;
   font-size: calculateToVwFrom360(20);
   line-height: calculateToVwFrom360(20);
+}
+
+@mixin fw700fs14lh1707for360 {
+  font-weight: 700;
+  font-size: calculateToVwFrom360(14);
+  line-height: calculateToVwFrom360(17.07);
 }
 
 @mixin visualyHidden {
