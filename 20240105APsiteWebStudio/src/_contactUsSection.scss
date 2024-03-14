@@ -105,3 +105,63 @@
     }
   }
 }
+
+@media screen and (max-width: $minWidthForMobileView) {
+  .contactUsSection {
+    width: 100%;
+    height: calculateToVwFrom360(726);
+    padding: calculateToVwFrom360(60) calculateToVwFrom360(15);
+    gap: calculateToVwFrom360(30);
+    display: flex;
+    flex-direction: column;
+    .contactUsInfo {
+      width: 100%;
+      height: unset;
+      gap: calculateToVwFrom360(15);
+      display: flex;
+      flex-direction: column;
+      .contactUsTitle {
+        width: unset;
+        height: unset;
+        @include fw500fs26lh3169For360;
+      }
+      .contactUsDescription {
+        width: unset;
+        height: unset;
+        @include fw400fs16lh224For360;
+      }
+    }
+    .contactUsForm {
+      width: unset;
+      height: unset;
+      gap: calculateToVwFrom360(15);
+      display: flex;
+      flex-direction: column;
+      .name,
+      .tel,
+      .message {
+        input {
+          padding: calculateToVwFrom360(14) calculateToVwFrom360(20)
+            calculateToVwFrom360(10) calculateToVwFrom360(10);
+          height: unset;
+          width: 100%;
+          @include fw400fs16lh224For360;
+        }
+      }
+      .checkboxesAndStendBox {
+        display: flex;
+        flex-direction: column;
+        margin: calculateToVwFrom360(15) 0 0 0;
+        .choiceContactMethod {
+          padding-right: calculateToVwFrom360(93);
+          * {
+            @include fw400fs16lh224For360;
+          }
+          h6 {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1257,6 +1257,60 @@ nav.navigationPages {
         font-size: 0.72917vw;
         line-height: 0.88906vw; }
 
+@media screen and (max-width: 360px) {
+  .contactUsSection {
+    width: 100%;
+    height: 201.66667vw;
+    padding: 16.66667vw 4.16667vw;
+    gap: 8.33333vw;
+    display: flex;
+    flex-direction: column; }
+    .contactUsSection .contactUsInfo {
+      width: 100%;
+      height: unset;
+      gap: 4.16667vw;
+      display: flex;
+      flex-direction: column; }
+      .contactUsSection .contactUsInfo .contactUsTitle {
+        width: unset;
+        height: unset;
+        font-weight: 500;
+        font-size: 7.22222vw;
+        line-height: 8.80278vw; }
+      .contactUsSection .contactUsInfo .contactUsDescription {
+        width: unset;
+        height: unset;
+        font-weight: 400;
+        font-size: 4.44444vw;
+        line-height: 6.22222vw; }
+    .contactUsSection .contactUsForm {
+      width: unset;
+      height: unset;
+      gap: 4.16667vw;
+      display: flex;
+      flex-direction: column; }
+      .contactUsSection .contactUsForm .name input,
+      .contactUsSection .contactUsForm .tel input,
+      .contactUsSection .contactUsForm .message input {
+        padding: 3.88889vw 5.55556vw 2.77778vw 2.77778vw;
+        height: unset;
+        width: 100%;
+        font-weight: 400;
+        font-size: 4.44444vw;
+        line-height: 6.22222vw; }
+      .contactUsSection .contactUsForm .checkboxesAndStendBox {
+        display: flex;
+        flex-direction: column;
+        margin: 4.16667vw 0 0 0; }
+        .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod {
+          padding-right: 25.83333vw; }
+          .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod * {
+            font-weight: 400;
+            font-size: 4.44444vw;
+            line-height: 6.22222vw; }
+          .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod h6 {
+            display: block; } }
+
 .ourContactsSection {
   width: 100%;
   height: 54.16667vw;
