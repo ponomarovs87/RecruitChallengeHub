@@ -1220,8 +1220,9 @@ nav.navigationPages {
             height: 1.04167vw;
             border: solid 1px #18181b;
             margin-right: 0.52083vw;
-            transition: color 0.3s linear; }
+            transition: color 0.3s linear, border-color 0.3s linear; }
           .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label .standartCheckbox:checked + .castomCheckbox {
+            border-color: #f6d375;
             background-color: #f6d375;
             content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.25 5L7.5 15L3.75 11.25' stroke='%2318181B'/%3E%3C/svg%3E"); }
       .contactUsSection .contactUsForm .checkboxesAndStendBox * {
@@ -1303,13 +1304,42 @@ nav.navigationPages {
         flex-direction: column;
         margin: 4.16667vw 0 0 0; }
         .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod {
-          padding-right: 25.83333vw; }
+          padding-right: 25.83333vw;
+          display: unset; }
           .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod * {
             font-weight: 400;
             font-size: 4.44444vw;
             line-height: 6.22222vw; }
           .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod h6 {
-            display: block; } }
+            display: block; }
+          .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label {
+            height: unset;
+            display: inline-flex;
+            margin-top: 4.16667vw; }
+            .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label .castomCheckbox {
+              width: 5.55556vw;
+              height: 5.55556vw;
+              margin-right: 2.77778vw; }
+            .contactUsSection .contactUsForm .checkboxesAndStendBox .choiceContactMethod label:nth-child(odd) {
+              margin-left: 8.33333vw; }
+        .contactUsSection .contactUsForm .checkboxesAndStendBox .stendForm {
+          margin-top: 8.33333vw;
+          gap: 4.16667vw;
+          display: flex;
+          align-items: normal;
+          flex-direction: column; }
+          .contactUsSection .contactUsForm .checkboxesAndStendBox .stendForm .stendFormBtn {
+            width: 91.66667vw;
+            height: 12.77778vw;
+            border-radius: 6.66667vw;
+            font-weight: 600;
+            font-size: 4.44444vw;
+            line-height: 5.41667vw; }
+          .contactUsSection .contactUsForm .checkboxesAndStendBox .stendForm .stendFormDescription {
+            width: 100%;
+            font-weight: 400;
+            font-size: 3.88889vw;
+            line-height: 4.74167vw; } }
 
 .ourContactsSection {
   width: 100%;
