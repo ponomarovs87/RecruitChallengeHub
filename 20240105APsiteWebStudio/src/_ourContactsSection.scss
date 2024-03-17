@@ -116,3 +116,29 @@
     }
   }
 }
+
+@media screen and (max-width: $minWidthForMobileView) {
+  .ourContactsSection {
+    width: calculateToVwFrom360(360);
+    height: calculateToVwFrom360(621);
+    padding: calculateToVwFrom360(60) calculateToVwFrom360(15);
+    gap: calculateToVwFrom360(30);
+    position: relative;
+    .ourContactsDescription {
+      height: unset;
+      h2 {
+        height: calculateToVwFrom360(32);
+        @include fw500fs26lh3169For360;
+      }
+      button {
+        position: absolute;
+        bottom: calculateToVwFrom360(60);
+        left: calculateToVwFrom360(77.5);
+        @include fw600fs16lh195For360;
+        width: calculateToVwFrom360(205);
+        height: calculateToVwFrom360(40);
+        padding: calculateToVwFrom360(10) 0;
+      }
+    }
+  }
+}
