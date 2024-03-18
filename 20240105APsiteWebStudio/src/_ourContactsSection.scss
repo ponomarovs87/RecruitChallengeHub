@@ -140,5 +140,60 @@
         padding: calculateToVwFrom360(10) 0;
       }
     }
+    .contactSection {
+      gap: calculateToVwFrom360(30);
+      height: unset;
+      width: 100%;
+      flex-direction: column;
+      .contacts {
+        width: 100%;
+        height: calculateToVwFrom360(134);
+        gap: calculateToVwFrom360(15);
+        @include fw500fs18lh2194for360;
+        @include specialBorderfor360(-15);
+        .socialNetworks {
+          gap: calculateToVwFrom360(30);
+          a {
+            width: calculateToVwFrom360(30);
+            height: calculateToVwFrom360(30);
+            padding: calculateToVwFrom360(2.5);
+          }
+        }
+      }
+      .interactiveMap {
+        width: calculateToVwFrom360(330);
+        height: calculateToVwFrom360(220);
+        .khmelnytskyi {
+          height: calculateToVwFrom360(59.58);
+          width: calculateToVwFrom360(31.81);
+          top: calculateToVwFrom360(52.48);
+          left: calculateToVwFrom360(73.69);
+        }
+        .dnipropetrovsk {
+          width: calculateToVwFrom360(72.04);
+          height: calculateToVwFrom360(46.56);
+          top: calculateToVwFrom360(91.95);
+          left: calculateToVwFrom360(198.56);
+        }
+        .kyiv {
+          width: calculateToVwFrom360(52.4);
+          height: calculateToVwFrom360(65.92);
+          top: calculateToVwFrom360(26.38);
+          left: calculateToVwFrom360(130.75);
+        }
+        .poltava {
+          height: calculateToVwFrom1920(155.75);
+          width: calculateToVwFrom1920(190.49);
+          top: calculateToVwFrom1920(165.74);
+          left: calculateToVwFrom1920(556.61);
+        }
+        .zaporizhzhia {
+          height: calculateToVwFrom1920(154.53);
+          width: calculateToVwFrom1920(168.67);
+          top: calculateToVwFrom1920(373.44);
+          left: calculateToVwFrom1920(675.99);
+        }
+      }
+    }
   }
 }

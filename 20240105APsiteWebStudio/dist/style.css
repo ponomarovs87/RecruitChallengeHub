@@ -1488,7 +1488,56 @@ nav.navigationPages {
         line-height: 5.41667vw;
         width: 56.94444vw;
         height: 11.11111vw;
-        padding: 2.77778vw 0; } }
+        padding: 2.77778vw 0; }
+    .ourContactsSection .contactSection {
+      gap: 8.33333vw;
+      height: unset;
+      width: 100%;
+      flex-direction: column; }
+      .ourContactsSection .contactSection .contacts {
+        width: 100%;
+        height: 37.22222vw;
+        gap: 4.16667vw;
+        font-weight: 500;
+        font-size: 5vw;
+        line-height: 6.09444vw; }
+        .ourContactsSection .contactSection .contacts > *:not(:first-child)::after {
+          top: -4.16667vw;
+          height: 0.27778vw; }
+        .ourContactsSection .contactSection .contacts .socialNetworks {
+          gap: 8.33333vw; }
+          .ourContactsSection .contactSection .contacts .socialNetworks a {
+            width: 8.33333vw;
+            height: 8.33333vw;
+            padding: 0.69444vw; }
+      .ourContactsSection .contactSection .interactiveMap {
+        width: 91.66667vw;
+        height: 61.11111vw; }
+        .ourContactsSection .contactSection .interactiveMap .khmelnytskyi {
+          height: 16.55vw;
+          width: 8.83611vw;
+          top: 14.57778vw;
+          left: 20.46944vw; }
+        .ourContactsSection .contactSection .interactiveMap .dnipropetrovsk {
+          width: 20.01111vw;
+          height: 12.93333vw;
+          top: 25.54167vw;
+          left: 55.15556vw; }
+        .ourContactsSection .contactSection .interactiveMap .kyiv {
+          width: 14.55556vw;
+          height: 18.31111vw;
+          top: 7.32778vw;
+          left: 36.31944vw; }
+        .ourContactsSection .contactSection .interactiveMap .poltava {
+          height: 8.11198vw;
+          width: 9.92135vw;
+          top: 8.63229vw;
+          left: 28.9901vw; }
+        .ourContactsSection .contactSection .interactiveMap .zaporizhzhia {
+          height: 8.04844vw;
+          width: 8.7849vw;
+          top: 19.45vw;
+          left: 35.20781vw; } }
 
 .footer {
   width: 100%;
