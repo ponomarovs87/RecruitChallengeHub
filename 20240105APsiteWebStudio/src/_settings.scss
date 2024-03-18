@@ -247,7 +247,7 @@ $minWidthForMobileView: 360px;
   & > *:not(:first-child) {
     &::after {
       top: calculateToVwFrom360($top);
-      height: calculateToVwFrom360(1);
+      height: calculateToVwFrom360(2);
     }
   }
 }

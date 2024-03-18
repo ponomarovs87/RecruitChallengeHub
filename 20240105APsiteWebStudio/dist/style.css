@@ -1503,7 +1503,7 @@ nav.navigationPages {
         line-height: 6.09444vw; }
         .ourContactsSection .contactSection .contacts > *:not(:first-child)::after {
           top: -4.16667vw;
-          height: 0.27778vw; }
+          height: 0.55556vw; }
         .ourContactsSection .contactSection .contacts .socialNetworks {
           gap: 8.33333vw; }
           .ourContactsSection .contactSection .contacts .socialNetworks a {
