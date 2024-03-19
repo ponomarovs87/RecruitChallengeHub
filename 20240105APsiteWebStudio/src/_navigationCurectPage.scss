@@ -77,6 +77,16 @@
       .hiddenForDecktop {
         display: unset;
       }
+      & > a {
+        display: none !important;
+      }
+      .activeChoise {
+        display: flex !important;
+        @include fw600fs16lh195For360;
+        &::after {
+          display: none !important;
+        }
+      }
       .progressLine {
         background-color: $yellowColor;
         height: calculateToVwFrom360(3);
@@ -97,25 +107,35 @@
       top: calculateToVwFrom360(60);
       z-index: 5;
     }
+    .shoppingButtons {
+      position: fixed;
+      bottom: 0;
+      z-index: 5;
+      width: 100vw;
+      height: calculateToVwFrom360(66);
+      padding: calculateToVwFrom360(10) calculateToVwFrom360(15);
+      gap: calculateToVwFrom360(10);
+      justify-content: space-between;
+      background-color: $whiteColor;
+      button {
+        border-radius: calculateToVwFrom360(24);
+        @include fw600fs16lh195For360;
+      }
+      .shopinngButton {
+        width: calculateToVwFrom360(160);
+        height: calculateToVwFrom360(46);
+        background-color: $blackColor;
+        color: $whiteColor;
+      }
+      .lisingShopinngButton {
+        width: calculateToVwFrom360(160);
+        height: calculateToVwFrom360(46);
+        border: $blackColor calculateToVwFrom360(1) solid;
+        color: $blackColor;
+      }
+    }
+    .hideForMobile {
+      bottom: calculateToVwFrom360(-66);
+    }
   }
 }
-
-/*    .progressNavigation {
-      width: calculateToVwFrom360(360);
-      height: calculateToVwFrom360(54);
-      padding: calculateToVwFrom360(17) calculateToVwFrom360(15);
-      gap: calculateToVwFrom360(6);
-      display: flex;
-      align-items: center;
-      position: relative;
-      button {
-        display: flex;
-        align-items: center;
-        gap: calculateToVwFrom360(15);
-        h2 {
-          color: $yellowColor;
-          @include fw600fs16lh195For360;
-        }
-      }
-      
-    } */

@@ -9,9 +9,9 @@ window.addEventListener("scroll", scrollUpShow, false);
 function scrollUpShow() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > lastScrollTop) {
-    document.querySelector(".shoppingButtons").classList.add("hide");
+    document.querySelector(".shoppingButtons").classList.add("hideForMobile");
   } else {
-    document.querySelector(".shoppingButtons").classList.remove("hide");
+    document.querySelector(".shoppingButtons").classList.remove("hideForMobile");
   }
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }

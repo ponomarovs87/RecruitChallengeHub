@@ -214,7 +214,7 @@
         width: 1.25vw;
         height: 1.25vw; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .header .headerBlock {
     height: 16.66667vw;
     padding: 4.16667vw;
@@ -284,7 +284,7 @@ nav.navigationPages {
   nav.navigationPages a.currectPage {
     opacity: 50%; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   nav.navigationPages {
     margin-top: 31.66667vw;
     width: 100vw;
@@ -397,7 +397,7 @@ nav.navigationPages {
           color: #bfaa70;
           border-color: #bfaa70; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .navigationCurectPage {
     position: unset;
     display: contents; }
@@ -414,6 +414,15 @@ nav.navigationPages {
       z-index: 5; }
       .navigationCurectPage .navCurrectCarDeatil .hiddenForDecktop {
         display: unset; }
+      .navigationCurectPage .navCurrectCarDeatil > a {
+        display: none !important; }
+      .navigationCurectPage .navCurrectCarDeatil .activeChoise {
+        display: flex !important;
+        font-weight: 600;
+        font-size: 4.44444vw;
+        line-height: 5.41667vw; }
+        .navigationCurectPage .navCurrectCarDeatil .activeChoise::after {
+          display: none !important; }
       .navigationCurectPage .navCurrectCarDeatil .progressLine {
         background-color: #f6d375;
         height: 0.83333vw;
@@ -421,27 +430,35 @@ nav.navigationPages {
         position: absolute;
         bottom: 0;
         left: 0;
-        min-width: 1%; } }
+        min-width: 1%; }
+    .navigationCurectPage .shoppingButtons {
+      position: fixed;
+      bottom: 0;
+      z-index: 5;
+      width: 100vw;
+      height: 18.33333vw;
+      padding: 2.77778vw 4.16667vw;
+      gap: 2.77778vw;
+      justify-content: space-between;
+      background-color: #ffffff; }
+      .navigationCurectPage .shoppingButtons button {
+        border-radius: 6.66667vw;
+        font-weight: 600;
+        font-size: 4.44444vw;
+        line-height: 5.41667vw; }
+      .navigationCurectPage .shoppingButtons .shopinngButton {
+        width: 44.44444vw;
+        height: 12.77778vw;
+        background-color: #18181b;
+        color: #ffffff; }
+      .navigationCurectPage .shoppingButtons .lisingShopinngButton {
+        width: 44.44444vw;
+        height: 12.77778vw;
+        border: #18181b 0.27778vw solid;
+        color: #18181b; }
+    .navigationCurectPage .hideForMobile {
+      bottom: -18.33333vw; } }
 
-/*    .progressNavigation {
-      width: calculateToVwFrom360(360);
-      height: calculateToVwFrom360(54);
-      padding: calculateToVwFrom360(17) calculateToVwFrom360(15);
-      gap: calculateToVwFrom360(6);
-      display: flex;
-      align-items: center;
-      position: relative;
-      button {
-        display: flex;
-        align-items: center;
-        gap: calculateToVwFrom360(15);
-        h2 {
-          color: $yellowColor;
-          @include fw600fs16lh195For360;
-        }
-      }
-      
-    } */
 .currectCarSection {
   background: url("./Assets/Images/cars/GENESIS G80.png") center/cover;
   width: 100%;
@@ -483,7 +500,7 @@ nav.navigationPages {
       .currectCarSection .carInfo .carPrice * {
         white-space: nowrap; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .currectCarSection {
     height: 166.66667vw;
     position: relative; }
@@ -606,7 +623,7 @@ nav.navigationPages {
           width: 1.04167vw;
           margin-left: 0.26042vw; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .currectCarDeatil {
     height: 262.77778vw;
     padding: 16.66667vw 4.16667vw; }
@@ -707,7 +724,7 @@ nav.navigationPages {
     display: flex;
     align-items: center; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .galary {
     height: 183.33333vw; }
     .galary > div {
@@ -764,7 +781,7 @@ nav.navigationPages {
     z-index: 1;
     object-fit: contain; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .colorCarPresentation {
     height: 183.33333vw; }
     .colorCarPresentation .choiseColor {
@@ -840,7 +857,7 @@ nav.navigationPages {
     object-fit: contain;
     margin-bottom: 0.26042vw; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .section4 {
     width: 100vw;
     height: 212.77778vw;
@@ -905,7 +922,7 @@ nav.navigationPages {
       .VisionSection button svg path {
         fill: #18181b; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .VisionSection {
     width: 100vw;
     height: 183.33333vw; }
@@ -921,7 +938,7 @@ nav.navigationPages {
         height: 5.55556vw;
         margin-right: 2.22222vw; } }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .section6 {
     flex-direction: column; } }
 
@@ -935,7 +952,7 @@ nav.navigationPages {
     object-position: bottom;
     overflow: hidden; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .section7 {
     height: 183.33333vw; }
     .section7 img {
@@ -1065,7 +1082,7 @@ nav.navigationPages {
           letter-spacing: 0em;
           text-align: left; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .availableProductsSection {
     width: 100vw;
     height: 247.22222vw;
@@ -1258,7 +1275,7 @@ nav.navigationPages {
         font-size: 0.72917vw;
         line-height: 0.88906vw; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .contactUsSection {
     width: 100%;
     height: 201.66667vw;
@@ -1465,7 +1482,7 @@ nav.navigationPages {
         top: 19.45vw;
         left: 35.20781vw; }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 750px) {
   .ourContactsSection {
     width: 100vw;
     height: 172.5vw;
@@ -1550,37 +1567,37 @@ nav.navigationPages {
     padding: 4.16667vw 10.15625vw 2.86458vw;
     display: flex;
     justify-content: space-between; }
-    .footer .linksBlock .hrfsBlock {
+    .footer .linksBlock .hrefsBlock {
       width: 39.0625vw;
       gap: 1.5625vw;
       display: flex; }
-      .footer .linksBlock .hrfsBlock > div {
+      .footer .linksBlock .hrefsBlock > div {
         width: 11.97917vw;
         gap: 1.04167vw;
         display: flex;
         flex-direction: column; }
-        .footer .linksBlock .hrfsBlock > div h4 {
+        .footer .linksBlock .hrefsBlock > div h4 {
           color: #ffffff;
           opacity: 50%;
           font-weight: 500;
           font-size: 1.04167vw;
           line-height: 1.26979vw;
           height: 1.25vw; }
-        .footer .linksBlock .hrfsBlock > div > div {
+        .footer .linksBlock .hrefsBlock > div > div {
           display: flex;
           flex-direction: column;
           gap: 0.52083vw; }
-          .footer .linksBlock .hrfsBlock > div > div a {
+          .footer .linksBlock .hrefsBlock > div > div a {
             font-weight: 400;
             font-size: 0.9375vw;
             line-height: 1.5vw;
             color: #ffffff;
             height: 1.51042vw; }
-            .footer .linksBlock .hrfsBlock > div > div a {
+            .footer .linksBlock .hrefsBlock > div > div a {
               transition: color 0.3s linear, fill 0.3s linear; }
-              .footer .linksBlock .hrfsBlock > div > div a:hover {
+              .footer .linksBlock .hrefsBlock > div > div a:hover {
                 color: #f6d375; }
-                .footer .linksBlock .hrfsBlock > div > div a:hover * {
+                .footer .linksBlock .hrefsBlock > div > div a:hover * {
                   fill: #f6d375; }
     .footer .linksBlock .footerDisclaimer {
       display: flex;
@@ -1645,6 +1662,71 @@ nav.navigationPages {
             color: #f6d375; }
             .footer .bottomLinksContainer .bottomLinks a:hover * {
               fill: #f6d375; }
+
+@media screen and (max-width: 750px) {
+  .footer {
+    height: unset; }
+    .footer .linksBlock {
+      padding: 8.33333vw 4.16667vw;
+      height: unset;
+      flex-direction: column;
+      gap: 8.33333vw; }
+      .footer .linksBlock .hrefsBlock {
+        flex-direction: column;
+        width: 100%;
+        gap: 8.33333vw; }
+        .footer .linksBlock .hrefsBlock > div {
+          width: unset;
+          gap: 5.55556vw;
+          flex-direction: column; }
+          .footer .linksBlock .hrefsBlock > div h4 {
+            font-weight: 500;
+            font-size: 5.55556vw;
+            line-height: 6.77222vw;
+            height: unset; }
+          .footer .linksBlock .hrefsBlock > div > div {
+            gap: 2.77778vw; }
+            .footer .linksBlock .hrefsBlock > div > div a {
+              font-weight: 400;
+              font-size: 5vw;
+              line-height: 8vw;
+              height: unset; }
+      .footer .linksBlock .footerDisclaimer {
+        gap: 5.55556vw; }
+        .footer .linksBlock .footerDisclaimer p {
+          width: unset;
+          height: unset;
+          font-weight: 400;
+          font-size: 5vw;
+          line-height: 8vw; }
+        .footer .linksBlock .footerDisclaimer .socialNetworks {
+          gap: 8.33333vw; }
+          .footer .linksBlock .footerDisclaimer .socialNetworks a {
+            width: 8.33333vw;
+            height: 8.33333vw;
+            padding: 0.69444vw; }
+    .footer .bottomLinksContainer {
+      height: unset;
+      padding: 8.33333vw 4.16667vw;
+      flex-direction: column;
+      align-items: normal;
+      gap: 5.55556vw; }
+      .footer .bottomLinksContainer > h2 {
+        width: unset;
+        height: unset;
+        font-weight: 500;
+        font-size: 8.88889vw;
+        line-height: 10.83611vw; }
+      .footer .bottomLinksContainer .bottomLinks {
+        width: unset;
+        height: unset;
+        flex-direction: column;
+        align-items: normal;
+        gap: 5.55556vw; }
+        .footer .bottomLinksContainer .bottomLinks a {
+          font-weight: 400;
+          font-size: 3.88889vw;
+          line-height: 4.74167vw; } }
 
 * {
   font-family: Montserrat; }

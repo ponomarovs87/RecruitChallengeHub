@@ -9,7 +9,7 @@ $footerBlack: #111111;
 $redErrorColor: #eb5757;
 $navigationBlack: #000000;
 
-$minWidthForMobileView: 360px;
+$minWidthForMobileView: 750px;
 
 @mixin backgroungLinearGray {
   background: linear-gradient(90deg, #bababa 0%, #f3f3f3 100%);
@@ -141,6 +141,12 @@ $minWidthForMobileView: 360px;
   font-weight: 500;
   font-size: calculateToVwFrom1920(32);
   line-height: calculateToVwFrom1920(39.01);
+}
+
+@mixin fw500fs32lh3901For360 {
+  font-weight: 500;
+  font-size: calculateToVwFrom360(32);
+  line-height: calculateToVwFrom360(39.01);
 }
 
 @mixin fw600fs16lh195ls0taLeft {

@@ -10,7 +10,7 @@
       calculateToVwFrom1920(55);
     display: flex;
     justify-content: space-between;
-    .hrfsBlock {
+    .hrefsBlock {
       width: calculateToVwFrom1920(750);
       gap: calculateToVwFrom1920(30);
       display: flex;
@@ -95,6 +95,82 @@
         @include fw400fs14lh1707;
         color: $whiteColor;
         @include hoverBrendYellow;
+      }
+    }
+  }
+}
+@media screen and (max-width: $minWidthForMobileView) {
+  .footer {
+    height: unset;
+    .linksBlock {
+      padding: calculateToVwFrom360(30) calculateToVwFrom360(15);
+      height: unset;
+      flex-direction: column;
+      gap: calculateToVwFrom360(30);
+
+      .hrefsBlock {
+        flex-direction: column;
+        width: 100%;
+        gap: calculateToVwFrom360(30);
+
+        & > div {
+          width: unset;
+          gap: calculateToVwFrom360(20);
+          flex-direction: column;
+          h4 {
+            @include fw500fs20lh2438For360;
+            height: unset;
+          }
+          & > div {
+            gap: calculateToVwFrom360(10);
+            a {
+              @include fw400fs18lh288For360;
+
+              height: unset;
+            }
+          }
+        }
+      }
+      .footerDisclaimer {
+        gap: calculateToVwFrom360(20);
+        p {
+          width: unset;
+          height: unset;
+          @include fw400fs18lh288For360;
+        }
+        .socialNetworks {
+          gap: calculateToVwFrom360(30);
+          a {
+            width: calculateToVwFrom360(30);
+            height: calculateToVwFrom360(30);
+            padding: calculateToVwFrom360(2.5);
+          }
+        }
+      }
+    }
+
+    .bottomLinksContainer {
+      height: unset;
+      padding: calculateToVwFrom360(30) calculateToVwFrom360(15);
+      flex-direction: column;
+      align-items: normal;
+      gap: calculateToVwFrom360(20);
+
+      & > h2 {
+        width: unset;
+        height: unset;
+        @include fw500fs32lh3901For360;
+      }
+      .bottomLinks {
+        width: unset;
+        height: unset;
+        flex-direction: column;
+        align-items: normal;
+        gap: calculateToVwFrom360(20);
+
+        a {
+          @include fw400fs14lh1707For360;
+        }
       }
     }
   }
